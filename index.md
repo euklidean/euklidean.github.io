@@ -4,7 +4,7 @@ layout: default
 
 ![](https://guides.github.com/activities/hello-world/branching.png)
 
-![](https://www.dropbox.com/s/hcnknb1fii0nnjy/8161503074_832e49d388_o.jpg?dl=0)
+![](https://www.flickr.com/photos/clintonintokyo/8785431079/in/dateposted/)
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
