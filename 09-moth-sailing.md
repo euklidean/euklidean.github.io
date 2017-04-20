@@ -2,9 +2,8 @@
 layout: default
 ---
 
-## Welcome to another page
+![](https://euklidean.github.io/images/09-01.jpg)
 
-_yay_
-HA!
+
 
 [back](./)
