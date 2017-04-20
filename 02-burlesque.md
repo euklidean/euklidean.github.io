@@ -49,4 +49,4 @@ layout: default
 <BR>
 <BR>
 
-[back](./) &nbsp &nbsp &nbsp &nbsp &nbsp [next](03-places-nearby)
+[back](./) <&nbsp> <&nbsp> <&nbsp> <&nbsp> <&nbsp> [next](03-places-nearby)
