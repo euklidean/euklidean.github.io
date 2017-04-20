@@ -2,7 +2,7 @@
 layout: default
 ---
 
-### burlesque &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+### burlesque &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h3><small>[home](index)</small>
 <small>[home](index)</small>
 
 <BR>
