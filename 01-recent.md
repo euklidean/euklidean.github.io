@@ -12,3 +12,5 @@ layout: default
 [back](./)
 <BR>
 <BR>
+
+[next](02-burlesque)

@@ -40,5 +40,5 @@ layout: default
 ![](https://euklidean.github.io/images/08-09.jpg)
 <BR>
 <BR>
-<BR>
-[back](./)
+
+[back](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](09-moth-sailing)

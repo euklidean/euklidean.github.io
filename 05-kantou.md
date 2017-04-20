@@ -32,6 +32,5 @@ layout: default
 ![](https://euklidean.github.io/images/05-07.jpg)
 <BR>
 <BR>
-<BR>
 
-[back](./)
+[back](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](06-portrait)

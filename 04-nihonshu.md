@@ -40,5 +40,5 @@ layout: default
 ![](https://euklidean.github.io/images/04-09.jpg)
 <BR>
 <BR>
-<BR>
-[back](./)
+
+[back](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](05-kantou)

@@ -8,6 +8,5 @@ layout: default
 ![](https://euklidean.github.io/images/07-01.jpg)
 <BR>
 <BR>
-<BR>
 
-[back](./)
+[back](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](08-random)

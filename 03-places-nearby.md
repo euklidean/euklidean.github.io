@@ -64,5 +64,5 @@ layout: default
 ![](https://euklidean.github.io/images/03-15.jpg)
 <BR>
 <BR>
-<BR>
-[back](./)
+
+[back](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](04-nihonshu)
