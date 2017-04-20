@@ -11,6 +11,8 @@ Photographs with: 135, 120 and 4x5 film cameras.
 Enlarges with: Lucky 90-D.
 Also at: Euclidian on tumblr.
 
+
+
 Admires the work of: Hiroshi Hamaya, Bill Brandt, Garry Winogrand, Shomei Tomatsu, Andreas Gursky, Daido Moriyama, Nobuyoshi Araki, Alfred Stieglitz, Robert Frank, Sebastiao Salgado, Michael Marten, Shinya Arimoto, Edward Burtynsky, Ihei Kimura, Rennie Ellis, Issei Suda, Josef Koudelka, Walker Evans, Kazuo Kitai.
 
 
