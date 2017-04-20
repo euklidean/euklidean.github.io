@@ -2,9 +2,43 @@
 layout: default
 ---
 
-## Welcome to another page
-
-_yay_
-HA!
-
+### random
+<BR>
+<BR>
+![](https://euklidean.github.io/images/08-01.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/08-02.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/08-03.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/08-04.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/08-05.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/08-06.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/08-07.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/08-08.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/08-09.jpg)
+<BR>
+<BR>
+<BR>
 [back](./)

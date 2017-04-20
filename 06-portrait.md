@@ -2,9 +2,19 @@
 layout: default
 ---
 
-## Welcome to another page
-
-_yay_
-HA!
-
+### portrait
+<BR>
+<BR>
+![](https://euklidean.github.io/images/06-01.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/06-02.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/06-03.jpg)
+<BR>
+<BR>
+<BR>
 [back](./)

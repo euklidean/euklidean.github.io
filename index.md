@@ -3,10 +3,13 @@ layout: default
 ---
 ![](https://euklidean.github.io/images/hp1.jpg)
 
+<BR>
+
 #### photoblog:-
 
 [recent](01-recent)
 
+<BR>
 
 #### portfolio:-
 
@@ -28,6 +31,7 @@ layout: default
 
 [temp](redundant)
 
+<BR>
 
 [about](99-about)
 
