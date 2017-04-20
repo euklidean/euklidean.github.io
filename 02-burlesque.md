@@ -2,7 +2,7 @@
 layout: default
 ---
 
-### burlesque
+### burlesque &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <small>[home](index)</small>
 
 <BR>
 ![](https://euklidean.github.io/images/02-01.jpg)
