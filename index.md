@@ -10,7 +10,7 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](another-page).
 
-[Link to another page](another-page1).
+[Link to another page](p1).
 
 There should be whitespace between paragraphs.
 
