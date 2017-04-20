@@ -1,6 +1,4 @@
----
 layout: default
----
 ![](https://euklidean.github.io/images/hp1.jpg)
 
 #### photoblog:-
