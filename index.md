@@ -5,9 +5,9 @@ layout: default
 
 <BR>
 
-#### [photoblog](01-recent)
+### [photoblog](01-recent)
 <BR>
-#### portfolio:-
+### portfolio:-
 
 ###### [burlesque](02-burlesque)
 
