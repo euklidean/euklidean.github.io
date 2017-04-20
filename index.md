@@ -4,6 +4,9 @@ layout: default
 
 ![](https://guides.github.com/activities/hello-world/branching.png)
 
+![](https://euklidean.github.io/images/p2.jpg)
+Hayama, 201X.
+
 ![](https://euklidean.github.io/images/p1.jpg)
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
