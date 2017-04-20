@@ -17,4 +17,4 @@ layout: default
 <BR>
 <BR>
 
-[back](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](07-landscape)
+[home](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](07-landscape)

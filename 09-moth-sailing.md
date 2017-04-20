@@ -45,4 +45,4 @@ layout: default
 <BR>
 <BR>
 <BR>
-[back](./)
+[home](./)

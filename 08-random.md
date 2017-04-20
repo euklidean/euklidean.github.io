@@ -41,4 +41,4 @@ layout: default
 <BR>
 <BR>
 
-[back](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](09-moth-sailing)
+[home](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](09-moth-sailing)

@@ -9,4 +9,4 @@ layout: default
 <BR>
 <BR>
 
-[back](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](08-random)
+[home](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](08-random)

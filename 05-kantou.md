@@ -33,4 +33,4 @@ layout: default
 <BR>
 <BR>
 
-[back](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](06-portrait)
+[home](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](06-portrait)

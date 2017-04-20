@@ -65,4 +65,4 @@ layout: default
 <BR>
 <BR>
 
-[back](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](04-nihonshu)
+[home](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](04-nihonshu)

@@ -41,4 +41,4 @@ layout: default
 <BR>
 <BR>
 
-[back](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](05-kantou)
+[home](./) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [next](05-kantou)
