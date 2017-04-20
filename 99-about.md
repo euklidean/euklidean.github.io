@@ -13,7 +13,11 @@ Also at: Euclidian on tumblr.
 
 Admires the work of: Hiroshi Hamaya, Bill Brandt, Garry Winogrand, Shomei Tomatsu, Andreas Gursky, Daido Moriyama, Nobuyoshi Araki, Alfred Stieglitz, Robert Frank, Sebastiao Salgado, Michael Marten, Shinya Arimoto, Edward Burtynsky, Ihei Kimura, Rennie Ellis, Issei Suda, Josef Koudelka, Walker Evans, Kazuo Kitai.
 
+
+
 All images on this site are analogue photographs scanned from negative or positive film, or prints. The exception is those catagorised under Moth Sailing, which are a mixture of analogue and digital.
+
+
 
 
 [back](./)
