@@ -2,9 +2,43 @@
 layout: default
 ---
 
-## Welcome to another page
-
-_yay_
-HA!
-
+### 日本酒
+<BR>
+<BR>
+![](https://euklidean.github.io/images/04-01.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/04-02.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/04-03.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/04-04.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/04-05.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/04-06.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/04-07.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/04-08.jpg)
+<BR>
+<BR>
+<BR>
+![](https://euklidean.github.io/images/04-09.jpg)
+<BR>
+<BR>
+<BR>
 [back](./)
