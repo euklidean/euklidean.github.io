@@ -3,7 +3,7 @@ layout: default
 ---
 
 ### places nearby
-<BR>
+
 <BR>
 ![](https://euklidean.github.io/images/03-01.jpg)
 <BR>

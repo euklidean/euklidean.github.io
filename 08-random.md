@@ -3,7 +3,7 @@ layout: default
 ---
 
 ### random
-<BR>
+
 <BR>
 ![](https://euklidean.github.io/images/08-01.jpg)
 <BR>

@@ -3,7 +3,7 @@ layout: default
 ---
 
 ### 日本酒
-<BR>
+
 <BR>
 ![](https://euklidean.github.io/images/04-01.jpg)
 <BR>

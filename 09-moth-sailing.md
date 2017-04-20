@@ -2,8 +2,8 @@
 layout: default
 ---
 
-### moth-sailing (analogue and digital)
-<BR>
+### moth sailing (analogue & digital)
+
 <BR>
 ![](https://euklidean.github.io/images/09-01.jpg)
 <BR>

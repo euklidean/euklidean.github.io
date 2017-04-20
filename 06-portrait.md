@@ -3,7 +3,7 @@ layout: default
 ---
 
 ### portrait
-<BR>
+
 <BR>
 ![](https://euklidean.github.io/images/06-01.jpg)
 <BR>
