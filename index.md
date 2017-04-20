@@ -3,7 +3,10 @@ layout: default
 ---
 
 
-[burlesque](burlesque).
+[recent](recent)
+
+
+[burlesque](burlesque)
 
 [places nearby](places-nearby)
 
@@ -18,6 +21,7 @@ layout: default
 [random](random)
 
 [moth sailing (a&d)](moth-sailing)
+
 
 [about](about)
 
