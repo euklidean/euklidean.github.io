@@ -4,7 +4,7 @@ layout: default
 
 ![](https://guides.github.com/activities/hello-world/branching.png)
 
-![](/Users/Clinton/Dropbox/application_data/GitHub/euklidean.github.io/p1.jpg)
+![](file:/Users/Clinton/Dropbox/application_data/GitHub/euklidean.github.io/p1.jpg)
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
