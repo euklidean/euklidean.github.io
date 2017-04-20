@@ -29,8 +29,6 @@ layout: default
 
 [moth sailing (a&d)](09-moth-sailing)
 
-[temp](redundant)
-
 <BR>
 
 [about](99-about)
