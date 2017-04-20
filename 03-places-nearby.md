@@ -2,9 +2,55 @@
 layout: default
 ---
 
-## Welcome to another page
-
-_yay_
-HA!
+### places nearby
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-01.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-02.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-03.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-04.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-05.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-06.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-07.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-08.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-09.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-10.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-11.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-12.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-13.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-14.jpg)
+<BR>
+<BR>
+![](https://euklidean.github.io/images/03-15.jpg)
+<BR>
+<BR>
+<BR>
+<BR>
 
 [back](./)
