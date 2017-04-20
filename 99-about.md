@@ -11,7 +11,7 @@ Also at: <a href="http://euklidian.tumblr.com/">Euclidian</a> on tumblr.<BR>
 <BR>
 <BR>
 Admires the work of: Hiroshi Hamaya, Bill Brandt, Garry Winogrand, Shomei Tomatsu, Andreas Gursky, Daido Moriyama, Nobuyoshi Araki, Alfred Stieglitz, Robert Frank, Sebastiao Salgado, Michael Marten, Shinya Arimoto, Edward Burtynsky, Ihei Kimura, Rennie Ellis, Issei Suda, Josef Koudelka, Walker Evans, Kazuo Kitai,
-    Jun Abe, Raghubir Singh.
+    Jun Abe, Raghubir Singh, Robert Adams, John Gossage.
 <BR>
 <BR>
 <BR>
