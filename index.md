@@ -2,9 +2,13 @@
 layout: default
 ---
 
+####photoblog
 
 [recent](recent)
 
+![](https://euklidean.github.io/images/hp1.jpg)
+
+####portfolio
 
 [burlesque](burlesque)
 
