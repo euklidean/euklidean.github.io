@@ -4,7 +4,6 @@ layout: default
 
 ### burlesque
 <BR>
-<BR>
 ![](https://euklidean.github.io/images/02-01.jpg)
 <BR>
 <BR>
@@ -45,7 +44,7 @@ layout: default
 <BR>
 <BR>
 <BR>
-![](https://euklidean.github.io/images/02-02.jpg)
+![](https://euklidean.github.io/images/02-11.jpg)
 <BR>
 <BR>
 <BR>
