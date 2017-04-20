@@ -3,6 +3,7 @@ layout: default
 ---
 
 ### burlesque
+[back](./)
 
 ![](https://euklidean.github.io/images/02-01.jpg)
 <BR>
@@ -47,5 +48,5 @@ layout: default
 ![](https://euklidean.github.io/images/02-11.jpg)
 <BR>
 <BR>
-<BR>
+
 [back](./)
