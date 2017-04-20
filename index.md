@@ -6,9 +6,8 @@ layout: default
 <BR>
 
 #### [photoblog](01-recent)
-<BR>
 
-#### portfolio:-
+#### portfolio:
 
 [burlesque](02-burlesque)
 
@@ -26,7 +25,6 @@ layout: default
 
 [moth sailing (a&d)](09-moth-sailing)
 
-<BR>
 ##### [about](99-about)
 
 
