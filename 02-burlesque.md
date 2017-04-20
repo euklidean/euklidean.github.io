@@ -2,8 +2,7 @@
 layout: default
 ---
 
-### burlesque
-[back](./)
+### burlesque [back](./)
 
 ![](https://euklidean.github.io/images/02-01.jpg)
 <BR>
