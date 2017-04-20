@@ -5,10 +5,8 @@ layout: default
 
 <BR>
 
-#### photoblog:-
-
-[recent](01-recent)
-
+#### [photoblog](01-recent)
+<BR>
 
 #### portfolio:-
 
@@ -28,7 +26,7 @@ layout: default
 
 [moth sailing (a&d)](09-moth-sailing)
 
-
-[about](99-about)
+<BR>
+##### [about](99-about)
 
 
