@@ -47,6 +47,12 @@
     <loc>/publication/journal-article/2021-pbfj/</loc>
     <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/courses/</loc>
+    <lastmod>2021-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/fta/fta/</loc>
+    <lastmod>2021-05-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/categories/</loc>
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
   </url><url>
@@ -62,6 +68,9 @@
     <loc>/tag/irf/</loc>
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/courses/pm/pm/</loc>
+    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/post/</loc>
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
   </url><url>
@@ -74,15 +83,6 @@
     <loc>/tag/var-model/</loc>
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/</loc>
-    <lastmod>2021-05-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/fta/fta/</loc>
-    <lastmod>2021-05-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/bf/bf/</loc>
-    <lastmod>2021-05-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tag/conway/</loc>
     <lastmod>2021-05-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -90,9 +90,6 @@
     <lastmod>2021-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/game-of-life/</loc>
-    <lastmod>2021-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/pm/pm/</loc>
     <lastmod>2021-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/sem/sem/</loc>
@@ -200,17 +197,26 @@
     <loc>/courses/ec/ec/</loc>
     <lastmod>2020-03-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/courses/ed/ed/</loc>
+    <lastmod>2020-03-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/courses/efc/efc/</loc>
     <lastmod>2020-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/erie/erie/</loc>
     <lastmod>2020-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/me/me/</loc>
-    <lastmod>2020-03-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/courses/fmw/fmw/</loc>
     <lastmod>2020-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/ib/ib/</loc>
+    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/it/it/</loc>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/me/me/</loc>
+    <lastmod>2020-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/futures/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
@@ -338,9 +344,6 @@
     <loc>/talk/intraday-seasonality-in-efficiency-liquidity-volatility-and-volume-platinum-and-gold-futures-in-tokyo-and-new-york-abfc/</loc>
     <lastmod>2017-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/ib/ib/</loc>
-    <lastmod>2015-06-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/talk/econometric-modelling-of-non-ferrous-metals-prices/</loc>
     <lastmod>2015-01-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -358,12 +361,6 @@
   </url><url>
     <loc>/talk/outlook-for-the-us-dollar-in-2011/</loc>
     <lastmod>2010-12-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/ed/ed/</loc>
-    <lastmod>2010-06-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/it/it/</loc>
-    <lastmod>2010-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/talk/macro-view-on-global-financial-markets/</loc>
     <lastmod>2010-05-13T00:00:00+00:00</lastmod>
