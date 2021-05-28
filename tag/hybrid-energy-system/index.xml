@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hybrid energy system | Clinton Watkins PhD</title>
+    <link>/tag/hybrid-energy-system/</link>
+      <atom:link href="/tag/hybrid-energy-system/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hybrid energy system</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Fri, 01 Jun 2001 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <title>Hybrid energy system</title>
+      <link>/tag/hybrid-energy-system/</link>
+    </image>
+    
+    <item>
+      <title>Installation of a Demonstration Mini Hybrid Renewable Energy System at Hluleka Nature Reserve, Eastern Cape, South Africa</title>
+      <link>/publication/report/2001-acre-2/</link>
+      <pubDate>Fri, 01 Jun 2001 00:00:00 +0000</pubDate>
+      <guid>/publication/report/2001-acre-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Performance Evaluation of Hybrid Renewable Energy Systems</title>
+      <link>/publication/report/2001-case-1/</link>
+      <pubDate>Fri, 01 Jun 2001 00:00:00 +0000</pubDate>
+      <guid>/publication/report/2001-case-1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

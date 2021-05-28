@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R | Clinton Watkins PhD</title>
+    <link>/tag/r/</link>
+      <atom:link href="/tag/r/index.xml" rel="self" type="application/rss+xml" />
+    <description>R</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <title>R</title>
+      <link>/tag/r/</link>
+    </image>
+    
+    <item>
+      <title>Generalised impulse response function in R.</title>
+      <link>/post/2021-girf/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      <guid>/post/2021-girf/</guid>
+      <description>
+&lt;script src=&#34;../../post/2021-girf/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This function is a replacement for vars:::.irf that estimates Pesaran and Shin (1998) orthogonalised and generalised IRFs and is intended to be slotted into the vars:::.boot function to bootstrap confidence intervals for IRFs.&lt;/p&gt;
+&lt;p&gt;I referred to the Matlab code posted by &lt;a href=&#34;http://ken-nyholm.com/Matlab/GIRF/GIRF.html&#34;&gt;Ken Nyholm&lt;/a&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# orthog = FALSE gives GIRF.
+
+psGIRF &amp;lt;- function(x, n.ahead = 20, cumulative = TRUE, orthog = FALSE){
+
+  y.names &amp;lt;- colnames(x$y)
+  impulse &amp;lt;- y.names
+  response &amp;lt;- y.names
+  
+  # Ensure n.ahead is an integer
+  n.ahead &amp;lt;- abs(as.integer(n.ahead))
+  
+  # Create arrays to hold calculations     
+  # [1:nlags, 1:nvariables, shocked variable ] 
+  
+  IRF_o  = array(data = 0, dim = c(n.ahead,x$K,x$K),
+                 dimnames = list(NULL,y.names,y.names))       
+  IRF_g  = array(data = 0, dim = c(n.ahead,x$K,x$K),
+                 dimnames = list(NULL,y.names,y.names))
+  IRF_g1 = array(data = 0, dim = c(n.ahead,x$K,x$K))
+  
+  # Estimation of orthogonalised and generalised IRFs
+  SpecMA &amp;lt;- Phi(x, n.ahead)
+  params &amp;lt;- ncol(x$datamat[, -c(1:x$K)])
+  sigma.u &amp;lt;- crossprod(resid(x))/(x$obs - params)
+  P &amp;lt;- t(chol(sigma.u))
+  sig_jj &amp;lt;- diag(sigma.u)
+  
+  for (jj in 1:x$K){
+    indx_      &amp;lt;- matrix(0,x$K,1)
+    indx_[jj,1] &amp;lt;- 1
+    
+    for (kk in 1:n.ahead){  #kk counts the lag
+      
+      IRF_o[kk, ,jj] &amp;lt;- SpecMA[, ,kk]%*%P%*%indx_  # Peseran-Shin eqn 7 (OIRF)
+      
+      IRF_g1[kk, ,jj] &amp;lt;- SpecMA[, ,kk]%*%sigma.u%*%indx_
+      IRF_g[kk, ,jj] &amp;lt;- sig_jj[jj]^(-0.5)*IRF_g1[kk, ,jj]  # Peseran-Shin eqn 10 (GIRF)
+      
+    }
+  }
+  
+  if(orthog==TRUE){
+    irf &amp;lt;- IRF_o
+  } else if(orthog==FALSE) {
+    irf &amp;lt;- IRF_g
+  } else {
+    stop(&amp;quot;\nError! Orthogonalised or generalised IRF?\n&amp;quot;)
+  }
+  
+  idx &amp;lt;- length(impulse)
+  irs &amp;lt;- list()
+  for (ii in 1:idx) {
+    irs[[ii]] &amp;lt;- matrix(irf[1:(n.ahead), response, impulse[ii]], nrow = n.ahead)
+    colnames(irs[[ii]]) &amp;lt;- response
+    if (cumulative) {
+      if (length(response) &amp;gt; 1) 
+        irs[[ii]] &amp;lt;- apply(irs[[ii]], 2, cumsum)
+      if (length(response) == 1) {
+        tmp &amp;lt;- matrix(cumsum(irs[[ii]]))
+        colnames(tmp) &amp;lt;- response
+        irs[[ii]] &amp;lt;- tmp
+      }
+    }
+  }
+  names(irs) &amp;lt;- impulse
+  result &amp;lt;- irs
+  return(result)
+ 
+}&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Conway&#39;s GOL</title>
+      <link>/post/2021-conway/</link>
+      <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
+      <guid>/post/2021-conway/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.r-bloggers.com/2012/11/fast-conways-game-of-life-in-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Here on R Bloggers&lt;/strong&gt;&lt;/a&gt; is some code simulating Conway&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Game of Life&lt;/em&gt;&lt;/a&gt;. The code produces the animated gif above that shows the evolution of a pattern determined only by its initial conditions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Estimating the Japanese Business Cycle Using R</title>
+      <link>/publication/uncat/gnt/</link>
+      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/uncat/gnt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Currency Portfolio Backtesting Software Manual</title>
+      <link>/publication/report/2018-sumi-2/</link>
+      <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/report/2018-sumi-2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

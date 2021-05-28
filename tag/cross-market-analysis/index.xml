@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cross-market analysis | Clinton Watkins PhD</title>
+    <link>/tag/cross-market-analysis/</link>
+      <atom:link href="/tag/cross-market-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <description>Cross-market analysis</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <title>Cross-market analysis</title>
+      <link>/tag/cross-market-analysis/</link>
+    </image>
+    
+    <item>
+      <title>Summary of our intraday commodity seasonality research on the JPX website.</title>
+      <link>/post/2020-jpx-1/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-jpx-1/</guid>
+      <description>&lt;p&gt;Read a summary (in Japanese) of a recent research project &amp;ldquo;Intraday seasonality in efficiency, liquidity, volatility and volume: Platinum and gold futures in Tokyo and New York&amp;rdquo; with Ken Iwatsubo and Tao Xu on the &lt;a href=&#34;https://www.jpx.co.jp/derivatives/futures-options-report/archives/nlsgeu000004hmd8-att/rerk2004.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Japan Exchange Futures and Options Report&lt;/a&gt; website.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arbitrage and Liquidity Across International Platinum Markets (with Kentaro Iwatsubo)</title>
+      <link>/project/arb-liq/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/project/arb-liq/</guid>
+      <description>&lt;p&gt;Liquidity and the ability to conduct arbitrage are interrelated. Arbitrage by investors enforces the law of one price. We examine how liquidity and arbitrage influence each other in the platinum futures markets located in New York and Tokyo. Granger causality between the arbitrage and liquidity variables in each direction provides evidence of their endogeneity. Whether arbitrage opportunity leads to an increase or decrease in liquidity depends on the reason the price difference between the two markets has arisen. A demand shock leads to greater liquidity while asymmetric information is toxic to liquidity. Using a Vector Autregression model and intraday data, we show that the relationship between liquidity and arbitrage changes over time in the context of futures based on the same underlying physical commodity.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Intraday seasonality in efficiency, liquidity, volatility and volume: Platinum and gold futures in Tokyo and New York</title>
+      <link>/publication/journal-article/2018-jcm/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/2018-jcm/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
