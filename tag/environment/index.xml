@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Environment | Clinton Watkins PhD</title>
+    <link>/tag/environment/</link>
+      <atom:link href="/tag/environment/index.xml" rel="self" type="application/rss+xml" />
+    <description>Environment</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Mon, 01 Dec 2003 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <title>Environment</title>
+      <link>/tag/environment/</link>
+    </image>
+    
+    <item>
+      <title>Climate Change and International Trade: Australia and Japan</title>
+      <link>/publication/conf-paper/2003-modsim-2/</link>
+      <pubDate>Mon, 01 Dec 2003 00:00:00 +0000</pubDate>
+      <guid>/publication/conf-paper/2003-modsim-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comment on the South West Power Project Strategic Environmental Review</title>
+      <link>/publication/report/2002-ecocarbon-4/</link>
+      <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
+      <guid>/publication/report/2002-ecocarbon-4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Submission to the State Greenhouse Strategy</title>
+      <link>/publication/report/2002-ecocarbon-5/</link>
+      <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
+      <guid>/publication/report/2002-ecocarbon-5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Carbon emissions markets: a simulation approach</title>
+      <link>/publication/conf-paper/2001-modsim-2/</link>
+      <pubDate>Mon, 10 Dec 2001 00:00:00 +0000</pubDate>
+      <guid>/publication/conf-paper/2001-modsim-2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

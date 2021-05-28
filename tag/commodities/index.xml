@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commodities | Clinton Watkins PhD</title>
+    <link>/tag/commodities/</link>
+      <atom:link href="/tag/commodities/index.xml" rel="self" type="application/rss+xml" />
+    <description>Commodities</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <title>Commodities</title>
+      <link>/tag/commodities/</link>
+    </image>
+    
+    <item>
+      <title>Summary of our intraday commodity seasonality research on the JPX website.</title>
+      <link>/post/2020-jpx-1/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-jpx-1/</guid>
+      <description>&lt;p&gt;Read a summary (in Japanese) of a recent research project &amp;ldquo;Intraday seasonality in efficiency, liquidity, volatility and volume: Platinum and gold futures in Tokyo and New York&amp;rdquo; with Ken Iwatsubo and Tao Xu on the &lt;a href=&#34;https://www.jpx.co.jp/derivatives/futures-options-report/archives/nlsgeu000004hmd8-att/rerk2004.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Japan Exchange Futures and Options Report&lt;/a&gt; website.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Who influences the fundamental value of commodity futures in Japan?</title>
+      <link>/publication/journal-article/2020-irfa/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/2020-irfa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nikkei Newspaper article</title>
+      <link>/post/2019-nikkei/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/post/2019-nikkei/</guid>
+      <description>&lt;p&gt;Nikkei Newspaper Staff Writer Shuhei Yamamoto came to Kobe University to interview Kentaro Iwatsubo, Yasuo Takatsuki and myself about our work on commodity derivatives.&lt;/p&gt;
+&lt;p&gt;You can find the article about our work published 25 June 2019 in the
+&lt;a href=&#34;https://tinyurl.com/2ha4umha&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nikkei&lt;/a&gt;
+or by copying this URL:
+&lt;a href=&#34;https://www.nikkei.com/article/&#34;&gt;https://www.nikkei.com/article/&lt;/a&gt; DGXMZO46496130U9A620C1000000/&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arbitrage and Liquidity Across International Platinum Markets (with Kentaro Iwatsubo)</title>
+      <link>/project/arb-liq/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/project/arb-liq/</guid>
+      <description>&lt;p&gt;Liquidity and the ability to conduct arbitrage are interrelated. Arbitrage by investors enforces the law of one price. We examine how liquidity and arbitrage influence each other in the platinum futures markets located in New York and Tokyo. Granger causality between the arbitrage and liquidity variables in each direction provides evidence of their endogeneity. Whether arbitrage opportunity leads to an increase or decrease in liquidity depends on the reason the price difference between the two markets has arisen. A demand shock leads to greater liquidity while asymmetric information is toxic to liquidity. Using a Vector Autregression model and intraday data, we show that the relationship between liquidity and arbitrage changes over time in the context of futures based on the same underlying physical commodity.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How has volatility in metals markets changed?</title>
+      <link>/publication/journal-article/2008-matcom/</link>
+      <pubDate>Fri, 18 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/2008-matcom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pricing of non-ferrous metals futures on the London Metal Exchange</title>
+      <link>/publication/journal-article/2006-afe/</link>
+      <pubDate>Mon, 20 Nov 2006 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/2006-afe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Related commodity markets and conditional correlations</title>
+      <link>/publication/journal-article/2005-matcom/</link>
+      <pubDate>Tue, 15 Mar 2005 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/2005-matcom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Econometric modelling of non-ferrous metal prices</title>
+      <link>/publication/journal-article/2004-joes/</link>
+      <pubDate>Wed, 10 Nov 2004 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/2004-joes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Correlation in volatility among related commodity markets</title>
+      <link>/publication/conf-paper/2003-modsim-1/</link>
+      <pubDate>Mon, 01 Dec 2003 00:00:00 +0000</pubDate>
+      <guid>/publication/conf-paper/2003-modsim-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modelling prices, returns and volatility in futures markets for industrial metals</title>
+      <link>/publication/thesis/phd/</link>
+      <pubDate>Fri, 29 Nov 2002 00:00:00 +0000</pubDate>
+      <guid>/publication/thesis/phd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cointegration analysis of metals futures</title>
+      <link>/publication/journal-article/2002-matcom/</link>
+      <pubDate>Fri, 10 May 2002 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/2002-matcom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estimating long run pricing models for copper futures prices</title>
+      <link>/publication/conf-paper/1999-modsim/</link>
+      <pubDate>Mon, 06 Dec 1999 00:00:00 +0000</pubDate>
+      <guid>/publication/conf-paper/1999-modsim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pricing in futures and forward markets for non-ferrous metals: an empirical critique</title>
+      <link>/publication/conf-paper/1997-modsim/</link>
+      <pubDate>Mon, 08 Dec 1997 00:00:00 +0000</pubDate>
+      <guid>/publication/conf-paper/1997-modsim/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
