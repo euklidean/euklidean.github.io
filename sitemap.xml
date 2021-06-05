@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/courses/bf/bf/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/fta/fta/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/pm/pm/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/sem/sem/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/ped/ped/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/ec/ec/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/ed/ed/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/efc/efc/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/erie/erie/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/fmw/fmw/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/ib/ib/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/it/it/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/me/me/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/publication-type/2/</loc>
     <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -9,9 +54,6 @@
     <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/author/clinton-watkins/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/efficiency/</loc>
@@ -47,15 +89,6 @@
     <loc>/publication/journal-article/2021-pbfj/</loc>
     <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/bf/bf/</loc>
-    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/</loc>
-    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/fta/fta/</loc>
-    <lastmod>2021-05-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/categories/</loc>
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
   </url><url>
@@ -69,9 +102,6 @@
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/irf/</loc>
-    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/pm/pm/</loc>
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/</loc>
@@ -94,12 +124,6 @@
   </url><url>
     <loc>/tag/game-of-life/</loc>
     <lastmod>2021-05-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/sem/sem/</loc>
-    <lastmod>2021-05-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/ped/ped/</loc>
-    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/event/</loc>
     <lastmod>2020-10-16T00:00:00+00:00</lastmod>
@@ -196,30 +220,6 @@
   </url><url>
     <loc>/post/2020-jpx-1/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/ec/ec/</loc>
-    <lastmod>2020-03-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/ed/ed/</loc>
-    <lastmod>2020-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/efc/efc/</loc>
-    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/erie/erie/</loc>
-    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/fmw/fmw/</loc>
-    <lastmod>2020-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/ib/ib/</loc>
-    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/it/it/</loc>
-    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/me/me/</loc>
-    <lastmod>2020-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/futures/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>

@@ -120,17 +120,19 @@ projects:
   post_view: 2
   publication_view: 2
   talk_view: 2
+book:
+  date-format: January 2006
 breadcrumb:
   page_types:
     book: true
 comments:
   provider: ''
   commentable:
-    post: true
-    book: true
-    project: true
-    publication: true
-    event: true
+    post: false
+    book: false
+    project: false
+    publication: false
+    event: false
   disqus:
     shortname: ''
     show_count: true

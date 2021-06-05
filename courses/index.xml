@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Courses | Clinton Watkins PhD</title>
+    <title>Courses | Clinton Watkins</title>
     <link>/courses/</link>
       <atom:link href="/courses/index.xml" rel="self" type="application/rss+xml" />
     <description>Courses</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Sat, 05 Jun 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Courses</title>
@@ -15,7 +15,7 @@
     <item>
       <title>📊 Behavioural Finance</title>
       <link>/courses/bf/bf/</link>
-      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/courses/bf/bf/</guid>
       <description>
 
@@ -62,7 +62,7 @@
     <item>
       <title>💹 Financial Theories &amp; Applications</title>
       <link>/courses/fta/fta/</link>
-      <pubDate>Thu, 27 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/courses/fta/fta/</guid>
       <description>
 
@@ -121,7 +121,7 @@
     <item>
       <title>🧮 Portfolio Management</title>
       <link>/courses/pm/pm/</link>
-      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/courses/pm/pm/</guid>
       <description>
 
@@ -160,7 +160,7 @@
     <item>
       <title>📚 Undergraduate Seminar</title>
       <link>/courses/sem/sem/</link>
-      <pubDate>Wed, 19 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/courses/sem/sem/</guid>
       <description>&lt;h2 id=&#34;this-is-a-research-seminar&#34;&gt;This is a research seminar&lt;/h2&gt;
 &lt;p&gt;This seminar course is designed for you to write a research paper on an appropriate research topic of your choice. Potential research areas include finance, applied econometrics and other areas of empirical analysis in business.&lt;/p&gt;
@@ -184,7 +184,7 @@
     <item>
       <title>Ψ The Psychology of Economic Decision-making</title>
       <link>/courses/ped/ped/</link>
-      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/courses/ped/ped/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This session will bring economics down to earth and get you thinking about how we think about our world. Three recent winners of the Nobel Prize in Economics, Daniel Kahneman (2002), Robert Shiller (2013) and Richard Thaler (2017), have pioneered the application of behavioural insights from psychology to economic decision-making. Mixing human psychology with a practical understanding of economic incentives and market behaviour, we will explore how understanding human miscalculations can help us make smarter decisions in both our private and professional lives.&lt;/p&gt;
@@ -206,7 +206,7 @@
     <item>
       <title>∑ Econometrics (Applied Econometrics Using R)</title>
       <link>/courses/ec/ec/</link>
-      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/courses/ec/ec/</guid>
       <description>
 
@@ -244,7 +244,7 @@
     <item>
       <title>📈 Economic Development</title>
       <link>/courses/ed/ed/</link>
-      <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/courses/ed/ed/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course covers the microfoundations of development, examining theoretical and empirical issues applicable in less-developed country economies. Topics surveyed will include current issues, agriculture and rural development, education, human capital investment, employment and labour markets, population, poverty alleviation, health, credit and financial markets, dealing with risk, technological change and the design and evaluation of development projects.&lt;/p&gt;
@@ -256,7 +256,7 @@
     <item>
       <title>🏢 Economic &amp; Financial Crises</title>
       <link>/courses/efc/efc/</link>
-      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/courses/efc/efc/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;We will examine the salient features of past crises in both emerging and developed economies and cover Hyman Minsky’s financial instability model in detail. The course will include aspects of economic history, international macroeconomics, international finance, banking and financial markets, regulation, government finances, international relations and politics. By successfully completing this course, students will develop a deep understanding of economic and financial crises, their causes and consequences.&lt;/p&gt;
@@ -279,7 +279,7 @@
     <item>
       <title>🇬🇧 Economics Readings in English</title>
       <link>/courses/erie/erie/</link>
-      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/courses/erie/erie/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course aims to develop the the ability and confidence of non-native English speaking undergraduates to comprehend and discuss economics in English. The course focuses on discussing economics related topics, not teaching English language. You are required to read, present and discuss various economics topics in English.&lt;/p&gt;
@@ -291,7 +291,7 @@
     <item>
       <title>🌐 Financial Markets Workshop</title>
       <link>/courses/fmw/fmw/</link>
-      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/courses/fmw/fmw/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course will develop students’ skills in applying economic and financial theory to the real time analysis of macroeconomics, financial markets and investment strategy. The course is conducted in a workshop style. The class sessions be a combination of lectures given by me, student presentations and student led discussion. We will develop a strategy for interpreting and forecasting developments in financial markets and important economies, focussing on cycles and trends.&lt;/p&gt;
@@ -311,7 +311,7 @@
     <item>
       <title>🌏 International Business</title>
       <link>/courses/ib/ib/</link>
-      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/courses/ib/ib/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This is an introductory course in international business that examines the economic, management and commercial aspects of international businesses. We will take a global perspective, but also emphasise the perspective of Asian firms and doing business in Asia. Working through Asia-relevant case studies about international businesses is a key part of the course.&lt;/p&gt;
@@ -323,7 +323,7 @@
     <item>
       <title>🚢 International Trade</title>
       <link>/courses/it/it/</link>
-      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/courses/it/it/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course surveys a number of major issues in trade theory and policy, as well as empirical tests of trade models, in the light of recent developments in international economics. Through this course, students should become familiar with the theoretical models of international trade, current issues in trade policy, and application of the theory to less developed country economies.&lt;/p&gt;
@@ -335,7 +335,7 @@
     <item>
       <title>🏛 Macroeconomics</title>
       <link>/courses/me/me/</link>
-      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/courses/me/me/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course introduces advanced macroeconomic modelling techniques and their ap- plication to the the analysis of business cycle fluctuations. The course has three main parts; we cover:&lt;/p&gt;
