@@ -5,14 +5,23 @@
     <loc>/courses/bf/bf/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/project/tfp/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/courses/fta/fta/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/pm/pm/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/project/dp/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/courses/sem/sem/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/arb-liq/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/ped/ped/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
@@ -41,13 +50,25 @@
     <loc>/courses/me/me/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/tag/arbitrage/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/causality/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/commodities/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/cross-market-analysis/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/cross-section-of-returns/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/tfp/</loc>
+    <loc>/tag/dividend-policy/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/firm-level-productivity/</loc>
@@ -56,19 +77,37 @@
     <loc>/tag/innovation/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/tag/intraday-data/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tag/investment-risk/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/liquidity/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/metals/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/organizational-capital/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/tag/payout-targets/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tag/personnel-expenditure/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/platinum/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/project/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tag/research-and-development-r%5Cd/</loc>
+    <loc>/tag/research-and-development-rd/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/stock-repurchases/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
@@ -170,25 +209,13 @@
     <loc>/tag/applied-econometrics/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/dp/</loc>
-    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tag/dividend-policy/</loc>
-    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/author/michael-mcaleer/</loc>
-    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tag/payout-targets/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/rankings/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication/book-section/2020-mdpi/</loc>
-    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tag/stock-buy-backs/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/author/tamotsu-nakamura/</loc>
@@ -208,12 +235,6 @@
   </url><url>
     <loc>/post/2020-jpx-2/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tag/commodities/</loc>
-    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tag/cross-market-analysis/</loc>
-    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/intraday-seasonality/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
@@ -268,27 +289,6 @@
   </url><url>
     <loc>/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tag/arbitrage/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/project/arb-liq/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tag/causality/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tag/intraday-data/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tag/liquidity/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tag/metals/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tag/platinum/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/talk/who-influences-the-fundamental-value-of-commodity-futures-in-japan-abfc/</loc>
     <lastmod>2018-12-13T00:00:00+00:00</lastmod>

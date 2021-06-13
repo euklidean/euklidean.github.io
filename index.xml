@@ -60,6 +60,17 @@
     </item>
     
     <item>
+      <title>Does Firm-Level Productivity Predict Stock Returns? (with Takashi Hiroki and Kentaro Iwatsubo)</title>
+      <link>/project/tfp/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>/project/tfp/</guid>
+      <description>&lt;p&gt;Contrary to the findings of previous U.S. studies, we show that the firm-level total factor productivity (TFP) of Japanese manufacturers positively predicts their future stock returns in the cross-section when controlling for relevant risk factors, including those of Fama and French (2015).  Risks related to intangible expenditure, primarily those for research and development (R&amp;amp;D) and personnel, explain a substantial fraction of the predictive power of firm-level TFP, while bankruptcy, macroeconomic, and capital expenditure risks do not. More productive firms trade at a significant premium to less productive firms. This premium compensates investors for risks associated with innovation and human and organizational capital formation.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Keywords:&lt;/em&gt; Firm-level productivity; Total factor productivity (TFP); Cross-section of returns; Intangibles; Research and development (R&amp;amp;D); Organizational capital&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;JEL classification:&lt;/em&gt; D24; G12; G14; G17&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>💹 Financial Theories &amp; Applications</title>
       <link>/courses/fta/fta/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
@@ -158,6 +169,15 @@
     </item>
     
     <item>
+      <title>Dividend payout policies (with Jason Bennett)</title>
+      <link>/project/dp/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>/project/dp/</guid>
+      <description>&lt;p&gt;Results to come&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>📚 Undergraduate Seminar</title>
       <link>/courses/sem/sem/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
@@ -178,6 +198,15 @@
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;./courses/sem/capstone_syllabus_20201202.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;./courses/sem/msp_20210612.html&#34;&gt; Seminar outline and model study guide for AIU students.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arbitrage and Liquidity Across International Platinum Markets (with Kentaro Iwatsubo)</title>
+      <link>/project/arb-liq/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>/project/arb-liq/</guid>
+      <description>&lt;p&gt;Liquidity and the ability to conduct arbitrage are interrelated. Arbitrage by investors enforces the law of one price. We examine how liquidity and arbitrage influence each other in the platinum futures markets located in New York and Tokyo. Granger causality between the arbitrage and liquidity variables in each direction provides evidence of their endogeneity. Whether arbitrage opportunity leads to an increase or decrease in liquidity depends on the reason the price difference between the two markets has arisen. A demand shock leads to greater liquidity while asymmetric information is toxic to liquidity. Using a Vector Autregression model and intraday data, we show that the relationship between liquidity and arbitrage changes over time in the context of futures based on the same underlying physical commodity.&lt;/p&gt;
 </description>
     </item>
     
@@ -372,17 +401,6 @@
     </item>
     
     <item>
-      <title>Does Firm-Level Productivity Predict Stock Returns? (with Takashi Hiroki and Kentaro Iwatsubo)</title>
-      <link>/project/tfp/</link>
-      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/project/tfp/</guid>
-      <description>&lt;p&gt;Contrary to the findings of previous U.S. studies, we show that the firm-level total factor productivity (TFP) of Japanese manufacturers positively predicts their future stock returns in the cross-section when controlling for relevant risk factors, including those of Fama and French (2015).  Risks related to intangible expenditure, primarily those for research and development (R&amp;amp;D) and personnel, explain a substantial fraction of the predictive power of firm-level TFP, while bankruptcy, macroeconomic, and capital expenditure risks do not. More productive firms trade at a significant premium to less productive firms. This premium compensates investors for risks associated with innovation and human and organizational capital formation.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Keywords:&lt;/em&gt; Firm-level productivity; Total factor productivity (TFP); Cross-section of returns; Intangibles; Research and development (R&amp;amp;D); Organizational capital&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;JEL classification:&lt;/em&gt; D24; G12; G14; G17&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>The changing role of foreign investors in Tokyo stock price formation</title>
       <link>/publication/journal-article/2021-pbfj/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
@@ -496,15 +514,6 @@ psGIRF &amp;lt;- function(x, n.ahead = 20, cumulative = TRUE, orthog = FALSE){
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/talk/the-changing-role-of-foreign-investors-in-tokyo-stock-price-formation-wfc/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Dividend payout policies (with Jason Bennett)</title>
-      <link>/project/dp/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>/project/dp/</guid>
-      <description>&lt;p&gt;Results to come&amp;hellip;&lt;/p&gt;
-</description>
     </item>
     
     <item>
@@ -714,15 +723,6 @@ Three
 &lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Arbitrage and Liquidity Across International Platinum Markets (with Kentaro Iwatsubo)</title>
-      <link>/project/arb-liq/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/project/arb-liq/</guid>
-      <description>&lt;p&gt;Liquidity and the ability to conduct arbitrage are interrelated. Arbitrage by investors enforces the law of one price. We examine how liquidity and arbitrage influence each other in the platinum futures markets located in New York and Tokyo. Granger causality between the arbitrage and liquidity variables in each direction provides evidence of their endogeneity. Whether arbitrage opportunity leads to an increase or decrease in liquidity depends on the reason the price difference between the two markets has arisen. A demand shock leads to greater liquidity while asymmetric information is toxic to liquidity. Using a Vector Autregression model and intraday data, we show that the relationship between liquidity and arbitrage changes over time in the context of futures based on the same underlying physical commodity.&lt;/p&gt;
 </description>
     </item>
     
