@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/courses/bf/bf/</loc>
+    <loc>/courses/behavioural-finance/behavioural-finance/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/tfp/</loc>
+    <loc>/project/japanese-firm-level-productivity-and-stock-returns/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/fta/fta/</loc>
+    <loc>/courses/financial-theories-applications/financial-theories-applications/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/pm/pm/</loc>
+    <loc>/courses/portfolio-management-investment/portfolio-management-investment/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/dp/</loc>
+    <loc>/project/japanese-firms-dividend-payout-policy/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/sem/sem/</loc>
+    <loc>/courses/undergrad-research-seminar/undergrad-research-seminar/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/arb-liq/</loc>
+    <loc>/project/microstructure-arbitrage-liquidity-platinum-futures/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/ped/ped/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/ec/ec/</loc>
+    <loc>/courses/applied-econometrics/applied-econometrics/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/ed/ed/</loc>
@@ -81,6 +81,9 @@
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/investment-risk/</loc>
+    <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/japanese-stocks/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/liquidity/</loc>
@@ -155,7 +158,7 @@
     <loc>/publication/</loc>
     <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/journal-article/2021-pbfj/</loc>
+    <loc>/publication/journal-article/2021-pbfj-foreign-investors-tokyo-stock-price-formation/</loc>
     <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
@@ -215,7 +218,7 @@
     <loc>/tag/rankings/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/book-section/2020-mdpi/</loc>
+    <loc>/publication/book-section/2020-mdpi-size-internationalization-university-rankings-japan/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/author/tamotsu-nakamura/</loc>
@@ -245,7 +248,7 @@
     <loc>/tag/futures/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/journal-article/2020-irfa/</loc>
+    <loc>/publication/journal-article/2020-irfa-who-influences-fundamental-value-commodity-futures-japan/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/talk/the-changing-role-of-foreign-investors-in-tokyo-stock-price-formation-nfa/</loc>
@@ -281,7 +284,7 @@
     <loc>/post/2019-nikkei/</loc>
     <lastmod>2019-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/journal-article/2019-sustainability/</loc>
+    <loc>/publication/journal-article/2019-sustainability-size-internationalization-university-rankings-japan/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/slides/</loc>
@@ -299,7 +302,7 @@
     <loc>/tag/commodity-futures/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/journal-article/2018-jcm/</loc>
+    <loc>/publication/journal-article/2018-jcm-intraday-seasonality-microstructure-platinum-gold/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/author/tao-xu/</loc>
@@ -383,7 +386,7 @@
     <loc>/tag/tools/</loc>
     <lastmod>2008-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/book-section/2008-bis/</loc>
+    <loc>/publication/book-section/2008-bis-using-financial-market-information-monetary-policy/</loc>
     <lastmod>2008-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/futures-contracts/</loc>
@@ -392,7 +395,7 @@
     <loc>/tag/garch/</loc>
     <lastmod>2008-01-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/journal-article/2008-matcom/</loc>
+    <loc>/publication/journal-article/2008-matcom-how-has-volatility-metals-markets-changed/</loc>
     <lastmod>2008-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/industrial-metals/</loc>
@@ -422,7 +425,7 @@
     <loc>/tag/cost-of-carry/</loc>
     <lastmod>2006-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/journal-article/2006-afe/</loc>
+    <loc>/publication/journal-article/2006-afe-pricing-metals-futures-london-metal-exchange/</loc>
     <lastmod>2006-11-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/risk-premium-hypothesis/</loc>
@@ -443,13 +446,13 @@
     <loc>/tag/cross-sectional-aggregation/</loc>
     <lastmod>2005-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/journal-article/2005-matcom/</loc>
+    <loc>/publication/journal-article/2005-matcom-related-commodity-markets-conditional-correlations/</loc>
     <lastmod>2005-03-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/econometric-critique/</loc>
     <lastmod>2004-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/journal-article/2004-joes/</loc>
+    <loc>/publication/journal-article/2004-joes-econometric-modelling-non-ferrous-metal-prices/</loc>
     <lastmod>2004-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/empirical-models/</loc>
@@ -632,7 +635,7 @@
     <loc>/publication/report/2002-ecocarbon-5/</loc>
     <lastmod>2002-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/journal-article/2002-matcom/</loc>
+    <loc>/publication/journal-article/2002-matcom-cointegration-analysis-metals-futures/</loc>
     <lastmod>2002-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/talk/an-overview-of-emissions-trading-systems/</loc>
@@ -752,7 +755,7 @@
     <loc>/tag/interest-rates/</loc>
     <lastmod>1997-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/journal-article/1997-matcom/</loc>
+    <loc>/publication/journal-article/1997-matcom-term-structure-interest-rates-economic-activity/</loc>
     <lastmod>1997-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/yield-curve/</loc>

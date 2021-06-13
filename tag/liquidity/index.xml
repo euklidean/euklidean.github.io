@@ -14,9 +14,9 @@
     
     <item>
       <title>Arbitrage and Liquidity Across International Platinum Markets (with Kentaro Iwatsubo)</title>
-      <link>/project/arb-liq/</link>
+      <link>/project/microstructure-arbitrage-liquidity-platinum-futures/</link>
       <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/project/arb-liq/</guid>
+      <guid>/project/microstructure-arbitrage-liquidity-platinum-futures/</guid>
       <description>&lt;p&gt;Liquidity and the ability to conduct arbitrage are interrelated. Arbitrage by investors enforces the law of one price. We examine how liquidity and arbitrage influence each other in the platinum futures markets located in New York and Tokyo. Granger causality between the arbitrage and liquidity variables in each direction provides evidence of their endogeneity. Whether arbitrage opportunity leads to an increase or decrease in liquidity depends on the reason the price difference between the two markets has arisen. A demand shock leads to greater liquidity while asymmetric information is toxic to liquidity. Using a Vector Autregression model and intraday data, we show that the relationship between liquidity and arbitrage changes over time in the context of futures based on the same underlying physical commodity.&lt;/p&gt;
 </description>
     </item>
