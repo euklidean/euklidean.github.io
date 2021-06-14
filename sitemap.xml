@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/courses/behavioural-finance/behavioural-finance/</loc>
+    <loc>/courses/bf/behavioural-finance/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/project/japanese-firm-level-productivity-and-stock-returns/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/financial-theories-applications/financial-theories-applications/</loc>
+    <loc>/courses/ft/financial-theories-applications/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/portfolio-management-investment/portfolio-management-investment/</loc>
+    <loc>/courses/pm/portfolio-management-investment/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/project/japanese-firms-dividend-payout-policy/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/undergrad-research-seminar/undergrad-research-seminar/</loc>
+    <loc>/courses/se/undergrad-research-seminar/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/project/microstructure-arbitrage-liquidity-platinum-futures/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/ped/ped/</loc>
+    <loc>/courses/pe/psychology-economic-decision-making/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/applied-econometrics/applied-econometrics/</loc>
+    <loc>/courses/ae/applied-econometrics/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/ed/ed/</loc>
+    <loc>/courses/ed/economic-development/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/efc/efc/</loc>
+    <loc>/courses/fc/economic-financial-crises/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/erie/erie/</loc>
+    <loc>/courses/er/economics-readings/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/fmw/fmw/</loc>
+    <loc>/courses/fw/financial-markets-workshop/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/ib/ib/</loc>
+    <loc>/courses/ib/international-business/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/it/it/</loc>
+    <loc>/courses/it/international-trade/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/me/me/</loc>
+    <loc>/courses/me/macroeconomics/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/arbitrage/</loc>
@@ -167,7 +167,7 @@
     <loc>/tag/econometrics/</loc>
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/2021-girf/</loc>
+    <loc>/post/2021-generalised-impulse-response-function-r/</loc>
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/girf/</loc>
@@ -191,7 +191,7 @@
     <loc>/tag/conway/</loc>
     <lastmod>2021-05-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/2021-conway/</loc>
+    <loc>/post/2021-conway-gol/</loc>
     <lastmod>2021-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/game-of-life/</loc>
@@ -236,13 +236,13 @@
     <loc>/tag/japan-exchange-group/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/2020-jpx-2/</loc>
+    <loc>/post/2020-japan-exchange-group-commodity-market-microstructure/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/intraday-seasonality/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/2020-jpx-1/</loc>
+    <loc>/post/2020-japan-exchange-group-intraday-commodity-seasonality/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/futures/</loc>
@@ -257,7 +257,7 @@
     <loc>/category/media/</loc>
     <lastmod>2019-11-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/2019-the/</loc>
+    <loc>/post/2019-times-higher-edication-internationalisation/</loc>
     <lastmod>2019-11-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/times-higher-education/</loc>
@@ -272,7 +272,7 @@
     <loc>/tag/business-cycle/</loc>
     <lastmod>2019-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/uncat/gnt/</loc>
+    <loc>/publication/uncat/gnt-estimating-japanese-business-cycle-r/</loc>
     <lastmod>2019-10-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/modelling/</loc>
@@ -281,17 +281,11 @@
     <loc>/tag/nikkei/</loc>
     <lastmod>2019-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/2019-nikkei/</loc>
+    <loc>/post/2019-nikkei-newspaper-commodity-research-kobe/</loc>
     <lastmod>2019-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication/journal-article/2019-sustainability-size-internationalization-university-rankings-japan/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/slides/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/slides/example/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/talk/who-influences-the-fundamental-value-of-commodity-futures-in-japan-abfc/</loc>
     <lastmod>2018-12-13T00:00:00+00:00</lastmod>
@@ -320,7 +314,7 @@
     <loc>/tag/backtests/</loc>
     <lastmod>2018-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/report/2018-sumi-1/</loc>
+    <loc>/publication/report/2018-smam-foreign-exchange-rate-forecasting/</loc>
     <lastmod>2018-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/currency-returns/</loc>
@@ -344,7 +338,7 @@
     <loc>/tag/code/</loc>
     <lastmod>2018-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/report/2018-sumi-2/</loc>
+    <loc>/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</loc>
     <lastmod>2018-03-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/talk/intraday-seasonality-in-efficiency-liquidity-volatility-and-volume-platinum-and-gold-futures-in-tokyo-and-new-york-abfc/</loc>
@@ -410,7 +404,7 @@
     <loc>/publication-type/1/</loc>
     <lastmod>2007-08-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/conf-paper/2007-bnm/</loc>
+    <loc>/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</loc>
     <lastmod>2007-08-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/talk/using-financial-market-information-in-monetary-policy-some-examples-from-new-zealand/</loc>
@@ -434,7 +428,7 @@
     <loc>/talk/have-aluminium-and-copper-futures-markets-become-more-volatile-over-time/</loc>
     <lastmod>2005-12-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/conf-paper/2005-modsim/</loc>
+    <loc>/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</loc>
     <lastmod>2005-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/source-themes/</loc>
@@ -461,10 +455,10 @@
     <loc>/tag/climate-change/</loc>
     <lastmod>2003-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/conf-paper/2003-modsim-2/</loc>
+    <loc>/publication/conf-paper/2003-modsim-climate-change-international-trade/</loc>
     <lastmod>2003-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/conf-paper/2003-modsim-1/</loc>
+    <loc>/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</loc>
     <lastmod>2003-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/emissions-trading/</loc>
@@ -536,7 +530,7 @@
     <loc>/tag/empirical-finance/</loc>
     <lastmod>2002-11-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/thesis/phd/</loc>
+    <loc>/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</loc>
     <lastmod>2002-11-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/talk/an-overview-of-australias-greenhouse-response/</loc>
@@ -557,10 +551,10 @@
     <loc>/talk/estimating-tradeable-certificates-created-by-small-scale-renewable-energy-systems/</loc>
     <lastmod>2002-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/conf-paper/2002-iemss-2/</loc>
+    <loc>/publication/conf-paper/2002-iemss-renewable-energy/</loc>
     <lastmod>2002-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/conf-paper/2002-iemss-1/</loc>
+    <loc>/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</loc>
     <lastmod>2002-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/rolling-regressions/</loc>
@@ -653,7 +647,7 @@
     <loc>/talk/carbon-emissions-markets-a-simulation-approach/</loc>
     <lastmod>2001-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/conf-paper/2001-modsim-2/</loc>
+    <loc>/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</loc>
     <lastmod>2001-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/experimental-economics/</loc>
@@ -665,7 +659,7 @@
     <loc>/talk/forecasting-commodity-market-volatility-in-the-presence-of-extreme-observations/</loc>
     <lastmod>2001-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/conf-paper/2001-modsim-1/</loc>
+    <loc>/publication/conf-paper/2001-modsim-commodity-market-volatility/</loc>
     <lastmod>2001-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/outliers/</loc>
@@ -734,7 +728,7 @@
     <loc>/talk/estimating-long-run-pricing-models-for-copper-futures-contracts/</loc>
     <lastmod>1999-12-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/conf-paper/1999-modsim/</loc>
+    <loc>/publication/conf-paper/1999-modsim-pricing-copper-futures/</loc>
     <lastmod>1999-12-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/talk/hybrid-renewable-energy-system-and-village-workshop-in-kemiri-irian-jaya/</loc>
@@ -743,7 +737,7 @@
     <loc>/talk/pricing-in-futures-and-forward-markets-for-non-ferrous-metals-an-empirical-critique/</loc>
     <lastmod>1997-12-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/conf-paper/1997-modsim/</loc>
+    <loc>/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</loc>
     <lastmod>1997-12-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/econometrics-critique/</loc>
@@ -764,10 +758,10 @@
     <loc>/talk/human-capital-and-screening-theories-of-education-an-empirical-critique/</loc>
     <lastmod>1995-11-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/conf-paper/1995-modsim-2/</loc>
+    <loc>/publication/conf-paper/1995-modsim-human-capital/</loc>
     <lastmod>1995-11-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication/conf-paper/1995-modsim-1/</loc>
+    <loc>/publication/conf-paper/1995-modsim-term-structure-interest-rates/</loc>
     <lastmod>1995-11-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/talk/the-term-structure-of-interest-rates-and-economic-activity-an-empirical-critique-modsim95/</loc>

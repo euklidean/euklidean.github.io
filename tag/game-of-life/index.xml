@@ -14,9 +14,9 @@
     
     <item>
       <title>Conway&#39;s GOL</title>
-      <link>/post/2021-conway/</link>
+      <link>/post/2021-conway-gol/</link>
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
-      <guid>/post/2021-conway/</guid>
+      <guid>/post/2021-conway-gol/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.r-bloggers.com/2012/11/fast-conways-game-of-life-in-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Here on R Bloggers&lt;/strong&gt;&lt;/a&gt; is some code simulating Conway&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Game of Life&lt;/em&gt;&lt;/a&gt;. The code produces the animated gif above that shows the evolution of a pattern determined only by its initial conditions.&lt;/p&gt;
 </description>
     </item>

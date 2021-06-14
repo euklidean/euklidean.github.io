@@ -14,9 +14,9 @@
     
     <item>
       <title>📊 Behavioural Finance</title>
-      <link>/courses/behavioural-finance/behavioural-finance/</link>
+      <link>/courses/bf/behavioural-finance/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/behavioural-finance/behavioural-finance/</guid>
+      <guid>/courses/bf/behavioural-finance/</guid>
       <description>
 
 
@@ -33,7 +33,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./courses/behavioural-finance/bfp.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./courses/bf/bfp.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Researchers such as Daniel Kahneman (winner of the 2002 Nobel Prize in Economics), Robert Shiller (joint winner of the 2013 Nobel Prize in Economics) and Richard Thaler (winner of the 2017 Nobel Prize in Economics) pioneered the application of concepts from psychology to economic and financial decision-making. In behavioural economics and finance, we use principles from psychology to describe how individuals actually make economic and financial decisions, in contrast to the way rational agent models suggest individuals should make decisions.&lt;/p&gt;
@@ -55,7 +55,7 @@
   &lt;p&gt;Financial Theories and Applications&lt;/p&gt;
 &lt;/details&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/behavioural-finance/behavioural_finance_syllabus_aiu_20201208.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/bf/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -72,9 +72,9 @@
     
     <item>
       <title>💹 Financial Theories &amp; Applications</title>
-      <link>/courses/financial-theories-applications/financial-theories-applications/</link>
+      <link>/courses/ft/financial-theories-applications/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/financial-theories-applications/financial-theories-applications/</guid>
+      <guid>/courses/ft/financial-theories-applications/</guid>
       <description>
 
 
@@ -91,7 +91,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./courses/financial-theories-applications/sb.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./courses/ft/sb.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This is foundation course in finance that focuses primarily on financial markets and instruments, with some coverage of institutions. The course provides students with an understanding of the roles of financial markets, how financial securities are priced and traded, and the structure and functioning of the global financial system. We cover important security pricing and valuation calculations as well as theory and intuition behind the functioning of the financial system.&lt;/p&gt;
@@ -125,15 +125,15 @@
   &lt;p&gt;Mathematics and statistics.&lt;/p&gt;
 &lt;/details&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/financial-theories-applications/fta_syllabus_online_20210421.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/ft/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🧮 Portfolio Management</title>
-      <link>/courses/portfolio-management-investment/portfolio-management-investment/</link>
+      <link>/courses/pm/portfolio-management-investment/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/portfolio-management-investment/portfolio-management-investment/</guid>
+      <guid>/courses/pm/portfolio-management-investment/</guid>
       <description>
 
 
@@ -150,7 +150,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./courses/portfolio-management-investment/corr.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./courses/pm/corr.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;what-you-will-learn&#34;&gt;What you will learn&lt;/h2&gt;
 &lt;p&gt;This course is about the theory and practice of investment management. The course covers investment theory and concepts including security valuation, Modern Portfolio Theory, the risk/return trade-off, diversification, and the Black-Litterman Model. We will use these theories to construct portfolios using securities data in excel and R, and create portfolio analytics using R. We will discuss practical aspects of investment management, as well as the current situation of the investment management business in Japan and overseas. We also cover practical aspects of investment management such as investment philosophy, portfolio design, risk management, performance evaluation, ethics and fiduciary duty.&lt;/p&gt;
@@ -162,9 +162,9 @@
   &lt;p&gt;Mathematics, Statistics and Financial Theories and Applications&lt;/p&gt;
 &lt;/details&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/portfolio-management-investment/pm_syllabus_online_20210515.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/pm/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;setting-up-r-and-rstudio&#34;&gt;Setting up R and RStudio&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/portfolio-management-investment/pm_r_intro_nb_20210506.nb.html&#34;&gt;How to set up R and RStudio on your computer for the course.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/pm/intro-r.html&#34;&gt;How to set up R and RStudio on your computer for the course.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -179,9 +179,9 @@
     
     <item>
       <title>📚 Undergraduate Seminar</title>
-      <link>/courses/undergrad-research-seminar/undergrad-research-seminar/</link>
+      <link>/courses/se/undergrad-research-seminar/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/undergrad-research-seminar/undergrad-research-seminar/</guid>
+      <guid>/courses/se/undergrad-research-seminar/</guid>
       <description>&lt;h2 id=&#34;this-is-a-research-seminar&#34;&gt;This is a research seminar&lt;/h2&gt;
 &lt;p&gt;This seminar course is designed for you to write a research paper on an appropriate research topic of your choice. Potential research areas include finance, applied econometrics and other areas of empirical analysis in business.&lt;/p&gt;
 &lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;
@@ -196,8 +196,8 @@
   &lt;p&gt;Read as many research papers as possible in subjects in which you have taken courses. Discuss research with your professors and adviser. Ask your adviser&amp;rsquo;s opinion on whether your topic ideas are feasilbe, and how they can be improved. Your research question must be clear.&lt;/p&gt;
 &lt;/details&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/undergrad-research-seminar/capstone_syllabus_20201202.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/undergrad-research-seminar/msp_20210612.html&#34;&gt; Seminar outline and model study guide for AIU students.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/se/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/se/study-plan.html&#34;&gt; Seminar outline and model study guide for AIU students.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -212,9 +212,9 @@
     
     <item>
       <title>Ψ The Psychology of Economic Decision-making</title>
-      <link>/courses/ped/ped/</link>
+      <link>/courses/pe/psychology-economic-decision-making/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/ped/ped/</guid>
+      <guid>/courses/pe/psychology-economic-decision-making/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This session will bring economics down to earth and get you thinking about how we think about our world. Three recent winners of the Nobel Prize in Economics, Daniel Kahneman (2002), Robert Shiller (2013) and Richard Thaler (2017), have pioneered the application of behavioural insights from psychology to economic decision-making. Mixing human psychology with a practical understanding of economic incentives and market behaviour, we will explore how understanding human miscalculations can help us make smarter decisions in both our private and professional lives.&lt;/p&gt;
 &lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;
@@ -233,10 +233,10 @@
     </item>
     
     <item>
-      <title>∑ Econometrics (Applied Econometrics Using R)</title>
-      <link>/courses/applied-econometrics/applied-econometrics/</link>
+      <title>∑ Applied Econometrics (using R)</title>
+      <link>/courses/ae/applied-econometrics/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/applied-econometrics/applied-econometrics/</guid>
+      <guid>/courses/ae/applied-econometrics/</guid>
       <description>
 
 
@@ -253,7 +253,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./courses/applied-econometrics/Rlogo.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;15%&#34; /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./courses/ae/Rlogo.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;15%&#34; /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course exposes students to common econometric techniques that economists use to estimate, test, and forecast relationships between variables in economics and finance. We cover applied econometrics and selective intermediate theory. Students will apply theory to empirical problems using economic and financial data in class and in assignments using the language &lt;a href=&#34;https://www.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;R&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://www.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -266,27 +266,27 @@
 &lt;li&gt;Become competent using R and associated tools for applied econometrics.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/applied-econometrics/econometrics_syllabus_20191001.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/ae/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>📈 Economic Development</title>
-      <link>/courses/ed/ed/</link>
+      <link>/courses/ed/economic-development/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/ed/ed/</guid>
+      <guid>/courses/ed/economic-development/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course covers the microfoundations of development, examining theoretical and empirical issues applicable in less-developed country economies. Topics surveyed will include current issues, agriculture and rural development, education, human capital investment, employment and labour markets, population, poverty alleviation, health, credit and financial markets, dealing with risk, technological change and the design and evaluation of development projects.&lt;/p&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/ed/ED%20Course%20Guide%2004.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/ed/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🏢 Economic &amp; Financial Crises</title>
-      <link>/courses/efc/efc/</link>
+      <link>/courses/fc/economic-financial-crises/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/efc/efc/</guid>
+      <guid>/courses/fc/economic-financial-crises/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;We will examine the salient features of past crises in both emerging and developed economies and cover Hyman Minsky’s financial instability model in detail. The course will include aspects of economic history, international macroeconomics, international finance, banking and financial markets, regulation, government finances, international relations and politics. By successfully completing this course, students will develop a deep understanding of economic and financial crises, their causes and consequences.&lt;/p&gt;
 &lt;h2 id=&#34;course-objectives&#34;&gt;Course objectives&lt;/h2&gt;
@@ -301,27 +301,27 @@
 &lt;li&gt;the history and lessons of various financial crises.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/efc/efc_syllabus_20180815.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/fc/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🇬🇧 Economics Readings in English</title>
-      <link>/courses/erie/erie/</link>
+      <link>/courses/er/economics-readings/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/erie/erie/</guid>
+      <guid>/courses/er/economics-readings/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course aims to develop the the ability and confidence of non-native English speaking undergraduates to comprehend and discuss economics in English. The course focuses on discussing economics related topics, not teaching English language. You are required to read, present and discuss various economics topics in English.&lt;/p&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/erie/erie_syllabus_20161004.pdf&#34;&gt;Download the syllabus&lt;/a&gt; and &lt;a href=&#34;./courses/erie/erie_syllabus_20161004.pdf&#34;&gt;the topic list.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/er/syllabus.pdf&#34;&gt;Download the syllabus&lt;/a&gt; and &lt;a href=&#34;./courses/er/topics.pdf&#34;&gt;the topic list.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🌐 Financial Markets Workshop</title>
-      <link>/courses/fmw/fmw/</link>
+      <link>/courses/fw/financial-markets-workshop/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/fmw/fmw/</guid>
+      <guid>/courses/fw/financial-markets-workshop/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course will develop students’ skills in applying economic and financial theory to the real time analysis of macroeconomics, financial markets and investment strategy. The course is conducted in a workshop style. The class sessions be a combination of lectures given by me, student presentations and student led discussion. We will develop a strategy for interpreting and forecasting developments in financial markets and important economies, focussing on cycles and trends.&lt;/p&gt;
 &lt;h2 id=&#34;course-objectives&#34;&gt;Course objectives&lt;/h2&gt;
@@ -333,41 +333,41 @@
 &lt;li&gt;be able to discuss well-reasoned views about what is happening in international financial markets, and be able to present valid counter-views to consensus.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/fmw/fmw_syllabus_20180410.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/fw/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🌏 International Business</title>
-      <link>/courses/ib/ib/</link>
+      <link>/courses/ib/international-business/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/ib/ib/</guid>
+      <guid>/courses/ib/international-business/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This is an introductory course in international business that examines the economic, management and commercial aspects of international businesses. We will take a global perspective, but also emphasise the perspective of Asian firms and doing business in Asia. Working through Asia-relevant case studies about international businesses is a key part of the course.&lt;/p&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/ib/ECN304_course_outline_20150410.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/ib/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🚢 International Trade</title>
-      <link>/courses/it/it/</link>
+      <link>/courses/it/international-trade/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/it/it/</guid>
+      <guid>/courses/it/international-trade/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course surveys a number of major issues in trade theory and policy, as well as empirical tests of trade models, in the light of recent developments in international economics. Through this course, students should become familiar with the theoretical models of international trade, current issues in trade policy, and application of the theory to less developed country economies.&lt;/p&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/it/IEPP%20Course%20Outline%2005.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/it/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🏛 Macroeconomics</title>
-      <link>/courses/me/me/</link>
+      <link>/courses/me/macroeconomics/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/courses/me/me/</guid>
+      <guid>/courses/me/macroeconomics/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
-&lt;p&gt;This course introduces advanced macroeconomic modelling techniques and their ap- plication to the the analysis of business cycle fluctuations. The course has three main parts; we cover:&lt;/p&gt;
+&lt;p&gt;This course introduces advanced macroeconomic modelling techniques and their application to the the analysis of business cycle fluctuations. The course has three main parts; we cover:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;the approaches to macroeconomic modelling and analysis;&lt;/p&gt;
@@ -396,7 +396,7 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;./courses/me/macro_syllabus_20191001.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/me/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -410,11 +410,11 @@
     
     <item>
       <title>Generalised impulse response function in R.</title>
-      <link>/post/2021-girf/</link>
+      <link>/post/2021-generalised-impulse-response-function-r/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
-      <guid>/post/2021-girf/</guid>
+      <guid>/post/2021-generalised-impulse-response-function-r/</guid>
       <description>
-&lt;script src=&#34;./post/2021-girf/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;./post/2021-generalised-impulse-response-function-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;This function is a replacement for vars:::.irf that estimates Pesaran and Shin (1998) orthogonalised and generalised IRFs and is intended to be slotted into the vars:::.boot function to bootstrap confidence intervals for IRFs.&lt;/p&gt;
@@ -493,9 +493,9 @@ psGIRF &amp;lt;- function(x, n.ahead = 20, cumulative = TRUE, orthog = FALSE){
     
     <item>
       <title>Conway&#39;s GOL</title>
-      <link>/post/2021-conway/</link>
+      <link>/post/2021-conway-gol/</link>
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
-      <guid>/post/2021-conway/</guid>
+      <guid>/post/2021-conway-gol/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.r-bloggers.com/2012/11/fast-conways-game-of-life-in-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Here on R Bloggers&lt;/strong&gt;&lt;/a&gt; is some code simulating Conway&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Game of Life&lt;/em&gt;&lt;/a&gt;. The code produces the animated gif above that shows the evolution of a pattern determined only by its initial conditions.&lt;/p&gt;
 </description>
     </item>
@@ -526,18 +526,18 @@ psGIRF &amp;lt;- function(x, n.ahead = 20, cumulative = TRUE, orthog = FALSE){
     
     <item>
       <title>Summary of our commodity market microstructure research on the JPX website.</title>
-      <link>/post/2020-jpx-2/</link>
+      <link>/post/2020-japan-exchange-group-commodity-market-microstructure/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020-jpx-2/</guid>
+      <guid>/post/2020-japan-exchange-group-commodity-market-microstructure/</guid>
       <description>&lt;p&gt;Read a summary (in Japanese) of a recent research project &amp;ldquo;Who influences the fundamental value of commodity futures in Japan?&amp;rdquo; with Ken Iwatsubo on the &lt;a href=&#34;https://www.jpx.co.jp/derivatives/futures-options-report/archives/nlsgeu000004hmd8-att/rerk2005.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Japan Exchange Futures and Options Report&lt;/a&gt; website.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Summary of our intraday commodity seasonality research on the JPX website.</title>
-      <link>/post/2020-jpx-1/</link>
+      <link>/post/2020-japan-exchange-group-intraday-commodity-seasonality/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020-jpx-1/</guid>
+      <guid>/post/2020-japan-exchange-group-intraday-commodity-seasonality/</guid>
       <description>&lt;p&gt;Read a summary (in Japanese) of a recent research project &amp;ldquo;Intraday seasonality in efficiency, liquidity, volatility and volume: Platinum and gold futures in Tokyo and New York&amp;rdquo; with Ken Iwatsubo and Tao Xu on the &lt;a href=&#34;https://www.jpx.co.jp/derivatives/futures-options-report/archives/nlsgeu000004hmd8-att/rerk2004.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Japan Exchange Futures and Options Report&lt;/a&gt; website.&lt;/p&gt;
 </description>
     </item>
@@ -560,9 +560,9 @@ psGIRF &amp;lt;- function(x, n.ahead = 20, cumulative = TRUE, orthog = FALSE){
     
     <item>
       <title>Time Higher Education article</title>
-      <link>/post/2019-the/</link>
+      <link>/post/2019-times-higher-edication-internationalisation/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/post/2019-the/</guid>
+      <guid>/post/2019-times-higher-edication-internationalisation/</guid>
       <description>&lt;p&gt;My co-author Michael McAleer was interviewed by Times Higher Education reporter Ellie Bothwell in connection with our article “Size, internationalization, and university rankings: evaluating and predicting Times Higher Education (THE) data for Japan”.&lt;/p&gt;
 &lt;p&gt;You can read the article published on-line on 21 November 2019 on the &lt;a href=&#34;https://www.timeshighereducation.com/features/small-still-beautiful-age-mega-university&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;THE website&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -570,17 +570,17 @@ psGIRF &amp;lt;- function(x, n.ahead = 20, cumulative = TRUE, orthog = FALSE){
     
     <item>
       <title>Estimating the Japanese Business Cycle Using R</title>
-      <link>/publication/uncat/gnt/</link>
+      <link>/publication/uncat/gnt-estimating-japanese-business-cycle-r/</link>
       <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/uncat/gnt/</guid>
+      <guid>/publication/uncat/gnt-estimating-japanese-business-cycle-r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nikkei Newspaper article</title>
-      <link>/post/2019-nikkei/</link>
+      <link>/post/2019-nikkei-newspaper-commodity-research-kobe/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>/post/2019-nikkei/</guid>
+      <guid>/post/2019-nikkei-newspaper-commodity-research-kobe/</guid>
       <description>&lt;p&gt;Nikkei Newspaper Staff Writer Shuhei Yamamoto came to Kobe University to interview Kentaro Iwatsubo, Yasuo Takatsuki and myself about our work on commodity derivatives.&lt;/p&gt;
 &lt;p&gt;You can find the article about our work published 25 June 2019 in the
 &lt;a href=&#34;https://tinyurl.com/2ha4umha&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nikkei&lt;/a&gt;
@@ -595,135 +595,6 @@ or by copying this URL:
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       <guid>/publication/journal-article/2019-sustainability-size-internationalization-university-rankings-japan/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Slides</title>
-      <link>/slides/example/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/slides/example/</guid>
-      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
-&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
-&lt;li&gt;Supports speaker notes&lt;/li&gt;
-&lt;li&gt;Mobile friendly slides&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
-&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Code block:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
-if porridge == &amp;quot;blueberry&amp;quot;:
-    print(&amp;quot;Eating...&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
-&lt;p&gt;Block math:&lt;/p&gt;
-&lt;p&gt;$$
-f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
-&lt;p&gt;Make content appear incrementally&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-One
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-&lt;strong&gt;Two&lt;/strong&gt;
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-Three
-&lt;/span&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
-&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
-- Only the speaker can read these notes
-- Press `S` key to view
-{{% /speaker_note %}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
-&lt;aside class=&#34;notes&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/aside&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
-&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
-&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
-&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
-&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
-&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;/media/boards.jpg&#34;
-  &gt;
-
-&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
-&lt;p&gt;Customize the slide style and background&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/media/boards.jpg&amp;quot; &amp;gt;}}
-{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
-{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
-&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-</description>
     </item>
     
     <item>
@@ -760,17 +631,17 @@ Three
     
     <item>
       <title>Business Cycle and Value Insights for Forecasting Currency Returns</title>
-      <link>/publication/report/2018-sumi-1/</link>
+      <link>/publication/report/2018-smam-foreign-exchange-rate-forecasting/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/report/2018-sumi-1/</guid>
+      <guid>/publication/report/2018-smam-foreign-exchange-rate-forecasting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Currency Portfolio Backtesting Software Manual</title>
-      <link>/publication/report/2018-sumi-2/</link>
+      <link>/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</link>
       <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/report/2018-sumi-2/</guid>
+      <guid>/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</guid>
       <description></description>
     </item>
     
@@ -864,9 +735,9 @@ Three
     
     <item>
       <title>Using financial market information in monetary policy: some examples from New Zealand</title>
-      <link>/publication/conf-paper/2007-bnm/</link>
+      <link>/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</link>
       <pubDate>Mon, 13 Aug 2007 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/2007-bnm/</guid>
+      <guid>/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</guid>
       <description></description>
     </item>
     
@@ -904,9 +775,9 @@ Three
     
     <item>
       <title>Have aluminium and copper futures markets become more volatile over time?</title>
-      <link>/publication/conf-paper/2005-modsim/</link>
+      <link>/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</link>
       <pubDate>Thu, 01 Dec 2005 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/2005-modsim/</guid>
+      <guid>/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</guid>
       <description></description>
     </item>
     
@@ -936,17 +807,17 @@ Three
     
     <item>
       <title>Climate Change and International Trade: Australia and Japan</title>
-      <link>/publication/conf-paper/2003-modsim-2/</link>
+      <link>/publication/conf-paper/2003-modsim-climate-change-international-trade/</link>
       <pubDate>Mon, 01 Dec 2003 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/2003-modsim-2/</guid>
+      <guid>/publication/conf-paper/2003-modsim-climate-change-international-trade/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Correlation in volatility among related commodity markets</title>
-      <link>/publication/conf-paper/2003-modsim-1/</link>
+      <link>/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</link>
       <pubDate>Mon, 01 Dec 2003 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/2003-modsim-1/</guid>
+      <guid>/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</guid>
       <description></description>
     </item>
     
@@ -1016,9 +887,9 @@ Three
     
     <item>
       <title>Modelling prices, returns and volatility in futures markets for industrial metals</title>
-      <link>/publication/thesis/phd/</link>
+      <link>/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</link>
       <pubDate>Fri, 29 Nov 2002 00:00:00 +0000</pubDate>
-      <guid>/publication/thesis/phd/</guid>
+      <guid>/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</guid>
       <description></description>
     </item>
     
@@ -1072,17 +943,17 @@ Three
     
     <item>
       <title>Estimating tradeable certificates created by small-scale renewable energy systems</title>
-      <link>/publication/conf-paper/2002-iemss-2/</link>
+      <link>/publication/conf-paper/2002-iemss-renewable-energy/</link>
       <pubDate>Mon, 24 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/2002-iemss-2/</guid>
+      <guid>/publication/conf-paper/2002-iemss-renewable-energy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling time-varying volatility in non-ferrous metals markets</title>
-      <link>/publication/conf-paper/2002-iemss-1/</link>
+      <link>/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</link>
       <pubDate>Mon, 24 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/2002-iemss-1/</guid>
+      <guid>/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</guid>
       <description></description>
     </item>
     
@@ -1208,9 +1079,9 @@ Three
     
     <item>
       <title>Carbon emissions markets: a simulation approach</title>
-      <link>/publication/conf-paper/2001-modsim-2/</link>
+      <link>/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</link>
       <pubDate>Mon, 10 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/2001-modsim-2/</guid>
+      <guid>/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</guid>
       <description></description>
     </item>
     
@@ -1224,9 +1095,9 @@ Three
     
     <item>
       <title>Forecasting commodity market volatility in the presence of extreme observations</title>
-      <link>/publication/conf-paper/2001-modsim-1/</link>
+      <link>/publication/conf-paper/2001-modsim-commodity-market-volatility/</link>
       <pubDate>Mon, 10 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/2001-modsim-1/</guid>
+      <guid>/publication/conf-paper/2001-modsim-commodity-market-volatility/</guid>
       <description></description>
     </item>
     
@@ -1352,9 +1223,9 @@ Three
     
     <item>
       <title>Estimating long run pricing models for copper futures prices</title>
-      <link>/publication/conf-paper/1999-modsim/</link>
+      <link>/publication/conf-paper/1999-modsim-pricing-copper-futures/</link>
       <pubDate>Mon, 06 Dec 1999 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/1999-modsim/</guid>
+      <guid>/publication/conf-paper/1999-modsim-pricing-copper-futures/</guid>
       <description></description>
     </item>
     
@@ -1376,9 +1247,9 @@ Three
     
     <item>
       <title>Pricing in futures and forward markets for non-ferrous metals: an empirical critique</title>
-      <link>/publication/conf-paper/1997-modsim/</link>
+      <link>/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</link>
       <pubDate>Mon, 08 Dec 1997 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/1997-modsim/</guid>
+      <guid>/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</guid>
       <description></description>
     </item>
     
@@ -1400,17 +1271,17 @@ Three
     
     <item>
       <title>Human capital and screening theories of education: an empirical critique</title>
-      <link>/publication/conf-paper/1995-modsim-2/</link>
+      <link>/publication/conf-paper/1995-modsim-human-capital/</link>
       <pubDate>Mon, 27 Nov 1995 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/1995-modsim-2/</guid>
+      <guid>/publication/conf-paper/1995-modsim-human-capital/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The term structure of interest rates and economic activity: an empirical critique</title>
-      <link>/publication/conf-paper/1995-modsim-1/</link>
+      <link>/publication/conf-paper/1995-modsim-term-structure-interest-rates/</link>
       <pubDate>Mon, 27 Nov 1995 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/1995-modsim-1/</guid>
+      <guid>/publication/conf-paper/1995-modsim-term-structure-interest-rates/</guid>
       <description></description>
     </item>
     
