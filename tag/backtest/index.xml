@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Backtest | Clinton Watkins</title>
-    <link>clintonwatkins.com/tag/backtest/</link>
-      <atom:link href="clintonwatkins.com/tag/backtest/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tag/backtest/</link>
+      <atom:link href="/tag/backtest/index.xml" rel="self" type="application/rss+xml" />
     <description>Backtest</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Tue, 20 Mar 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Backtest</title>
-      <link>clintonwatkins.com/tag/backtest/</link>
+      <link>/tag/backtest/</link>
     </image>
     
     <item>
       <title>Currency Portfolio Backtesting Software Manual</title>
-      <link>clintonwatkins.com/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</link>
+      <link>/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</link>
       <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</guid>
+      <guid>/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</guid>
       <description></description>
     </item>
     

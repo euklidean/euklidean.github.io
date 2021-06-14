@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Market mechanisms | Clinton Watkins</title>
-    <link>clintonwatkins.com/tag/market-mechanisms/</link>
-      <atom:link href="clintonwatkins.com/tag/market-mechanisms/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tag/market-mechanisms/</link>
+      <atom:link href="/tag/market-mechanisms/index.xml" rel="self" type="application/rss+xml" />
     <description>Market mechanisms</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Mon, 01 Dec 2003 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Market mechanisms</title>
-      <link>clintonwatkins.com/tag/market-mechanisms/</link>
+      <link>/tag/market-mechanisms/</link>
     </image>
     
     <item>
       <title>Climate Change and International Trade: Australia and Japan</title>
-      <link>clintonwatkins.com/publication/conf-paper/2003-modsim-climate-change-international-trade/</link>
+      <link>/publication/conf-paper/2003-modsim-climate-change-international-trade/</link>
       <pubDate>Mon, 01 Dec 2003 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/2003-modsim-climate-change-international-trade/</guid>
+      <guid>/publication/conf-paper/2003-modsim-climate-change-international-trade/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Estimating tradeable certificates created by small-scale renewable energy systems</title>
-      <link>clintonwatkins.com/publication/conf-paper/2002-iemss-renewable-energy/</link>
+      <link>/publication/conf-paper/2002-iemss-renewable-energy/</link>
       <pubDate>Mon, 24 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/2002-iemss-renewable-energy/</guid>
+      <guid>/publication/conf-paper/2002-iemss-renewable-energy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Carbon emissions markets: a simulation approach</title>
-      <link>clintonwatkins.com/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</link>
+      <link>/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</link>
       <pubDate>Mon, 10 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</guid>
+      <guid>/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</guid>
       <description></description>
     </item>
     

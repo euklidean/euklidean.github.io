@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Extreme observations | Clinton Watkins</title>
-    <link>clintonwatkins.com/tag/extreme-observations/</link>
-      <atom:link href="clintonwatkins.com/tag/extreme-observations/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tag/extreme-observations/</link>
+      <atom:link href="/tag/extreme-observations/index.xml" rel="self" type="application/rss+xml" />
     <description>Extreme observations</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Mon, 10 Dec 2001 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Extreme observations</title>
-      <link>clintonwatkins.com/tag/extreme-observations/</link>
+      <link>/tag/extreme-observations/</link>
     </image>
     
     <item>
       <title>Forecasting commodity market volatility in the presence of extreme observations</title>
-      <link>clintonwatkins.com/publication/conf-paper/2001-modsim-commodity-market-volatility/</link>
+      <link>/publication/conf-paper/2001-modsim-commodity-market-volatility/</link>
       <pubDate>Mon, 10 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/2001-modsim-commodity-market-volatility/</guid>
+      <guid>/publication/conf-paper/2001-modsim-commodity-market-volatility/</guid>
       <description></description>
     </item>
     

@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Applied econometrics | Clinton Watkins</title>
-    <link>clintonwatkins.com/tag/applied-econometrics/</link>
-      <atom:link href="clintonwatkins.com/tag/applied-econometrics/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tag/applied-econometrics/</link>
+      <atom:link href="/tag/applied-econometrics/index.xml" rel="self" type="application/rss+xml" />
     <description>Applied econometrics</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Applied econometrics</title>
-      <link>clintonwatkins.com/tag/applied-econometrics/</link>
+      <link>/tag/applied-econometrics/</link>
     </image>
     
     <item>
       <title>Size, internationalization, and university rankings: evaluating and predicting Times Higher Education (THE) data for Japan</title>
-      <link>clintonwatkins.com/publication/book-section/2020-mdpi-size-internationalization-university-rankings-japan/</link>
+      <link>/publication/book-section/2020-mdpi-size-internationalization-university-rankings-japan/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/book-section/2020-mdpi-size-internationalization-university-rankings-japan/</guid>
+      <guid>/publication/book-section/2020-mdpi-size-internationalization-university-rankings-japan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Size, internationalization, and university rankings: evaluating and predicting Times Higher Education (THE) data for Japan</title>
-      <link>clintonwatkins.com/publication/journal-article/2019-sustainability-size-internationalization-university-rankings-japan/</link>
+      <link>/publication/journal-article/2019-sustainability-size-internationalization-university-rankings-japan/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/journal-article/2019-sustainability-size-internationalization-university-rankings-japan/</guid>
+      <guid>/publication/journal-article/2019-sustainability-size-internationalization-university-rankings-japan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling prices, returns and volatility in futures markets for industrial metals</title>
-      <link>clintonwatkins.com/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</link>
+      <link>/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</link>
       <pubDate>Fri, 29 Nov 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</guid>
+      <guid>/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</guid>
       <description></description>
     </item>
     

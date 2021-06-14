@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clinton Watkins</title>
-    <link>clintonwatkins.com/</link>
-      <atom:link href="clintonwatkins.com/index.xml" rel="self" type="application/rss+xml" />
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Clinton Watkins</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Clinton Watkins</title>
-      <link>clintonwatkins.com/</link>
+      <link>/</link>
     </image>
     
     <item>
       <title>📊 Behavioural Finance</title>
-      <link>clintonwatkins.com/courses/bf/behavioural-finance/</link>
+      <link>/courses/bf/behavioural-finance/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/courses/bf/behavioural-finance/</guid>
+      <guid>/courses/bf/behavioural-finance/</guid>
       <description>
 
 
@@ -33,7 +33,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;clintonwatkins.com/courses/bf/bfp.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./courses/bf/bfp.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Researchers such as Daniel Kahneman (winner of the 2002 Nobel Prize in Economics), Robert Shiller (joint winner of the 2013 Nobel Prize in Economics) and Richard Thaler (winner of the 2017 Nobel Prize in Economics) pioneered the application of concepts from psychology to economic and financial decision-making. In behavioural economics and finance, we use principles from psychology to describe how individuals actually make economic and financial decisions, in contrast to the way rational agent models suggest individuals should make decisions.&lt;/p&gt;
@@ -55,15 +55,15 @@
   &lt;p&gt;Financial Theories and Applications&lt;/p&gt;
 &lt;/details&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/bf/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/bf/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Does Firm-Level Productivity Predict Stock Returns? (with Takashi Hiroki and Kentaro Iwatsubo)</title>
-      <link>clintonwatkins.com/project/japanese-firm-level-productivity-and-stock-returns/</link>
+      <link>/project/japanese-firm-level-productivity-and-stock-returns/</link>
       <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/project/japanese-firm-level-productivity-and-stock-returns/</guid>
+      <guid>/project/japanese-firm-level-productivity-and-stock-returns/</guid>
       <description>&lt;p&gt;Contrary to the findings of previous U.S. studies, we show that the firm-level total factor productivity (TFP) of Japanese manufacturers positively predicts their future stock returns in the cross-section when controlling for relevant risk factors, including those of Fama and French (2015).  Risks related to intangible expenditure, primarily those for research and development (R&amp;amp;D) and personnel, explain a substantial fraction of the predictive power of firm-level TFP, while bankruptcy, macroeconomic, and capital expenditure risks do not. More productive firms trade at a significant premium to less productive firms. This premium compensates investors for risks associated with innovation and human and organizational capital formation.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Keywords:&lt;/em&gt; Firm-level productivity; Total factor productivity (TFP); Cross-section of returns; Intangibles; Research and development (R&amp;amp;D); Organizational capital&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;JEL classification:&lt;/em&gt; D24; G12; G14; G17&lt;/p&gt;
@@ -72,9 +72,9 @@
     
     <item>
       <title>💹 Financial Theories &amp; Applications</title>
-      <link>clintonwatkins.com/courses/ft/financial-theories-applications/</link>
+      <link>/courses/ft/financial-theories-applications/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/courses/ft/financial-theories-applications/</guid>
+      <guid>/courses/ft/financial-theories-applications/</guid>
       <description>
 
 
@@ -91,7 +91,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;clintonwatkins.com/courses/ft/sb.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./courses/ft/sb.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This is foundation course in finance that focuses primarily on financial markets and instruments, with some coverage of institutions. The course provides students with an understanding of the roles of financial markets, how financial securities are priced and traded, and the structure and functioning of the global financial system. We cover important security pricing and valuation calculations as well as theory and intuition behind the functioning of the financial system.&lt;/p&gt;
@@ -125,15 +125,15 @@
   &lt;p&gt;Mathematics and statistics.&lt;/p&gt;
 &lt;/details&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/ft/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/ft/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🧮 Portfolio Management</title>
-      <link>clintonwatkins.com/courses/pm/portfolio-management-investment/</link>
+      <link>/courses/pm/portfolio-management-investment/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/courses/pm/portfolio-management-investment/</guid>
+      <guid>/courses/pm/portfolio-management-investment/</guid>
       <description>
 
 
@@ -150,7 +150,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;clintonwatkins.com/courses/pm/corr.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./courses/pm/corr.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;what-you-will-learn&#34;&gt;What you will learn&lt;/h2&gt;
 &lt;p&gt;This course is about the theory and practice of investment management. The course covers investment theory and concepts including security valuation, Modern Portfolio Theory, the risk/return trade-off, diversification, and the Black-Litterman Model. We will use these theories to construct portfolios using securities data in excel and R, and create portfolio analytics using R. We will discuss practical aspects of investment management, as well as the current situation of the investment management business in Japan and overseas. We also cover practical aspects of investment management such as investment philosophy, portfolio design, risk management, performance evaluation, ethics and fiduciary duty.&lt;/p&gt;
@@ -162,26 +162,26 @@
   &lt;p&gt;Mathematics, Statistics and Financial Theories and Applications&lt;/p&gt;
 &lt;/details&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/pm/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/pm/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;setting-up-r-and-rstudio&#34;&gt;Setting up R and RStudio&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/pm/intro-r.html&#34;&gt;How to set up R and RStudio on your computer for the course.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/pm/intro-r.html&#34;&gt;How to set up R and RStudio on your computer for the course.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Analysis of Japanese firms&#39; dividend and total payout policies (with Jason Bennett)</title>
-      <link>clintonwatkins.com/project/japanese-firms-dividend-payout-policy/</link>
+      <link>/project/japanese-firms-dividend-payout-policy/</link>
       <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/project/japanese-firms-dividend-payout-policy/</guid>
+      <guid>/project/japanese-firms-dividend-payout-policy/</guid>
       <description>&lt;p&gt;The academic literature has long assumed the existence of long-term dividend payout target ratios. With the exception of a small number of surveys, there is little hard evidence on what may guide payout targets, the level and evolution of targets. We construct a novel data set that identifies management attitudes towards payout targets using text mining and natural language processing techniques. We analyse our panel of firms using cross-sectional regressions controlling for standard risk factors and other variables.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>📚 Undergraduate Seminar</title>
-      <link>clintonwatkins.com/courses/se/undergrad-research-seminar/</link>
+      <link>/courses/se/undergrad-research-seminar/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/courses/se/undergrad-research-seminar/</guid>
+      <guid>/courses/se/undergrad-research-seminar/</guid>
       <description>&lt;h2 id=&#34;this-is-a-research-seminar&#34;&gt;This is a research seminar&lt;/h2&gt;
 &lt;p&gt;This seminar course is designed for you to write a research paper on an appropriate research topic of your choice. Potential research areas include finance, applied econometrics and other areas of empirical analysis in business.&lt;/p&gt;
 &lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;
@@ -196,25 +196,25 @@
   &lt;p&gt;Read as many research papers as possible in subjects in which you have taken courses. Discuss research with your professors and adviser. Ask your adviser&amp;rsquo;s opinion on whether your topic ideas are feasilbe, and how they can be improved. Your research question must be clear.&lt;/p&gt;
 &lt;/details&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/se/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/se/study-plan.html&#34;&gt; Seminar outline and model study guide for AIU students.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/se/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/se/study-plan.html&#34;&gt; Seminar outline and model study guide for AIU students.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Arbitrage and Liquidity Across International Platinum Markets (with Kentaro Iwatsubo)</title>
-      <link>clintonwatkins.com/project/microstructure-arbitrage-liquidity-platinum-futures/</link>
+      <link>/project/microstructure-arbitrage-liquidity-platinum-futures/</link>
       <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/project/microstructure-arbitrage-liquidity-platinum-futures/</guid>
+      <guid>/project/microstructure-arbitrage-liquidity-platinum-futures/</guid>
       <description>&lt;p&gt;Liquidity and the ability to conduct arbitrage are interrelated. Arbitrage by investors enforces the law of one price. We examine how liquidity and arbitrage influence each other in the platinum futures markets located in New York and Tokyo. Granger causality between the arbitrage and liquidity variables in each direction provides evidence of their endogeneity. Whether arbitrage opportunity leads to an increase or decrease in liquidity depends on the reason the price difference between the two markets has arisen. A demand shock leads to greater liquidity while asymmetric information is toxic to liquidity. Using a Vector Autregression model and intraday data, we show that the relationship between liquidity and arbitrage changes over time in the context of futures based on the same underlying physical commodity.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Ψ The Psychology of Economic Decision-making</title>
-      <link>clintonwatkins.com/courses/pe/psychology-economic-decision-making/</link>
+      <link>/courses/pe/psychology-economic-decision-making/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/courses/pe/psychology-economic-decision-making/</guid>
+      <guid>/courses/pe/psychology-economic-decision-making/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This session will bring economics down to earth and get you thinking about how we think about our world. Three recent winners of the Nobel Prize in Economics, Daniel Kahneman (2002), Robert Shiller (2013) and Richard Thaler (2017), have pioneered the application of behavioural insights from psychology to economic decision-making. Mixing human psychology with a practical understanding of economic incentives and market behaviour, we will explore how understanding human miscalculations can help us make smarter decisions in both our private and professional lives.&lt;/p&gt;
 &lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;
@@ -234,9 +234,9 @@
     
     <item>
       <title>∑ Applied Econometrics (using R)</title>
-      <link>clintonwatkins.com/courses/ae/applied-econometrics/</link>
+      <link>/courses/ae/applied-econometrics/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/courses/ae/applied-econometrics/</guid>
+      <guid>/courses/ae/applied-econometrics/</guid>
       <description>
 
 
@@ -253,7 +253,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;clintonwatkins.com/courses/ae/Rlogo.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;15%&#34; /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./courses/ae/Rlogo.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;15%&#34; /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course exposes students to common econometric techniques that economists use to estimate, test, and forecast relationships between variables in economics and finance. We cover applied econometrics and selective intermediate theory. Students will apply theory to empirical problems using economic and financial data in class and in assignments using the language &lt;a href=&#34;https://www.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;R&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://www.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -266,27 +266,27 @@
 &lt;li&gt;Become competent using R and associated tools for applied econometrics.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/ae/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/ae/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>📈 Economic Development</title>
-      <link>clintonwatkins.com/courses/ed/economic-development/</link>
+      <link>/courses/ed/economic-development/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/courses/ed/economic-development/</guid>
+      <guid>/courses/ed/economic-development/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course covers the microfoundations of development, examining theoretical and empirical issues applicable in less-developed country economies. Topics surveyed will include current issues, agriculture and rural development, education, human capital investment, employment and labour markets, population, poverty alleviation, health, credit and financial markets, dealing with risk, technological change and the design and evaluation of development projects.&lt;/p&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/ed/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/ed/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🏢 Economic &amp; Financial Crises</title>
-      <link>clintonwatkins.com/courses/fc/economic-financial-crises/</link>
+      <link>/courses/fc/economic-financial-crises/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/courses/fc/economic-financial-crises/</guid>
+      <guid>/courses/fc/economic-financial-crises/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;We will examine the salient features of past crises in both emerging and developed economies and cover Hyman Minsky’s financial instability model in detail. The course will include aspects of economic history, international macroeconomics, international finance, banking and financial markets, regulation, government finances, international relations and politics. By successfully completing this course, students will develop a deep understanding of economic and financial crises, their causes and consequences.&lt;/p&gt;
 &lt;h2 id=&#34;course-objectives&#34;&gt;Course objectives&lt;/h2&gt;
@@ -301,27 +301,27 @@
 &lt;li&gt;the history and lessons of various financial crises.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/fc/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/fc/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🇬🇧 Economics Readings in English</title>
-      <link>clintonwatkins.com/courses/er/economics-readings/</link>
+      <link>/courses/er/economics-readings/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/courses/er/economics-readings/</guid>
+      <guid>/courses/er/economics-readings/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course aims to develop the the ability and confidence of non-native English speaking undergraduates to comprehend and discuss economics in English. The course focuses on discussing economics related topics, not teaching English language. You are required to read, present and discuss various economics topics in English.&lt;/p&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/er/syllabus.pdf&#34;&gt;Download the syllabus&lt;/a&gt; and &lt;a href=&#34;clintonwatkins.com/courses/er/topics.pdf&#34;&gt;the topic list.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/er/syllabus.pdf&#34;&gt;Download the syllabus&lt;/a&gt; and &lt;a href=&#34;./courses/er/topics.pdf&#34;&gt;the topic list.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🌐 Financial Markets Workshop</title>
-      <link>clintonwatkins.com/courses/fw/financial-markets-workshop/</link>
+      <link>/courses/fw/financial-markets-workshop/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/courses/fw/financial-markets-workshop/</guid>
+      <guid>/courses/fw/financial-markets-workshop/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course will develop students’ skills in applying economic and financial theory to the real time analysis of macroeconomics, financial markets and investment strategy. The course is conducted in a workshop style. The class sessions be a combination of lectures given by me, student presentations and student led discussion. We will develop a strategy for interpreting and forecasting developments in financial markets and important economies, focussing on cycles and trends.&lt;/p&gt;
 &lt;h2 id=&#34;course-objectives&#34;&gt;Course objectives&lt;/h2&gt;
@@ -333,39 +333,39 @@
 &lt;li&gt;be able to discuss well-reasoned views about what is happening in international financial markets, and be able to present valid counter-views to consensus.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/fw/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/fw/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🌏 International Business</title>
-      <link>clintonwatkins.com/courses/ib/international-business/</link>
+      <link>/courses/ib/international-business/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/courses/ib/international-business/</guid>
+      <guid>/courses/ib/international-business/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This is an introductory course in international business that examines the economic, management and commercial aspects of international businesses. We will take a global perspective, but also emphasise the perspective of Asian firms and doing business in Asia. Working through Asia-relevant case studies about international businesses is a key part of the course.&lt;/p&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/ib/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/ib/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🚢 International Trade</title>
-      <link>clintonwatkins.com/courses/it/international-trade/</link>
+      <link>/courses/it/international-trade/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/courses/it/international-trade/</guid>
+      <guid>/courses/it/international-trade/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course surveys a number of major issues in trade theory and policy, as well as empirical tests of trade models, in the light of recent developments in international economics. Through this course, students should become familiar with the theoretical models of international trade, current issues in trade policy, and application of the theory to less developed country economies.&lt;/p&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/it/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/it/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🏛 Macroeconomics</title>
-      <link>clintonwatkins.com/courses/me/macroeconomics/</link>
+      <link>/courses/me/macroeconomics/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/courses/me/macroeconomics/</guid>
+      <guid>/courses/me/macroeconomics/</guid>
       <description>&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
 &lt;p&gt;This course introduces advanced macroeconomic modelling techniques and their application to the the analysis of business cycle fluctuations. The course has three main parts; we cover:&lt;/p&gt;
 &lt;ol&gt;
@@ -396,25 +396,25 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;clintonwatkins.com/courses/me/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;./courses/me/syllabus.pdf&#34;&gt;Download the syllabus.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>The changing role of foreign investors in Tokyo stock price formation</title>
-      <link>clintonwatkins.com/publication/journal-article/2021-pbfj-foreign-investors-tokyo-stock-price-formation/</link>
+      <link>/publication/journal-article/2021-pbfj-foreign-investors-tokyo-stock-price-formation/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/journal-article/2021-pbfj-foreign-investors-tokyo-stock-price-formation/</guid>
+      <guid>/publication/journal-article/2021-pbfj-foreign-investors-tokyo-stock-price-formation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Generalised impulse response function in R.</title>
-      <link>clintonwatkins.com/post/2021-generalised-impulse-response-function-r/</link>
+      <link>/post/2021-generalised-impulse-response-function-r/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/post/2021-generalised-impulse-response-function-r/</guid>
+      <guid>/post/2021-generalised-impulse-response-function-r/</guid>
       <description>
-&lt;script src=&#34;clintonwatkins.com/post/2021-generalised-impulse-response-function-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;./post/2021-generalised-impulse-response-function-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;This function is a replacement for vars:::.irf that estimates Pesaran and Shin (1998) orthogonalised and generalised IRFs and is intended to be slotted into the vars:::.boot function to bootstrap confidence intervals for IRFs.&lt;/p&gt;
@@ -493,76 +493,76 @@ psGIRF &amp;lt;- function(x, n.ahead = 20, cumulative = TRUE, orthog = FALSE){
     
     <item>
       <title>Conway&#39;s GOL</title>
-      <link>clintonwatkins.com/post/2021-conway-gol/</link>
+      <link>/post/2021-conway-gol/</link>
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/post/2021-conway-gol/</guid>
+      <guid>/post/2021-conway-gol/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.r-bloggers.com/2012/11/fast-conways-game-of-life-in-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Here on R Bloggers&lt;/strong&gt;&lt;/a&gt; is some code simulating Conway&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Game of Life&lt;/em&gt;&lt;/a&gt;. The code produces the animated gif above that shows the evolution of a pattern determined only by its initial conditions.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Study of a Small and Innovative International Trading Firm</title>
-      <link>clintonwatkins.com/talk/study-of-a-small-and-innovative-international-trading-firm/</link>
+      <link>/talk/study-of-a-small-and-innovative-international-trading-firm/</link>
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/study-of-a-small-and-innovative-international-trading-firm/</guid>
+      <guid>/talk/study-of-a-small-and-innovative-international-trading-firm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Changing Role of Foreign Investors in Tokyo Stock Price Formation (WFC)</title>
-      <link>clintonwatkins.com/talk/the-changing-role-of-foreign-investors-in-tokyo-stock-price-formation-wfc/</link>
+      <link>/talk/the-changing-role-of-foreign-investors-in-tokyo-stock-price-formation-wfc/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/the-changing-role-of-foreign-investors-in-tokyo-stock-price-formation-wfc/</guid>
+      <guid>/talk/the-changing-role-of-foreign-investors-in-tokyo-stock-price-formation-wfc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Size, internationalization, and university rankings: evaluating and predicting Times Higher Education (THE) data for Japan</title>
-      <link>clintonwatkins.com/publication/book-section/2020-mdpi-size-internationalization-university-rankings-japan/</link>
+      <link>/publication/book-section/2020-mdpi-size-internationalization-university-rankings-japan/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/book-section/2020-mdpi-size-internationalization-university-rankings-japan/</guid>
+      <guid>/publication/book-section/2020-mdpi-size-internationalization-university-rankings-japan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Summary of our commodity market microstructure research on the JPX website.</title>
-      <link>clintonwatkins.com/post/2020-japan-exchange-group-commodity-market-microstructure/</link>
+      <link>/post/2020-japan-exchange-group-commodity-market-microstructure/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/post/2020-japan-exchange-group-commodity-market-microstructure/</guid>
+      <guid>/post/2020-japan-exchange-group-commodity-market-microstructure/</guid>
       <description>&lt;p&gt;Read a summary (in Japanese) of a recent research project &amp;ldquo;Who influences the fundamental value of commodity futures in Japan?&amp;rdquo; with Ken Iwatsubo on the &lt;a href=&#34;https://www.jpx.co.jp/derivatives/futures-options-report/archives/nlsgeu000004hmd8-att/rerk2005.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Japan Exchange Futures and Options Report&lt;/a&gt; website.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Summary of our intraday commodity seasonality research on the JPX website.</title>
-      <link>clintonwatkins.com/post/2020-japan-exchange-group-intraday-commodity-seasonality/</link>
+      <link>/post/2020-japan-exchange-group-intraday-commodity-seasonality/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/post/2020-japan-exchange-group-intraday-commodity-seasonality/</guid>
+      <guid>/post/2020-japan-exchange-group-intraday-commodity-seasonality/</guid>
       <description>&lt;p&gt;Read a summary (in Japanese) of a recent research project &amp;ldquo;Intraday seasonality in efficiency, liquidity, volatility and volume: Platinum and gold futures in Tokyo and New York&amp;rdquo; with Ken Iwatsubo and Tao Xu on the &lt;a href=&#34;https://www.jpx.co.jp/derivatives/futures-options-report/archives/nlsgeu000004hmd8-att/rerk2004.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Japan Exchange Futures and Options Report&lt;/a&gt; website.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Who influences the fundamental value of commodity futures in Japan?</title>
-      <link>clintonwatkins.com/publication/journal-article/2020-irfa-who-influences-fundamental-value-commodity-futures-japan/</link>
+      <link>/publication/journal-article/2020-irfa-who-influences-fundamental-value-commodity-futures-japan/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/journal-article/2020-irfa-who-influences-fundamental-value-commodity-futures-japan/</guid>
+      <guid>/publication/journal-article/2020-irfa-who-influences-fundamental-value-commodity-futures-japan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Changing Role of Foreign Investors in Tokyo Stock Price Formation (NFA)</title>
-      <link>clintonwatkins.com/talk/the-changing-role-of-foreign-investors-in-tokyo-stock-price-formation-nfa/</link>
+      <link>/talk/the-changing-role-of-foreign-investors-in-tokyo-stock-price-formation-nfa/</link>
       <pubDate>Sat, 30 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/the-changing-role-of-foreign-investors-in-tokyo-stock-price-formation-nfa/</guid>
+      <guid>/talk/the-changing-role-of-foreign-investors-in-tokyo-stock-price-formation-nfa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Time Higher Education article</title>
-      <link>clintonwatkins.com/post/2019-times-higher-edication-internationalisation/</link>
+      <link>/post/2019-times-higher-edication-internationalisation/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/post/2019-times-higher-edication-internationalisation/</guid>
+      <guid>/post/2019-times-higher-edication-internationalisation/</guid>
       <description>&lt;p&gt;My co-author Michael McAleer was interviewed by Times Higher Education reporter Ellie Bothwell in connection with our article “Size, internationalization, and university rankings: evaluating and predicting Times Higher Education (THE) data for Japan”.&lt;/p&gt;
 &lt;p&gt;You can read the article published on-line on 21 November 2019 on the &lt;a href=&#34;https://www.timeshighereducation.com/features/small-still-beautiful-age-mega-university&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;THE website&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -570,17 +570,17 @@ psGIRF &amp;lt;- function(x, n.ahead = 20, cumulative = TRUE, orthog = FALSE){
     
     <item>
       <title>Estimating the Japanese Business Cycle Using R</title>
-      <link>clintonwatkins.com/publication/uncat/gnt-estimating-japanese-business-cycle-r/</link>
+      <link>/publication/uncat/gnt-estimating-japanese-business-cycle-r/</link>
       <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/uncat/gnt-estimating-japanese-business-cycle-r/</guid>
+      <guid>/publication/uncat/gnt-estimating-japanese-business-cycle-r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nikkei Newspaper article</title>
-      <link>clintonwatkins.com/post/2019-nikkei-newspaper-commodity-research-kobe/</link>
+      <link>/post/2019-nikkei-newspaper-commodity-research-kobe/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/post/2019-nikkei-newspaper-commodity-research-kobe/</guid>
+      <guid>/post/2019-nikkei-newspaper-commodity-research-kobe/</guid>
       <description>&lt;p&gt;Nikkei Newspaper Staff Writer Shuhei Yamamoto came to Kobe University to interview Kentaro Iwatsubo, Yasuo Takatsuki and myself about our work on commodity derivatives.&lt;/p&gt;
 &lt;p&gt;You can find the article about our work published 25 June 2019 in the
 &lt;a href=&#34;https://tinyurl.com/2ha4umha&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nikkei&lt;/a&gt;
@@ -591,721 +591,721 @@ or by copying this URL:
     
     <item>
       <title>Size, internationalization, and university rankings: evaluating and predicting Times Higher Education (THE) data for Japan</title>
-      <link>clintonwatkins.com/publication/journal-article/2019-sustainability-size-internationalization-university-rankings-japan/</link>
+      <link>/publication/journal-article/2019-sustainability-size-internationalization-university-rankings-japan/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/journal-article/2019-sustainability-size-internationalization-university-rankings-japan/</guid>
+      <guid>/publication/journal-article/2019-sustainability-size-internationalization-university-rankings-japan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Who Influences the Fundamental Value of Commodity Futures in Japan? (ABFC)</title>
-      <link>clintonwatkins.com/talk/who-influences-the-fundamental-value-of-commodity-futures-in-japan-abfc/</link>
+      <link>/talk/who-influences-the-fundamental-value-of-commodity-futures-in-japan-abfc/</link>
       <pubDate>Thu, 13 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/who-influences-the-fundamental-value-of-commodity-futures-in-japan-abfc/</guid>
+      <guid>/talk/who-influences-the-fundamental-value-of-commodity-futures-in-japan-abfc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Discussant comments on &#39;Hurdle Rate, the Zero Lower Bound and investors Active Risk Taking&#39; by Woo Sau Leung and Zhongyan Zhu</title>
-      <link>clintonwatkins.com/talk/discussant-comments-on-hurdle-rate-the-zero-lower-bound-and-investors-active-risk-taking-by-woo-sau-leung-and-zhongyan-zhu/</link>
+      <link>/talk/discussant-comments-on-hurdle-rate-the-zero-lower-bound-and-investors-active-risk-taking-by-woo-sau-leung-and-zhongyan-zhu/</link>
       <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/discussant-comments-on-hurdle-rate-the-zero-lower-bound-and-investors-active-risk-taking-by-woo-sau-leung-and-zhongyan-zhu/</guid>
+      <guid>/talk/discussant-comments-on-hurdle-rate-the-zero-lower-bound-and-investors-active-risk-taking-by-woo-sau-leung-and-zhongyan-zhu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Intraday seasonality in efficiency, liquidity, volatility and volume: Platinum and gold futures in Tokyo and New York</title>
-      <link>clintonwatkins.com/publication/journal-article/2018-jcm-intraday-seasonality-microstructure-platinum-gold/</link>
+      <link>/publication/journal-article/2018-jcm-intraday-seasonality-microstructure-platinum-gold/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/journal-article/2018-jcm-intraday-seasonality-microstructure-platinum-gold/</guid>
+      <guid>/publication/journal-article/2018-jcm-intraday-seasonality-microstructure-platinum-gold/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Who Influences the Fundamental Value of Commodity Futures in Japan? (HKUST)</title>
-      <link>clintonwatkins.com/talk/who-influences-the-fundamental-value-of-commodity-futures-in-japan-hkust/</link>
+      <link>/talk/who-influences-the-fundamental-value-of-commodity-futures-in-japan-hkust/</link>
       <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/who-influences-the-fundamental-value-of-commodity-futures-in-japan-hkust/</guid>
+      <guid>/talk/who-influences-the-fundamental-value-of-commodity-futures-in-japan-hkust/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Business Cycle and Value Insights for Forecasting Currency Returns</title>
-      <link>clintonwatkins.com/publication/report/2018-smam-foreign-exchange-rate-forecasting/</link>
+      <link>/publication/report/2018-smam-foreign-exchange-rate-forecasting/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2018-smam-foreign-exchange-rate-forecasting/</guid>
+      <guid>/publication/report/2018-smam-foreign-exchange-rate-forecasting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Currency Portfolio Backtesting Software Manual</title>
-      <link>clintonwatkins.com/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</link>
+      <link>/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</link>
       <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</guid>
+      <guid>/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Intraday Seasonality in Efficiency, Liquidity, Volatility and Volume : Platinum and Gold Futures in Tokyo and New York (ABFC)</title>
-      <link>clintonwatkins.com/talk/intraday-seasonality-in-efficiency-liquidity-volatility-and-volume-platinum-and-gold-futures-in-tokyo-and-new-york-abfc/</link>
+      <link>/talk/intraday-seasonality-in-efficiency-liquidity-volatility-and-volume-platinum-and-gold-futures-in-tokyo-and-new-york-abfc/</link>
       <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/intraday-seasonality-in-efficiency-liquidity-volatility-and-volume-platinum-and-gold-futures-in-tokyo-and-new-york-abfc/</guid>
+      <guid>/talk/intraday-seasonality-in-efficiency-liquidity-volatility-and-volume-platinum-and-gold-futures-in-tokyo-and-new-york-abfc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Econometric Modelling of Non-ferrous Metals Prices</title>
-      <link>clintonwatkins.com/talk/econometric-modelling-of-non-ferrous-metals-prices/</link>
+      <link>/talk/econometric-modelling-of-non-ferrous-metals-prices/</link>
       <pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/econometric-modelling-of-non-ferrous-metals-prices/</guid>
+      <guid>/talk/econometric-modelling-of-non-ferrous-metals-prices/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A lesson from the financial crisis for business management</title>
-      <link>clintonwatkins.com/talk/a-lesson-from-the-financial-crisis-for-business-management/</link>
+      <link>/talk/a-lesson-from-the-financial-crisis-for-business-management/</link>
       <pubDate>Tue, 29 Oct 2013 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/a-lesson-from-the-financial-crisis-for-business-management/</guid>
+      <guid>/talk/a-lesson-from-the-financial-crisis-for-business-management/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Macro View on Global Financial Markets</title>
-      <link>clintonwatkins.com/talk/macro-view-on-global-financial-markets/</link>
+      <link>/talk/macro-view-on-global-financial-markets/</link>
       <pubDate>Tue, 23 Apr 2013 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/macro-view-on-global-financial-markets/</guid>
+      <guid>/talk/macro-view-on-global-financial-markets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Macro View on Global Financial Markets</title>
-      <link>clintonwatkins.com/talk/macro-view-on-global-financial-markets/</link>
+      <link>/talk/macro-view-on-global-financial-markets/</link>
       <pubDate>Tue, 17 Apr 2012 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/macro-view-on-global-financial-markets/</guid>
+      <guid>/talk/macro-view-on-global-financial-markets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Macro View on Global Financial Markets</title>
-      <link>clintonwatkins.com/talk/macro-view-on-global-financial-markets/</link>
+      <link>/talk/macro-view-on-global-financial-markets/</link>
       <pubDate>Tue, 24 May 2011 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/macro-view-on-global-financial-markets/</guid>
+      <guid>/talk/macro-view-on-global-financial-markets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Outlook for the US dollar in 2011</title>
-      <link>clintonwatkins.com/talk/outlook-for-the-us-dollar-in-2011/</link>
+      <link>/talk/outlook-for-the-us-dollar-in-2011/</link>
       <pubDate>Fri, 10 Dec 2010 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/outlook-for-the-us-dollar-in-2011/</guid>
+      <guid>/talk/outlook-for-the-us-dollar-in-2011/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Macro View on Global Financial Markets</title>
-      <link>clintonwatkins.com/talk/macro-view-on-global-financial-markets/</link>
+      <link>/talk/macro-view-on-global-financial-markets/</link>
       <pubDate>Thu, 13 May 2010 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/macro-view-on-global-financial-markets/</guid>
+      <guid>/talk/macro-view-on-global-financial-markets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Macro View on Global Financial Markets</title>
-      <link>clintonwatkins.com/talk/macro-view-on-global-financial-markets/</link>
+      <link>/talk/macro-view-on-global-financial-markets/</link>
       <pubDate>Fri, 15 May 2009 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/macro-view-on-global-financial-markets/</guid>
+      <guid>/talk/macro-view-on-global-financial-markets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Using financial market information in monetary policy: some examples from New Zealand</title>
-      <link>clintonwatkins.com/publication/book-section/2008-bis-using-financial-market-information-monetary-policy/</link>
+      <link>/publication/book-section/2008-bis-using-financial-market-information-monetary-policy/</link>
       <pubDate>Tue, 01 Apr 2008 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/book-section/2008-bis-using-financial-market-information-monetary-policy/</guid>
+      <guid>/publication/book-section/2008-bis-using-financial-market-information-monetary-policy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How has volatility in metals markets changed?</title>
-      <link>clintonwatkins.com/publication/journal-article/2008-matcom-how-has-volatility-metals-markets-changed/</link>
+      <link>/publication/journal-article/2008-matcom-how-has-volatility-metals-markets-changed/</link>
       <pubDate>Fri, 18 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/journal-article/2008-matcom-how-has-volatility-metals-markets-changed/</guid>
+      <guid>/publication/journal-article/2008-matcom-how-has-volatility-metals-markets-changed/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Using financial market information in monetary policy: some examples from New Zealand</title>
-      <link>clintonwatkins.com/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</link>
+      <link>/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</link>
       <pubDate>Mon, 13 Aug 2007 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</guid>
+      <guid>/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Using financial market information in monetary policy: some examples from New Zealand</title>
-      <link>clintonwatkins.com/talk/using-financial-market-information-in-monetary-policy-some-examples-from-new-zealand/</link>
+      <link>/talk/using-financial-market-information-in-monetary-policy-some-examples-from-new-zealand/</link>
       <pubDate>Fri, 13 Jul 2007 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/using-financial-market-information-in-monetary-policy-some-examples-from-new-zealand/</guid>
+      <guid>/talk/using-financial-market-information-in-monetary-policy-some-examples-from-new-zealand/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Comments on ‘A Yield Curve Perspective on Uncovered Interest Parity’ by Leo Kripner</title>
-      <link>clintonwatkins.com/talk/comments-on-a-yield-curve-perspective-on-uncovered-interest-parity-by-leo-kripner/</link>
+      <link>/talk/comments-on-a-yield-curve-perspective-on-uncovered-interest-parity-by-leo-kripner/</link>
       <pubDate>Wed, 27 Jun 2007 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/comments-on-a-yield-curve-perspective-on-uncovered-interest-parity-by-leo-kripner/</guid>
+      <guid>/talk/comments-on-a-yield-curve-perspective-on-uncovered-interest-parity-by-leo-kripner/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pricing of non-ferrous metals futures on the London Metal Exchange</title>
-      <link>clintonwatkins.com/publication/journal-article/2006-afe-pricing-metals-futures-london-metal-exchange/</link>
+      <link>/publication/journal-article/2006-afe-pricing-metals-futures-london-metal-exchange/</link>
       <pubDate>Mon, 20 Nov 2006 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/journal-article/2006-afe-pricing-metals-futures-london-metal-exchange/</guid>
+      <guid>/publication/journal-article/2006-afe-pricing-metals-futures-london-metal-exchange/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Have aluminium and copper futures markets become more volatile over time?</title>
-      <link>clintonwatkins.com/talk/have-aluminium-and-copper-futures-markets-become-more-volatile-over-time/</link>
+      <link>/talk/have-aluminium-and-copper-futures-markets-become-more-volatile-over-time/</link>
       <pubDate>Tue, 06 Dec 2005 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/have-aluminium-and-copper-futures-markets-become-more-volatile-over-time/</guid>
+      <guid>/talk/have-aluminium-and-copper-futures-markets-become-more-volatile-over-time/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Have aluminium and copper futures markets become more volatile over time?</title>
-      <link>clintonwatkins.com/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</link>
+      <link>/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</link>
       <pubDate>Thu, 01 Dec 2005 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</guid>
+      <guid>/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Investment and Natural Gas Markets</title>
-      <link>clintonwatkins.com/talk/investment-and-natural-gas-markets/</link>
+      <link>/talk/investment-and-natural-gas-markets/</link>
       <pubDate>Thu, 15 Sep 2005 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/investment-and-natural-gas-markets/</guid>
+      <guid>/talk/investment-and-natural-gas-markets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Related commodity markets and conditional correlations</title>
-      <link>clintonwatkins.com/publication/journal-article/2005-matcom-related-commodity-markets-conditional-correlations/</link>
+      <link>/publication/journal-article/2005-matcom-related-commodity-markets-conditional-correlations/</link>
       <pubDate>Tue, 15 Mar 2005 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/journal-article/2005-matcom-related-commodity-markets-conditional-correlations/</guid>
+      <guid>/publication/journal-article/2005-matcom-related-commodity-markets-conditional-correlations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Econometric modelling of non-ferrous metal prices</title>
-      <link>clintonwatkins.com/publication/journal-article/2004-joes-econometric-modelling-non-ferrous-metal-prices/</link>
+      <link>/publication/journal-article/2004-joes-econometric-modelling-non-ferrous-metal-prices/</link>
       <pubDate>Wed, 10 Nov 2004 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/journal-article/2004-joes-econometric-modelling-non-ferrous-metal-prices/</guid>
+      <guid>/publication/journal-article/2004-joes-econometric-modelling-non-ferrous-metal-prices/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Climate Change and International Trade: Australia and Japan</title>
-      <link>clintonwatkins.com/publication/conf-paper/2003-modsim-climate-change-international-trade/</link>
+      <link>/publication/conf-paper/2003-modsim-climate-change-international-trade/</link>
       <pubDate>Mon, 01 Dec 2003 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/2003-modsim-climate-change-international-trade/</guid>
+      <guid>/publication/conf-paper/2003-modsim-climate-change-international-trade/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Correlation in volatility among related commodity markets</title>
-      <link>clintonwatkins.com/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</link>
+      <link>/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</link>
       <pubDate>Mon, 01 Dec 2003 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</guid>
+      <guid>/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent financial market developments: a New Zealand dollar story</title>
-      <link>clintonwatkins.com/talk/recent-financial-market-developments-a-new-zealand-dollar-story/</link>
+      <link>/talk/recent-financial-market-developments-a-new-zealand-dollar-story/</link>
       <pubDate>Sat, 15 Nov 2003 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/recent-financial-market-developments-a-new-zealand-dollar-story/</guid>
+      <guid>/talk/recent-financial-market-developments-a-new-zealand-dollar-story/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Climate change and trade relations between Australia and Japan</title>
-      <link>clintonwatkins.com/talk/climate-change-and-trade-relations-between-australia-and-japan/</link>
+      <link>/talk/climate-change-and-trade-relations-between-australia-and-japan/</link>
       <pubDate>Mon, 14 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/climate-change-and-trade-relations-between-australia-and-japan/</guid>
+      <guid>/talk/climate-change-and-trade-relations-between-australia-and-japan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Correlation in volatility among related commodity markets</title>
-      <link>clintonwatkins.com/talk/correlation-in-volatility-among-related-commodity-markets/</link>
+      <link>/talk/correlation-in-volatility-among-related-commodity-markets/</link>
       <pubDate>Mon, 14 Jul 2003 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/correlation-in-volatility-among-related-commodity-markets/</guid>
+      <guid>/talk/correlation-in-volatility-among-related-commodity-markets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Climate Change Policy Developments in Japan</title>
-      <link>clintonwatkins.com/publication/uncat/2003-aetfr/</link>
+      <link>/publication/uncat/2003-aetfr/</link>
       <pubDate>Sun, 01 Jun 2003 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/uncat/2003-aetfr/</guid>
+      <guid>/publication/uncat/2003-aetfr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Building confidence in markets</title>
-      <link>clintonwatkins.com/talk/building-confidence-in-markets/</link>
+      <link>/talk/building-confidence-in-markets/</link>
       <pubDate>Tue, 15 Apr 2003 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/building-confidence-in-markets/</guid>
+      <guid>/talk/building-confidence-in-markets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cooperative Research Centres and technology commercialisation in Australia</title>
-      <link>clintonwatkins.com/talk/cooperative-research-centres-and-technology-commercialisation-in-australia/</link>
+      <link>/talk/cooperative-research-centres-and-technology-commercialisation-in-australia/</link>
       <pubDate>Sun, 15 Dec 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/cooperative-research-centres-and-technology-commercialisation-in-australia/</guid>
+      <guid>/talk/cooperative-research-centres-and-technology-commercialisation-in-australia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Emissions Trading and Indigenous Communities</title>
-      <link>clintonwatkins.com/publication/report/2002-cat-1/</link>
+      <link>/publication/report/2002-cat-1/</link>
       <pubDate>Sun, 01 Dec 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2002-cat-1/</guid>
+      <guid>/publication/report/2002-cat-1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Renewable Energy Certificates Created Within Indigenous Communities: Applicability and Feasibility Issues</title>
-      <link>clintonwatkins.com/publication/report/2002-cat-2/</link>
+      <link>/publication/report/2002-cat-2/</link>
       <pubDate>Sun, 01 Dec 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2002-cat-2/</guid>
+      <guid>/publication/report/2002-cat-2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling prices, returns and volatility in futures markets for industrial metals</title>
-      <link>clintonwatkins.com/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</link>
+      <link>/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</link>
       <pubDate>Fri, 29 Nov 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</guid>
+      <guid>/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An overview of Australia’s greenhouse response</title>
-      <link>clintonwatkins.com/talk/an-overview-of-australias-greenhouse-response/</link>
+      <link>/talk/an-overview-of-australias-greenhouse-response/</link>
       <pubDate>Fri, 15 Nov 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/an-overview-of-australias-greenhouse-response/</guid>
+      <guid>/talk/an-overview-of-australias-greenhouse-response/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Virtual emissions trading simulation workshop (ETAP)</title>
-      <link>clintonwatkins.com/talk/virtual-emissions-trading-simulation-workshop-etap/</link>
+      <link>/talk/virtual-emissions-trading-simulation-workshop-etap/</link>
       <pubDate>Fri, 15 Nov 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/virtual-emissions-trading-simulation-workshop-etap/</guid>
+      <guid>/talk/virtual-emissions-trading-simulation-workshop-etap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Implications for our trading relationship with Japan and others</title>
-      <link>clintonwatkins.com/talk/implications-for-our-trading-relationship-with-japan-and-others/</link>
+      <link>/talk/implications-for-our-trading-relationship-with-japan-and-others/</link>
       <pubDate>Thu, 15 Aug 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/implications-for-our-trading-relationship-with-japan-and-others/</guid>
+      <guid>/talk/implications-for-our-trading-relationship-with-japan-and-others/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Volatility of a market index and its components: an application to non-ferrous metals markets</title>
-      <link>clintonwatkins.com/talk/volatility-of-a-market-index-and-its-components-an-application-to-non-ferrous-metals-markets/</link>
+      <link>/talk/volatility-of-a-market-index-and-its-components-an-application-to-non-ferrous-metals-markets/</link>
       <pubDate>Sun, 30 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/volatility-of-a-market-index-and-its-components-an-application-to-non-ferrous-metals-markets/</guid>
+      <guid>/talk/volatility-of-a-market-index-and-its-components-an-application-to-non-ferrous-metals-markets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling time-varying volatility in non-ferrous metals markets</title>
-      <link>clintonwatkins.com/talk/modelling-time-varying-volatility-in-non-ferrous-metals-markets/</link>
+      <link>/talk/modelling-time-varying-volatility-in-non-ferrous-metals-markets/</link>
       <pubDate>Tue, 25 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/modelling-time-varying-volatility-in-non-ferrous-metals-markets/</guid>
+      <guid>/talk/modelling-time-varying-volatility-in-non-ferrous-metals-markets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Estimating tradeable certificates created by small-scale renewable energy systems</title>
-      <link>clintonwatkins.com/talk/estimating-tradeable-certificates-created-by-small-scale-renewable-energy-systems/</link>
+      <link>/talk/estimating-tradeable-certificates-created-by-small-scale-renewable-energy-systems/</link>
       <pubDate>Mon, 24 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/estimating-tradeable-certificates-created-by-small-scale-renewable-energy-systems/</guid>
+      <guid>/talk/estimating-tradeable-certificates-created-by-small-scale-renewable-energy-systems/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Estimating tradeable certificates created by small-scale renewable energy systems</title>
-      <link>clintonwatkins.com/publication/conf-paper/2002-iemss-renewable-energy/</link>
+      <link>/publication/conf-paper/2002-iemss-renewable-energy/</link>
       <pubDate>Mon, 24 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/2002-iemss-renewable-energy/</guid>
+      <guid>/publication/conf-paper/2002-iemss-renewable-energy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling time-varying volatility in non-ferrous metals markets</title>
-      <link>clintonwatkins.com/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</link>
+      <link>/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</link>
       <pubDate>Mon, 24 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</guid>
+      <guid>/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Comment on the South West Power Project Strategic Environmental Review</title>
-      <link>clintonwatkins.com/publication/report/2002-ecocarbon-4/</link>
+      <link>/publication/report/2002-ecocarbon-4/</link>
       <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2002-ecocarbon-4/</guid>
+      <guid>/publication/report/2002-ecocarbon-4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Early Greenhouse Abatement Action</title>
-      <link>clintonwatkins.com/publication/report/2001-ecocarbon/</link>
+      <link>/publication/report/2001-ecocarbon/</link>
       <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2001-ecocarbon/</guid>
+      <guid>/publication/report/2001-ecocarbon/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Japan Embarks on the Kyoto Path</title>
-      <link>clintonwatkins.com/publication/uncat/2002-aetfr-1/</link>
+      <link>/publication/uncat/2002-aetfr-1/</link>
       <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/uncat/2002-aetfr-1/</guid>
+      <guid>/publication/uncat/2002-aetfr-1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lessons from Carbon Risk Management Simulation</title>
-      <link>clintonwatkins.com/publication/uncat/2002-aetfr-2/</link>
+      <link>/publication/uncat/2002-aetfr-2/</link>
       <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/uncat/2002-aetfr-2/</guid>
+      <guid>/publication/uncat/2002-aetfr-2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Report on the VETP Workshop on GHG Emissions Risk Management at the Commercialising Sustainable Energy Conference</title>
-      <link>clintonwatkins.com/publication/report/2002-ecocarbon-2/</link>
+      <link>/publication/report/2002-ecocarbon-2/</link>
       <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2002-ecocarbon-2/</guid>
+      <guid>/publication/report/2002-ecocarbon-2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Report on the VETP Workshop on GHG Emissions Risk Management at the Eye-for-Energy Emissions Trading Conference</title>
-      <link>clintonwatkins.com/publication/report/2002-ecocarbon-1/</link>
+      <link>/publication/report/2002-ecocarbon-1/</link>
       <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2002-ecocarbon-1/</guid>
+      <guid>/publication/report/2002-ecocarbon-1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Report on the VETP Workshop on GHG Emissions Risk Management at Western Power Corporation</title>
-      <link>clintonwatkins.com/publication/report/2002-ecocarbon-3/</link>
+      <link>/publication/report/2002-ecocarbon-3/</link>
       <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2002-ecocarbon-3/</guid>
+      <guid>/publication/report/2002-ecocarbon-3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Response to the Draft Report of the COAG Energy Market Review Panel</title>
-      <link>clintonwatkins.com/publication/report/2002-acre/</link>
+      <link>/publication/report/2002-acre/</link>
       <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2002-acre/</guid>
+      <guid>/publication/report/2002-acre/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Submission to the State Greenhouse Strategy</title>
-      <link>clintonwatkins.com/publication/report/2002-ecocarbon-5/</link>
+      <link>/publication/report/2002-ecocarbon-5/</link>
       <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2002-ecocarbon-5/</guid>
+      <guid>/publication/report/2002-ecocarbon-5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cointegration analysis of metals futures</title>
-      <link>clintonwatkins.com/publication/journal-article/2002-matcom-cointegration-analysis-metals-futures/</link>
+      <link>/publication/journal-article/2002-matcom-cointegration-analysis-metals-futures/</link>
       <pubDate>Fri, 10 May 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/journal-article/2002-matcom-cointegration-analysis-metals-futures/</guid>
+      <guid>/publication/journal-article/2002-matcom-cointegration-analysis-metals-futures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An overview of emissions trading systems</title>
-      <link>clintonwatkins.com/talk/an-overview-of-emissions-trading-systems/</link>
+      <link>/talk/an-overview-of-emissions-trading-systems/</link>
       <pubDate>Mon, 15 Apr 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/an-overview-of-emissions-trading-systems/</guid>
+      <guid>/talk/an-overview-of-emissions-trading-systems/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Virtual emissions trading simulation workshop (CSE)</title>
-      <link>clintonwatkins.com/talk/virtual-emissions-trading-simulation-workshop-cse/</link>
+      <link>/talk/virtual-emissions-trading-simulation-workshop-cse/</link>
       <pubDate>Mon, 15 Apr 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/virtual-emissions-trading-simulation-workshop-cse/</guid>
+      <guid>/talk/virtual-emissions-trading-simulation-workshop-cse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An overview of Australia’s greenhouse response</title>
-      <link>clintonwatkins.com/talk/an-overview-of-australias-greenhouse-response/</link>
+      <link>/talk/an-overview-of-australias-greenhouse-response/</link>
       <pubDate>Tue, 15 Jan 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/an-overview-of-australias-greenhouse-response/</guid>
+      <guid>/talk/an-overview-of-australias-greenhouse-response/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Carbon constraints, emissions trading and the macroeconomy</title>
-      <link>clintonwatkins.com/talk/carbon-constraints-emissions-trading-and-the-macroeconomy/</link>
+      <link>/talk/carbon-constraints-emissions-trading-and-the-macroeconomy/</link>
       <pubDate>Sat, 15 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/carbon-constraints-emissions-trading-and-the-macroeconomy/</guid>
+      <guid>/talk/carbon-constraints-emissions-trading-and-the-macroeconomy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Carbon emissions markets: a simulation approach</title>
-      <link>clintonwatkins.com/talk/carbon-emissions-markets-a-simulation-approach/</link>
+      <link>/talk/carbon-emissions-markets-a-simulation-approach/</link>
       <pubDate>Mon, 10 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/carbon-emissions-markets-a-simulation-approach/</guid>
+      <guid>/talk/carbon-emissions-markets-a-simulation-approach/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Carbon emissions markets: a simulation approach</title>
-      <link>clintonwatkins.com/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</link>
+      <link>/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</link>
       <pubDate>Mon, 10 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</guid>
+      <guid>/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Forecasting commodity market volatility in the presence of extreme observations</title>
-      <link>clintonwatkins.com/talk/forecasting-commodity-market-volatility-in-the-presence-of-extreme-observations/</link>
+      <link>/talk/forecasting-commodity-market-volatility-in-the-presence-of-extreme-observations/</link>
       <pubDate>Mon, 10 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/forecasting-commodity-market-volatility-in-the-presence-of-extreme-observations/</guid>
+      <guid>/talk/forecasting-commodity-market-volatility-in-the-presence-of-extreme-observations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Forecasting commodity market volatility in the presence of extreme observations</title>
-      <link>clintonwatkins.com/publication/conf-paper/2001-modsim-commodity-market-volatility/</link>
+      <link>/publication/conf-paper/2001-modsim-commodity-market-volatility/</link>
       <pubDate>Mon, 10 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/2001-modsim-commodity-market-volatility/</guid>
+      <guid>/publication/conf-paper/2001-modsim-commodity-market-volatility/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Developments in emissions trading</title>
-      <link>clintonwatkins.com/talk/developments-in-emissions-trading/</link>
+      <link>/talk/developments-in-emissions-trading/</link>
       <pubDate>Sat, 15 Sep 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/developments-in-emissions-trading/</guid>
+      <guid>/talk/developments-in-emissions-trading/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Volatility of a market index and its components: an application to commodity markets (FEMES)</title>
-      <link>clintonwatkins.com/talk/volatility-of-a-market-index-and-its-components-an-application-to-commodity-markets-femes/</link>
+      <link>/talk/volatility-of-a-market-index-and-its-components-an-application-to-commodity-markets-femes/</link>
       <pubDate>Fri, 20 Jul 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/volatility-of-a-market-index-and-its-components-an-application-to-commodity-markets-femes/</guid>
+      <guid>/talk/volatility-of-a-market-index-and-its-components-an-application-to-commodity-markets-femes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Harnessing green energy opportunities in Western Australia</title>
-      <link>clintonwatkins.com/talk/harnessing-green-energy-opportunities-in-western-australia/</link>
+      <link>/talk/harnessing-green-energy-opportunities-in-western-australia/</link>
       <pubDate>Fri, 15 Jun 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/harnessing-green-energy-opportunities-in-western-australia/</guid>
+      <guid>/talk/harnessing-green-energy-opportunities-in-western-australia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An Overview of Australian Greenpower Schemes</title>
-      <link>clintonwatkins.com/publication/report/2001-case-2/</link>
+      <link>/publication/report/2001-case-2/</link>
       <pubDate>Fri, 01 Jun 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2001-case-2/</guid>
+      <guid>/publication/report/2001-case-2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Harnessing Green Energy Opportunities in Western Australia</title>
-      <link>clintonwatkins.com/publication/report/2001-acre-1/</link>
+      <link>/publication/report/2001-acre-1/</link>
       <pubDate>Fri, 01 Jun 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2001-acre-1/</guid>
+      <guid>/publication/report/2001-acre-1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Installation of a Demonstration Mini Hybrid Renewable Energy System at Hluleka Nature Reserve, Eastern Cape, South Africa</title>
-      <link>clintonwatkins.com/publication/report/2001-acre-2/</link>
+      <link>/publication/report/2001-acre-2/</link>
       <pubDate>Fri, 01 Jun 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2001-acre-2/</guid>
+      <guid>/publication/report/2001-acre-2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Performance Evaluation of Hybrid Renewable Energy Systems</title>
-      <link>clintonwatkins.com/publication/report/2001-case-1/</link>
+      <link>/publication/report/2001-case-1/</link>
       <pubDate>Fri, 01 Jun 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2001-case-1/</guid>
+      <guid>/publication/report/2001-case-1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Survey of electrification needs and local socioeconomic conditions</title>
-      <link>clintonwatkins.com/talk/survey-of-electrification-needs-and-local-socioeconomic-conditions/</link>
+      <link>/talk/survey-of-electrification-needs-and-local-socioeconomic-conditions/</link>
       <pubDate>Sun, 15 Apr 2001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/survey-of-electrification-needs-and-local-socioeconomic-conditions/</guid>
+      <guid>/talk/survey-of-electrification-needs-and-local-socioeconomic-conditions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Volatility of a market index and its components: an application to commodity markets</title>
-      <link>clintonwatkins.com/talk/volatility-of-a-market-index-and-its-components-an-application-to-commodity-markets/</link>
+      <link>/talk/volatility-of-a-market-index-and-its-components-an-application-to-commodity-markets/</link>
       <pubDate>Sat, 16 Dec 2000 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/volatility-of-a-market-index-and-its-components-an-application-to-commodity-markets/</guid>
+      <guid>/talk/volatility-of-a-market-index-and-its-components-an-application-to-commodity-markets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Economic evaluation of rural electrification projects</title>
-      <link>clintonwatkins.com/talk/economic-evaluation-of-rural-electrification-projects/</link>
+      <link>/talk/economic-evaluation-of-rural-electrification-projects/</link>
       <pubDate>Fri, 01 Dec 2000 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/economic-evaluation-of-rural-electrification-projects/</guid>
+      <guid>/talk/economic-evaluation-of-rural-electrification-projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Estimating long run pricing models for metals futures contracts</title>
-      <link>clintonwatkins.com/talk/estimating-long-run-pricing-models-for-metals-futures-contracts/</link>
+      <link>/talk/estimating-long-run-pricing-models-for-metals-futures-contracts/</link>
       <pubDate>Sat, 15 Jul 2000 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/estimating-long-run-pricing-models-for-metals-futures-contracts/</guid>
+      <guid>/talk/estimating-long-run-pricing-models-for-metals-futures-contracts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Socioeconomic Evaluation of Capacity Building and Institutional Strengthening at Kemiri, Irian Jaya</title>
-      <link>clintonwatkins.com/publication/report/2000-case-3/</link>
+      <link>/publication/report/2000-case-3/</link>
       <pubDate>Thu, 01 Jun 2000 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2000-case-3/</guid>
+      <guid>/publication/report/2000-case-3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Survey of Island Electrification Needs and Socioeconomic Conditions</title>
-      <link>clintonwatkins.com/publication/report/2000-case-2/</link>
+      <link>/publication/report/2000-case-2/</link>
       <pubDate>Thu, 01 Jun 2000 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2000-case-2/</guid>
+      <guid>/publication/report/2000-case-2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Australian Experience in Developing a Policy Framework for Greenhouse Gas Mitigation: A Renewable Energy Target</title>
-      <link>clintonwatkins.com/publication/report/2000-case-1/</link>
+      <link>/publication/report/2000-case-1/</link>
       <pubDate>Thu, 01 Jun 2000 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2000-case-1/</guid>
+      <guid>/publication/report/2000-case-1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Estimating long run pricing models for copper futures contracts</title>
-      <link>clintonwatkins.com/talk/estimating-long-run-pricing-models-for-copper-futures-contracts/</link>
+      <link>/talk/estimating-long-run-pricing-models-for-copper-futures-contracts/</link>
       <pubDate>Mon, 06 Dec 1999 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/estimating-long-run-pricing-models-for-copper-futures-contracts/</guid>
+      <guid>/talk/estimating-long-run-pricing-models-for-copper-futures-contracts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Estimating long run pricing models for copper futures prices</title>
-      <link>clintonwatkins.com/publication/conf-paper/1999-modsim-pricing-copper-futures/</link>
+      <link>/publication/conf-paper/1999-modsim-pricing-copper-futures/</link>
       <pubDate>Mon, 06 Dec 1999 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/1999-modsim-pricing-copper-futures/</guid>
+      <guid>/publication/conf-paper/1999-modsim-pricing-copper-futures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hybrid renewable energy system and village workshop in Kemiri, Irian Jaya</title>
-      <link>clintonwatkins.com/talk/hybrid-renewable-energy-system-and-village-workshop-in-kemiri-irian-jaya/</link>
+      <link>/talk/hybrid-renewable-energy-system-and-village-workshop-in-kemiri-irian-jaya/</link>
       <pubDate>Mon, 26 Jul 1999 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/hybrid-renewable-energy-system-and-village-workshop-in-kemiri-irian-jaya/</guid>
+      <guid>/talk/hybrid-renewable-energy-system-and-village-workshop-in-kemiri-irian-jaya/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pricing in futures and forward markets for non-ferrous metals: an empirical critique</title>
-      <link>clintonwatkins.com/talk/pricing-in-futures-and-forward-markets-for-non-ferrous-metals-an-empirical-critique/</link>
+      <link>/talk/pricing-in-futures-and-forward-markets-for-non-ferrous-metals-an-empirical-critique/</link>
       <pubDate>Mon, 08 Dec 1997 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/pricing-in-futures-and-forward-markets-for-non-ferrous-metals-an-empirical-critique/</guid>
+      <guid>/talk/pricing-in-futures-and-forward-markets-for-non-ferrous-metals-an-empirical-critique/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pricing in futures and forward markets for non-ferrous metals: an empirical critique</title>
-      <link>clintonwatkins.com/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</link>
+      <link>/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</link>
       <pubDate>Mon, 08 Dec 1997 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</guid>
+      <guid>/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The term structure of interest rates and economic activity: An empirical critique</title>
-      <link>clintonwatkins.com/publication/journal-article/1997-matcom-term-structure-interest-rates-economic-activity/</link>
+      <link>/publication/journal-article/1997-matcom-term-structure-interest-rates-economic-activity/</link>
       <pubDate>Mon, 10 Mar 1997 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/journal-article/1997-matcom-term-structure-interest-rates-economic-activity/</guid>
+      <guid>/publication/journal-article/1997-matcom-term-structure-interest-rates-economic-activity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Human capital and screening theories of education: an empirical critique</title>
-      <link>clintonwatkins.com/talk/human-capital-and-screening-theories-of-education-an-empirical-critique/</link>
+      <link>/talk/human-capital-and-screening-theories-of-education-an-empirical-critique/</link>
       <pubDate>Mon, 27 Nov 1995 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/human-capital-and-screening-theories-of-education-an-empirical-critique/</guid>
+      <guid>/talk/human-capital-and-screening-theories-of-education-an-empirical-critique/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Human capital and screening theories of education: an empirical critique</title>
-      <link>clintonwatkins.com/publication/conf-paper/1995-modsim-human-capital/</link>
+      <link>/publication/conf-paper/1995-modsim-human-capital/</link>
       <pubDate>Mon, 27 Nov 1995 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/1995-modsim-human-capital/</guid>
+      <guid>/publication/conf-paper/1995-modsim-human-capital/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The term structure of interest rates and economic activity: an empirical critique</title>
-      <link>clintonwatkins.com/publication/conf-paper/1995-modsim-term-structure-interest-rates/</link>
+      <link>/publication/conf-paper/1995-modsim-term-structure-interest-rates/</link>
       <pubDate>Mon, 27 Nov 1995 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/conf-paper/1995-modsim-term-structure-interest-rates/</guid>
+      <guid>/publication/conf-paper/1995-modsim-term-structure-interest-rates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The term structure of interest rates and economic activity: an empirical critique (MODSIM95)</title>
-      <link>clintonwatkins.com/talk/the-term-structure-of-interest-rates-and-economic-activity-an-empirical-critique-modsim95/</link>
+      <link>/talk/the-term-structure-of-interest-rates-and-economic-activity-an-empirical-critique-modsim95/</link>
       <pubDate>Mon, 27 Nov 1995 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/the-term-structure-of-interest-rates-and-economic-activity-an-empirical-critique-modsim95/</guid>
+      <guid>/talk/the-term-structure-of-interest-rates-and-economic-activity-an-empirical-critique-modsim95/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The term structure of interest rates and economic activity: an empirical critique</title>
-      <link>clintonwatkins.com/talk/the-term-structure-of-interest-rates-and-economic-activity-an-empirical-critique/</link>
+      <link>/talk/the-term-structure-of-interest-rates-and-economic-activity-an-empirical-critique/</link>
       <pubDate>Fri, 12 Aug 1994 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/talk/the-term-structure-of-interest-rates-and-economic-activity-an-empirical-critique/</guid>
+      <guid>/talk/the-term-structure-of-interest-rates-and-economic-activity-an-empirical-critique/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>clintonwatkins.com/admin/config.yml</link>
+      <link>/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/admin/config.yml</guid>
+      <guid>/admin/config.yml</guid>
       <description></description>
     </item>
     

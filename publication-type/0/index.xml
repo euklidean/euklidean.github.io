@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>0 | Clinton Watkins</title>
-    <link>clintonwatkins.com/publication-type/0/</link>
-      <atom:link href="clintonwatkins.com/publication-type/0/index.xml" rel="self" type="application/rss+xml" />
+    <link>/publication-type/0/</link>
+      <atom:link href="/publication-type/0/index.xml" rel="self" type="application/rss+xml" />
     <description>0</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Wed, 30 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>0</title>
-      <link>clintonwatkins.com/publication-type/0/</link>
+      <link>/publication-type/0/</link>
     </image>
     
     <item>
       <title>Estimating the Japanese Business Cycle Using R</title>
-      <link>clintonwatkins.com/publication/uncat/gnt-estimating-japanese-business-cycle-r/</link>
+      <link>/publication/uncat/gnt-estimating-japanese-business-cycle-r/</link>
       <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/uncat/gnt-estimating-japanese-business-cycle-r/</guid>
+      <guid>/publication/uncat/gnt-estimating-japanese-business-cycle-r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Climate Change Policy Developments in Japan</title>
-      <link>clintonwatkins.com/publication/uncat/2003-aetfr/</link>
+      <link>/publication/uncat/2003-aetfr/</link>
       <pubDate>Sun, 01 Jun 2003 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/uncat/2003-aetfr/</guid>
+      <guid>/publication/uncat/2003-aetfr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Japan Embarks on the Kyoto Path</title>
-      <link>clintonwatkins.com/publication/uncat/2002-aetfr-1/</link>
+      <link>/publication/uncat/2002-aetfr-1/</link>
       <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/uncat/2002-aetfr-1/</guid>
+      <guid>/publication/uncat/2002-aetfr-1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lessons from Carbon Risk Management Simulation</title>
-      <link>clintonwatkins.com/publication/uncat/2002-aetfr-2/</link>
+      <link>/publication/uncat/2002-aetfr-2/</link>
       <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/uncat/2002-aetfr-2/</guid>
+      <guid>/publication/uncat/2002-aetfr-2/</guid>
       <description></description>
     </item>
     

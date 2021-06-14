@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Japan Exchange Group | Clinton Watkins</title>
-    <link>clintonwatkins.com/tag/japan-exchange-group/</link>
-      <atom:link href="clintonwatkins.com/tag/japan-exchange-group/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tag/japan-exchange-group/</link>
+      <atom:link href="/tag/japan-exchange-group/index.xml" rel="self" type="application/rss+xml" />
     <description>Japan Exchange Group</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Japan Exchange Group</title>
-      <link>clintonwatkins.com/tag/japan-exchange-group/</link>
+      <link>/tag/japan-exchange-group/</link>
     </image>
     
     <item>
       <title>Summary of our commodity market microstructure research on the JPX website.</title>
-      <link>clintonwatkins.com/post/2020-japan-exchange-group-commodity-market-microstructure/</link>
+      <link>/post/2020-japan-exchange-group-commodity-market-microstructure/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/post/2020-japan-exchange-group-commodity-market-microstructure/</guid>
+      <guid>/post/2020-japan-exchange-group-commodity-market-microstructure/</guid>
       <description>&lt;p&gt;Read a summary (in Japanese) of a recent research project &amp;ldquo;Who influences the fundamental value of commodity futures in Japan?&amp;rdquo; with Ken Iwatsubo on the &lt;a href=&#34;https://www.jpx.co.jp/derivatives/futures-options-report/archives/nlsgeu000004hmd8-att/rerk2005.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Japan Exchange Futures and Options Report&lt;/a&gt; website.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Summary of our intraday commodity seasonality research on the JPX website.</title>
-      <link>clintonwatkins.com/post/2020-japan-exchange-group-intraday-commodity-seasonality/</link>
+      <link>/post/2020-japan-exchange-group-intraday-commodity-seasonality/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/post/2020-japan-exchange-group-intraday-commodity-seasonality/</guid>
+      <guid>/post/2020-japan-exchange-group-intraday-commodity-seasonality/</guid>
       <description>&lt;p&gt;Read a summary (in Japanese) of a recent research project &amp;ldquo;Intraday seasonality in efficiency, liquidity, volatility and volume: Platinum and gold futures in Tokyo and New York&amp;rdquo; with Ken Iwatsubo and Tao Xu on the &lt;a href=&#34;https://www.jpx.co.jp/derivatives/futures-options-report/archives/nlsgeu000004hmd8-att/rerk2004.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Japan Exchange Futures and Options Report&lt;/a&gt; website.&lt;/p&gt;
 </description>
     </item>

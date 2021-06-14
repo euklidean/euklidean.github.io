@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alix Rhodes | Clinton Watkins</title>
-    <link>clintonwatkins.com/author/alix-rhodes/</link>
-      <atom:link href="clintonwatkins.com/author/alix-rhodes/index.xml" rel="self" type="application/rss+xml" />
+    <link>/author/alix-rhodes/</link>
+      <atom:link href="/author/alix-rhodes/index.xml" rel="self" type="application/rss+xml" />
     <description>Alix Rhodes</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Sat, 01 Jun 2002 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Alix Rhodes</title>
-      <link>clintonwatkins.com/author/alix-rhodes/</link>
+      <link>/author/alix-rhodes/</link>
     </image>
     
     <item>
       <title>Submission to the State Greenhouse Strategy</title>
-      <link>clintonwatkins.com/publication/report/2002-ecocarbon-5/</link>
+      <link>/publication/report/2002-ecocarbon-5/</link>
       <pubDate>Sat, 01 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>clintonwatkins.com/publication/report/2002-ecocarbon-5/</guid>
+      <guid>/publication/report/2002-ecocarbon-5/</guid>
       <description></description>
     </item>
     
