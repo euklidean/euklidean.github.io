@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Times Higher Education | Clinton Watkins</title>
-    <link>/tag/times-higher-education/</link>
-      <atom:link href="/tag/times-higher-education/index.xml" rel="self" type="application/rss+xml" />
+    <link>euklidean.github.io/tag/times-higher-education/</link>
+      <atom:link href="euklidean.github.io/tag/times-higher-education/index.xml" rel="self" type="application/rss+xml" />
     <description>Times Higher Education</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Thu, 21 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Times Higher Education</title>
-      <link>/tag/times-higher-education/</link>
+      <link>euklidean.github.io/tag/times-higher-education/</link>
     </image>
     
     <item>
       <title>Time Higher Education article</title>
-      <link>/post/2019-times-higher-edication-internationalisation/</link>
+      <link>euklidean.github.io/post/2019-times-higher-edication-internationalisation/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/post/2019-times-higher-edication-internationalisation/</guid>
+      <guid>euklidean.github.io/post/2019-times-higher-edication-internationalisation/</guid>
       <description>&lt;p&gt;My co-author Michael McAleer was interviewed by Times Higher Education reporter Ellie Bothwell in connection with our article “Size, internationalization, and university rankings: evaluating and predicting Times Higher Education (THE) data for Japan”.&lt;/p&gt;
 &lt;p&gt;You can read the article published on-line on 21 November 2019 on the &lt;a href=&#34;https://www.timeshighereducation.com/features/small-still-beautiful-age-mega-university&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;THE website&lt;/a&gt;.&lt;/p&gt;
 </description>

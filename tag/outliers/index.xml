@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Outliers | Clinton Watkins</title>
-    <link>/tag/outliers/</link>
-      <atom:link href="/tag/outliers/index.xml" rel="self" type="application/rss+xml" />
+    <link>euklidean.github.io/tag/outliers/</link>
+      <atom:link href="euklidean.github.io/tag/outliers/index.xml" rel="self" type="application/rss+xml" />
     <description>Outliers</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Mon, 10 Dec 2001 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Outliers</title>
-      <link>/tag/outliers/</link>
+      <link>euklidean.github.io/tag/outliers/</link>
     </image>
     
     <item>
       <title>Forecasting commodity market volatility in the presence of extreme observations</title>
-      <link>/publication/conf-paper/2001-modsim-commodity-market-volatility/</link>
+      <link>euklidean.github.io/publication/conf-paper/2001-modsim-commodity-market-volatility/</link>
       <pubDate>Mon, 10 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/2001-modsim-commodity-market-volatility/</guid>
+      <guid>euklidean.github.io/publication/conf-paper/2001-modsim-commodity-market-volatility/</guid>
       <description></description>
     </item>
     

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Indigenous communities | Clinton Watkins</title>
-    <link>/tag/indigenous-communities/</link>
-      <atom:link href="/tag/indigenous-communities/index.xml" rel="self" type="application/rss+xml" />
+    <link>euklidean.github.io/tag/indigenous-communities/</link>
+      <atom:link href="euklidean.github.io/tag/indigenous-communities/index.xml" rel="self" type="application/rss+xml" />
     <description>Indigenous communities</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Sun, 01 Dec 2002 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Indigenous communities</title>
-      <link>/tag/indigenous-communities/</link>
+      <link>euklidean.github.io/tag/indigenous-communities/</link>
     </image>
     
     <item>
       <title>Emissions Trading and Indigenous Communities</title>
-      <link>/publication/report/2002-cat-1/</link>
+      <link>euklidean.github.io/publication/report/2002-cat-1/</link>
       <pubDate>Sun, 01 Dec 2002 00:00:00 +0000</pubDate>
-      <guid>/publication/report/2002-cat-1/</guid>
+      <guid>euklidean.github.io/publication/report/2002-cat-1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Renewable Energy Certificates Created Within Indigenous Communities: Applicability and Feasibility Issues</title>
-      <link>/publication/report/2002-cat-2/</link>
+      <link>euklidean.github.io/publication/report/2002-cat-2/</link>
       <pubDate>Sun, 01 Dec 2002 00:00:00 +0000</pubDate>
-      <guid>/publication/report/2002-cat-2/</guid>
+      <guid>euklidean.github.io/publication/report/2002-cat-2/</guid>
       <description></description>
     </item>
     

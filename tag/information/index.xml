@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Information | Clinton Watkins</title>
-    <link>/tag/information/</link>
-      <atom:link href="/tag/information/index.xml" rel="self" type="application/rss+xml" />
+    <link>euklidean.github.io/tag/information/</link>
+      <atom:link href="euklidean.github.io/tag/information/index.xml" rel="self" type="application/rss+xml" />
     <description>Information</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Tue, 01 Apr 2008 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Information</title>
-      <link>/tag/information/</link>
+      <link>euklidean.github.io/tag/information/</link>
     </image>
     
     <item>
       <title>Using financial market information in monetary policy: some examples from New Zealand</title>
-      <link>/publication/book-section/2008-bis-using-financial-market-information-monetary-policy/</link>
+      <link>euklidean.github.io/publication/book-section/2008-bis-using-financial-market-information-monetary-policy/</link>
       <pubDate>Tue, 01 Apr 2008 00:00:00 +0000</pubDate>
-      <guid>/publication/book-section/2008-bis-using-financial-market-information-monetary-policy/</guid>
+      <guid>euklidean.github.io/publication/book-section/2008-bis-using-financial-market-information-monetary-policy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Using financial market information in monetary policy: some examples from New Zealand</title>
-      <link>/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</link>
+      <link>euklidean.github.io/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</link>
       <pubDate>Mon, 13 Aug 2007 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</guid>
+      <guid>euklidean.github.io/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</guid>
       <description></description>
     </item>
     

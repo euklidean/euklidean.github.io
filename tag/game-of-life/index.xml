@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Game of Life | Clinton Watkins</title>
-    <link>/tag/game-of-life/</link>
-      <atom:link href="/tag/game-of-life/index.xml" rel="self" type="application/rss+xml" />
+    <link>euklidean.github.io/tag/game-of-life/</link>
+      <atom:link href="euklidean.github.io/tag/game-of-life/index.xml" rel="self" type="application/rss+xml" />
     <description>Game of Life</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Thu, 20 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Game of Life</title>
-      <link>/tag/game-of-life/</link>
+      <link>euklidean.github.io/tag/game-of-life/</link>
     </image>
     
     <item>
       <title>Conway&#39;s GOL</title>
-      <link>/post/2021-conway-gol/</link>
+      <link>euklidean.github.io/post/2021-conway-gol/</link>
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
-      <guid>/post/2021-conway-gol/</guid>
+      <guid>euklidean.github.io/post/2021-conway-gol/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.r-bloggers.com/2012/11/fast-conways-game-of-life-in-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Here on R Bloggers&lt;/strong&gt;&lt;/a&gt; is some code simulating Conway&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Game of Life&lt;/em&gt;&lt;/a&gt;. The code produces the animated gif above that shows the evolution of a pattern determined only by its initial conditions.&lt;/p&gt;
 </description>
     </item>

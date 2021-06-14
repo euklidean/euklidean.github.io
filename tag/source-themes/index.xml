@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Source Themes | Clinton Watkins</title>
-    <link>/tag/source-themes/</link>
-      <atom:link href="/tag/source-themes/index.xml" rel="self" type="application/rss+xml" />
+    <link>euklidean.github.io/tag/source-themes/</link>
+      <atom:link href="euklidean.github.io/tag/source-themes/index.xml" rel="self" type="application/rss+xml" />
     <description>Source Themes</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Thu, 01 Dec 2005 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Source Themes</title>
-      <link>/tag/source-themes/</link>
+      <link>euklidean.github.io/tag/source-themes/</link>
     </image>
     
     <item>
       <title>Have aluminium and copper futures markets become more volatile over time?</title>
-      <link>/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</link>
+      <link>euklidean.github.io/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</link>
       <pubDate>Thu, 01 Dec 2005 00:00:00 +0000</pubDate>
-      <guid>/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</guid>
+      <guid>euklidean.github.io/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</guid>
       <description></description>
     </item>
     

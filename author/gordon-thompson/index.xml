@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gordon Thompson | Clinton Watkins</title>
-    <link>/author/gordon-thompson/</link>
-      <atom:link href="/author/gordon-thompson/index.xml" rel="self" type="application/rss+xml" />
+    <link>euklidean.github.io/author/gordon-thompson/</link>
+      <atom:link href="euklidean.github.io/author/gordon-thompson/index.xml" rel="self" type="application/rss+xml" />
     <description>Gordon Thompson</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Fri, 01 Jun 2001 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Gordon Thompson</title>
-      <link>/author/gordon-thompson/</link>
+      <link>euklidean.github.io/author/gordon-thompson/</link>
     </image>
     
     <item>
       <title>An Overview of Australian Greenpower Schemes</title>
-      <link>/publication/report/2001-case-2/</link>
+      <link>euklidean.github.io/publication/report/2001-case-2/</link>
       <pubDate>Fri, 01 Jun 2001 00:00:00 +0000</pubDate>
-      <guid>/publication/report/2001-case-2/</guid>
+      <guid>euklidean.github.io/publication/report/2001-case-2/</guid>
       <description></description>
     </item>
     

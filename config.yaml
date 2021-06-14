@@ -6,10 +6,11 @@ theme: "starter-academic"
 
 title: Clinton Watkins # Website name
 baseurl: 'euklidean.github.io' # Website URL
+# baseurl: 'clintonwatkins.com' # Website URL
 copyright: '© (2021) Clinton Watkins' # Footer text, e.g. '© {year} Me'
 
 canonifyurls: true
-relativeURLs: true
+relativeURLs: false
 
 publishDir: "../euklidean.github.io"
 
