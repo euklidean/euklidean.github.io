@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VAR model | Clinton Watkins</title>
-    <link>euklidean.github.io/tag/var-model/</link>
-      <atom:link href="euklidean.github.io/tag/var-model/index.xml" rel="self" type="application/rss+xml" />
+    <link>clintonwatkins.com/tag/var-model/</link>
+      <atom:link href="clintonwatkins.com/tag/var-model/index.xml" rel="self" type="application/rss+xml" />
     <description>VAR model</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>VAR model</title>
-      <link>euklidean.github.io/tag/var-model/</link>
+      <link>clintonwatkins.com/tag/var-model/</link>
     </image>
     
     <item>
       <title>Generalised impulse response function in R.</title>
-      <link>euklidean.github.io/post/2021-generalised-impulse-response-function-r/</link>
+      <link>clintonwatkins.com/post/2021-generalised-impulse-response-function-r/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/post/2021-generalised-impulse-response-function-r/</guid>
+      <guid>clintonwatkins.com/post/2021-generalised-impulse-response-function-r/</guid>
       <description>
-&lt;script src=&#34;euklidean.github.io/post/2021-generalised-impulse-response-function-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;clintonwatkins.com/post/2021-generalised-impulse-response-function-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;This function is a replacement for vars:::.irf that estimates Pesaran and Shin (1998) orthogonalised and generalised IRFs and is intended to be slotted into the vars:::.boot function to bootstrap confidence intervals for IRFs.&lt;/p&gt;

@@ -2,110 +2,110 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Metals | Clinton Watkins</title>
-    <link>euklidean.github.io/tag/metals/</link>
-      <atom:link href="euklidean.github.io/tag/metals/index.xml" rel="self" type="application/rss+xml" />
+    <link>clintonwatkins.com/tag/metals/</link>
+      <atom:link href="clintonwatkins.com/tag/metals/index.xml" rel="self" type="application/rss+xml" />
     <description>Metals</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Metals</title>
-      <link>euklidean.github.io/tag/metals/</link>
+      <link>clintonwatkins.com/tag/metals/</link>
     </image>
     
     <item>
       <title>Arbitrage and Liquidity Across International Platinum Markets (with Kentaro Iwatsubo)</title>
-      <link>euklidean.github.io/project/microstructure-arbitrage-liquidity-platinum-futures/</link>
+      <link>clintonwatkins.com/project/microstructure-arbitrage-liquidity-platinum-futures/</link>
       <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/project/microstructure-arbitrage-liquidity-platinum-futures/</guid>
+      <guid>clintonwatkins.com/project/microstructure-arbitrage-liquidity-platinum-futures/</guid>
       <description>&lt;p&gt;Liquidity and the ability to conduct arbitrage are interrelated. Arbitrage by investors enforces the law of one price. We examine how liquidity and arbitrage influence each other in the platinum futures markets located in New York and Tokyo. Granger causality between the arbitrage and liquidity variables in each direction provides evidence of their endogeneity. Whether arbitrage opportunity leads to an increase or decrease in liquidity depends on the reason the price difference between the two markets has arisen. A demand shock leads to greater liquidity while asymmetric information is toxic to liquidity. Using a Vector Autregression model and intraday data, we show that the relationship between liquidity and arbitrage changes over time in the context of futures based on the same underlying physical commodity.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>How has volatility in metals markets changed?</title>
-      <link>euklidean.github.io/publication/journal-article/2008-matcom-how-has-volatility-metals-markets-changed/</link>
+      <link>clintonwatkins.com/publication/journal-article/2008-matcom-how-has-volatility-metals-markets-changed/</link>
       <pubDate>Fri, 18 Jan 2008 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/journal-article/2008-matcom-how-has-volatility-metals-markets-changed/</guid>
+      <guid>clintonwatkins.com/publication/journal-article/2008-matcom-how-has-volatility-metals-markets-changed/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pricing of non-ferrous metals futures on the London Metal Exchange</title>
-      <link>euklidean.github.io/publication/journal-article/2006-afe-pricing-metals-futures-london-metal-exchange/</link>
+      <link>clintonwatkins.com/publication/journal-article/2006-afe-pricing-metals-futures-london-metal-exchange/</link>
       <pubDate>Mon, 20 Nov 2006 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/journal-article/2006-afe-pricing-metals-futures-london-metal-exchange/</guid>
+      <guid>clintonwatkins.com/publication/journal-article/2006-afe-pricing-metals-futures-london-metal-exchange/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Related commodity markets and conditional correlations</title>
-      <link>euklidean.github.io/publication/journal-article/2005-matcom-related-commodity-markets-conditional-correlations/</link>
+      <link>clintonwatkins.com/publication/journal-article/2005-matcom-related-commodity-markets-conditional-correlations/</link>
       <pubDate>Tue, 15 Mar 2005 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/journal-article/2005-matcom-related-commodity-markets-conditional-correlations/</guid>
+      <guid>clintonwatkins.com/publication/journal-article/2005-matcom-related-commodity-markets-conditional-correlations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Econometric modelling of non-ferrous metal prices</title>
-      <link>euklidean.github.io/publication/journal-article/2004-joes-econometric-modelling-non-ferrous-metal-prices/</link>
+      <link>clintonwatkins.com/publication/journal-article/2004-joes-econometric-modelling-non-ferrous-metal-prices/</link>
       <pubDate>Wed, 10 Nov 2004 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/journal-article/2004-joes-econometric-modelling-non-ferrous-metal-prices/</guid>
+      <guid>clintonwatkins.com/publication/journal-article/2004-joes-econometric-modelling-non-ferrous-metal-prices/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Correlation in volatility among related commodity markets</title>
-      <link>euklidean.github.io/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</link>
+      <link>clintonwatkins.com/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</link>
       <pubDate>Mon, 01 Dec 2003 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling prices, returns and volatility in futures markets for industrial metals</title>
-      <link>euklidean.github.io/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</link>
+      <link>clintonwatkins.com/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</link>
       <pubDate>Fri, 29 Nov 2002 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</guid>
+      <guid>clintonwatkins.com/publication/thesis/phd-modelling-prices-returns-and-volatility-in-futures-markets-for-industrial-metals/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling time-varying volatility in non-ferrous metals markets</title>
-      <link>euklidean.github.io/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</link>
+      <link>clintonwatkins.com/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</link>
       <pubDate>Mon, 24 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cointegration analysis of metals futures</title>
-      <link>euklidean.github.io/publication/journal-article/2002-matcom-cointegration-analysis-metals-futures/</link>
+      <link>clintonwatkins.com/publication/journal-article/2002-matcom-cointegration-analysis-metals-futures/</link>
       <pubDate>Fri, 10 May 2002 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/journal-article/2002-matcom-cointegration-analysis-metals-futures/</guid>
+      <guid>clintonwatkins.com/publication/journal-article/2002-matcom-cointegration-analysis-metals-futures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Forecasting commodity market volatility in the presence of extreme observations</title>
-      <link>euklidean.github.io/publication/conf-paper/2001-modsim-commodity-market-volatility/</link>
+      <link>clintonwatkins.com/publication/conf-paper/2001-modsim-commodity-market-volatility/</link>
       <pubDate>Mon, 10 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/2001-modsim-commodity-market-volatility/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/2001-modsim-commodity-market-volatility/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Estimating long run pricing models for copper futures prices</title>
-      <link>euklidean.github.io/publication/conf-paper/1999-modsim-pricing-copper-futures/</link>
+      <link>clintonwatkins.com/publication/conf-paper/1999-modsim-pricing-copper-futures/</link>
       <pubDate>Mon, 06 Dec 1999 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/1999-modsim-pricing-copper-futures/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/1999-modsim-pricing-copper-futures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pricing in futures and forward markets for non-ferrous metals: an empirical critique</title>
-      <link>euklidean.github.io/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</link>
+      <link>clintonwatkins.com/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</link>
       <pubDate>Mon, 08 Dec 1997 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</guid>
       <description></description>
     </item>
     

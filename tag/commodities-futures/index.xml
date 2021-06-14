@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Commodities Futures | Clinton Watkins</title>
-    <link>euklidean.github.io/tag/commodities-futures/</link>
-      <atom:link href="euklidean.github.io/tag/commodities-futures/index.xml" rel="self" type="application/rss+xml" />
+    <link>clintonwatkins.com/tag/commodities-futures/</link>
+      <atom:link href="clintonwatkins.com/tag/commodities-futures/index.xml" rel="self" type="application/rss+xml" />
     <description>Commodities Futures</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Commodities Futures</title>
-      <link>euklidean.github.io/tag/commodities-futures/</link>
+      <link>clintonwatkins.com/tag/commodities-futures/</link>
     </image>
     
     <item>
       <title>Summary of our commodity market microstructure research on the JPX website.</title>
-      <link>euklidean.github.io/post/2020-japan-exchange-group-commodity-market-microstructure/</link>
+      <link>clintonwatkins.com/post/2020-japan-exchange-group-commodity-market-microstructure/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/post/2020-japan-exchange-group-commodity-market-microstructure/</guid>
+      <guid>clintonwatkins.com/post/2020-japan-exchange-group-commodity-market-microstructure/</guid>
       <description>&lt;p&gt;Read a summary (in Japanese) of a recent research project &amp;ldquo;Who influences the fundamental value of commodity futures in Japan?&amp;rdquo; with Ken Iwatsubo on the &lt;a href=&#34;https://www.jpx.co.jp/derivatives/futures-options-report/archives/nlsgeu000004hmd8-att/rerk2005.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Japan Exchange Futures and Options Report&lt;/a&gt; website.&lt;/p&gt;
 </description>
     </item>

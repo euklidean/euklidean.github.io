@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R | Clinton Watkins</title>
-    <link>euklidean.github.io/tag/r/</link>
-      <atom:link href="euklidean.github.io/tag/r/index.xml" rel="self" type="application/rss+xml" />
+    <link>clintonwatkins.com/tag/r/</link>
+      <atom:link href="clintonwatkins.com/tag/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>R</title>
-      <link>euklidean.github.io/tag/r/</link>
+      <link>clintonwatkins.com/tag/r/</link>
     </image>
     
     <item>
       <title>Generalised impulse response function in R.</title>
-      <link>euklidean.github.io/post/2021-generalised-impulse-response-function-r/</link>
+      <link>clintonwatkins.com/post/2021-generalised-impulse-response-function-r/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/post/2021-generalised-impulse-response-function-r/</guid>
+      <guid>clintonwatkins.com/post/2021-generalised-impulse-response-function-r/</guid>
       <description>
-&lt;script src=&#34;euklidean.github.io/post/2021-generalised-impulse-response-function-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;clintonwatkins.com/post/2021-generalised-impulse-response-function-r/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;This function is a replacement for vars:::.irf that estimates Pesaran and Shin (1998) orthogonalised and generalised IRFs and is intended to be slotted into the vars:::.boot function to bootstrap confidence intervals for IRFs.&lt;/p&gt;
@@ -97,26 +97,26 @@ psGIRF &amp;lt;- function(x, n.ahead = 20, cumulative = TRUE, orthog = FALSE){
     
     <item>
       <title>Conway&#39;s GOL</title>
-      <link>euklidean.github.io/post/2021-conway-gol/</link>
+      <link>clintonwatkins.com/post/2021-conway-gol/</link>
       <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/post/2021-conway-gol/</guid>
+      <guid>clintonwatkins.com/post/2021-conway-gol/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.r-bloggers.com/2012/11/fast-conways-game-of-life-in-r/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Here on R Bloggers&lt;/strong&gt;&lt;/a&gt; is some code simulating Conway&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Game of Life&lt;/em&gt;&lt;/a&gt;. The code produces the animated gif above that shows the evolution of a pattern determined only by its initial conditions.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Estimating the Japanese Business Cycle Using R</title>
-      <link>euklidean.github.io/publication/uncat/gnt-estimating-japanese-business-cycle-r/</link>
+      <link>clintonwatkins.com/publication/uncat/gnt-estimating-japanese-business-cycle-r/</link>
       <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/uncat/gnt-estimating-japanese-business-cycle-r/</guid>
+      <guid>clintonwatkins.com/publication/uncat/gnt-estimating-japanese-business-cycle-r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Currency Portfolio Backtesting Software Manual</title>
-      <link>euklidean.github.io/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</link>
+      <link>clintonwatkins.com/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</link>
       <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</guid>
+      <guid>clintonwatkins.com/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</guid>
       <description></description>
     </item>
     

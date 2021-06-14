@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Currency returns | Clinton Watkins</title>
-    <link>euklidean.github.io/tag/currency-returns/</link>
-      <atom:link href="euklidean.github.io/tag/currency-returns/index.xml" rel="self" type="application/rss+xml" />
+    <link>clintonwatkins.com/tag/currency-returns/</link>
+      <atom:link href="clintonwatkins.com/tag/currency-returns/index.xml" rel="self" type="application/rss+xml" />
     <description>Currency returns</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Thu, 29 Mar 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Currency returns</title>
-      <link>euklidean.github.io/tag/currency-returns/</link>
+      <link>clintonwatkins.com/tag/currency-returns/</link>
     </image>
     
     <item>
       <title>Business Cycle and Value Insights for Forecasting Currency Returns</title>
-      <link>euklidean.github.io/publication/report/2018-smam-foreign-exchange-rate-forecasting/</link>
+      <link>clintonwatkins.com/publication/report/2018-smam-foreign-exchange-rate-forecasting/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/report/2018-smam-foreign-exchange-rate-forecasting/</guid>
+      <guid>clintonwatkins.com/publication/report/2018-smam-foreign-exchange-rate-forecasting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Currency Portfolio Backtesting Software Manual</title>
-      <link>euklidean.github.io/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</link>
+      <link>clintonwatkins.com/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</link>
       <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</guid>
+      <guid>clintonwatkins.com/publication/report/2018-smam-currency-foreign-exchange-rate-backtest/</guid>
       <description></description>
     </item>
     

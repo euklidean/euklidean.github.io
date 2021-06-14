@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Liquidity | Clinton Watkins</title>
-    <link>euklidean.github.io/tag/liquidity/</link>
-      <atom:link href="euklidean.github.io/tag/liquidity/index.xml" rel="self" type="application/rss+xml" />
+    <link>clintonwatkins.com/tag/liquidity/</link>
+      <atom:link href="clintonwatkins.com/tag/liquidity/index.xml" rel="self" type="application/rss+xml" />
     <description>Liquidity</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Liquidity</title>
-      <link>euklidean.github.io/tag/liquidity/</link>
+      <link>clintonwatkins.com/tag/liquidity/</link>
     </image>
     
     <item>
       <title>Arbitrage and Liquidity Across International Platinum Markets (with Kentaro Iwatsubo)</title>
-      <link>euklidean.github.io/project/microstructure-arbitrage-liquidity-platinum-futures/</link>
+      <link>clintonwatkins.com/project/microstructure-arbitrage-liquidity-platinum-futures/</link>
       <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/project/microstructure-arbitrage-liquidity-platinum-futures/</guid>
+      <guid>clintonwatkins.com/project/microstructure-arbitrage-liquidity-platinum-futures/</guid>
       <description>&lt;p&gt;Liquidity and the ability to conduct arbitrage are interrelated. Arbitrage by investors enforces the law of one price. We examine how liquidity and arbitrage influence each other in the platinum futures markets located in New York and Tokyo. Granger causality between the arbitrage and liquidity variables in each direction provides evidence of their endogeneity. Whether arbitrage opportunity leads to an increase or decrease in liquidity depends on the reason the price difference between the two markets has arisen. A demand shock leads to greater liquidity while asymmetric information is toxic to liquidity. Using a Vector Autregression model and intraday data, we show that the relationship between liquidity and arbitrage changes over time in the context of futures based on the same underlying physical commodity.&lt;/p&gt;
 </description>
     </item>

@@ -2,109 +2,109 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 | Clinton Watkins</title>
-    <link>euklidean.github.io/publication-type/1/</link>
-      <atom:link href="euklidean.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <link>clintonwatkins.com/publication-type/1/</link>
+      <atom:link href="clintonwatkins.com/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Mon, 13 Aug 2007 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/euklidean.github.io/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <url>/clintonwatkins.com/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>1</title>
-      <link>euklidean.github.io/publication-type/1/</link>
+      <link>clintonwatkins.com/publication-type/1/</link>
     </image>
     
     <item>
       <title>Using financial market information in monetary policy: some examples from New Zealand</title>
-      <link>euklidean.github.io/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</link>
+      <link>clintonwatkins.com/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</link>
       <pubDate>Mon, 13 Aug 2007 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/2007-bnm-financial-market-information-monetary-policy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Have aluminium and copper futures markets become more volatile over time?</title>
-      <link>euklidean.github.io/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</link>
+      <link>clintonwatkins.com/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</link>
       <pubDate>Thu, 01 Dec 2005 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/2005-modsim-aluminium-copper-futures-volatility/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Climate Change and International Trade: Australia and Japan</title>
-      <link>euklidean.github.io/publication/conf-paper/2003-modsim-climate-change-international-trade/</link>
+      <link>clintonwatkins.com/publication/conf-paper/2003-modsim-climate-change-international-trade/</link>
       <pubDate>Mon, 01 Dec 2003 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/2003-modsim-climate-change-international-trade/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/2003-modsim-climate-change-international-trade/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Correlation in volatility among related commodity markets</title>
-      <link>euklidean.github.io/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</link>
+      <link>clintonwatkins.com/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</link>
       <pubDate>Mon, 01 Dec 2003 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/2003-modsim-commodity-volatility-correlation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Estimating tradeable certificates created by small-scale renewable energy systems</title>
-      <link>euklidean.github.io/publication/conf-paper/2002-iemss-renewable-energy/</link>
+      <link>clintonwatkins.com/publication/conf-paper/2002-iemss-renewable-energy/</link>
       <pubDate>Mon, 24 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/2002-iemss-renewable-energy/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/2002-iemss-renewable-energy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling time-varying volatility in non-ferrous metals markets</title>
-      <link>euklidean.github.io/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</link>
+      <link>clintonwatkins.com/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</link>
       <pubDate>Mon, 24 Jun 2002 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/2002-iemss-time-varying-volatility-metals-futures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Carbon emissions markets: a simulation approach</title>
-      <link>euklidean.github.io/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</link>
+      <link>clintonwatkins.com/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</link>
       <pubDate>Mon, 10 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/2001-modsim-carbon-emissions-market-simulation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Forecasting commodity market volatility in the presence of extreme observations</title>
-      <link>euklidean.github.io/publication/conf-paper/2001-modsim-commodity-market-volatility/</link>
+      <link>clintonwatkins.com/publication/conf-paper/2001-modsim-commodity-market-volatility/</link>
       <pubDate>Mon, 10 Dec 2001 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/2001-modsim-commodity-market-volatility/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/2001-modsim-commodity-market-volatility/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Estimating long run pricing models for copper futures prices</title>
-      <link>euklidean.github.io/publication/conf-paper/1999-modsim-pricing-copper-futures/</link>
+      <link>clintonwatkins.com/publication/conf-paper/1999-modsim-pricing-copper-futures/</link>
       <pubDate>Mon, 06 Dec 1999 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/1999-modsim-pricing-copper-futures/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/1999-modsim-pricing-copper-futures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pricing in futures and forward markets for non-ferrous metals: an empirical critique</title>
-      <link>euklidean.github.io/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</link>
+      <link>clintonwatkins.com/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</link>
       <pubDate>Mon, 08 Dec 1997 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/1997-modsim-empirical-critique-futures-pricing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Human capital and screening theories of education: an empirical critique</title>
-      <link>euklidean.github.io/publication/conf-paper/1995-modsim-human-capital/</link>
+      <link>clintonwatkins.com/publication/conf-paper/1995-modsim-human-capital/</link>
       <pubDate>Mon, 27 Nov 1995 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/1995-modsim-human-capital/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/1995-modsim-human-capital/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The term structure of interest rates and economic activity: an empirical critique</title>
-      <link>euklidean.github.io/publication/conf-paper/1995-modsim-term-structure-interest-rates/</link>
+      <link>clintonwatkins.com/publication/conf-paper/1995-modsim-term-structure-interest-rates/</link>
       <pubDate>Mon, 27 Nov 1995 00:00:00 +0000</pubDate>
-      <guid>euklidean.github.io/publication/conf-paper/1995-modsim-term-structure-interest-rates/</guid>
+      <guid>clintonwatkins.com/publication/conf-paper/1995-modsim-term-structure-interest-rates/</guid>
       <description></description>
     </item>
     

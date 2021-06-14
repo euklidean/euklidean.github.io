@@ -5,8 +5,8 @@ theme: "starter-academic"
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Clinton Watkins # Website name
-baseurl: 'euklidean.github.io' # Website URL
-# baseurl: 'clintonwatkins.com' # Website URL
+# baseurl: 'euklidean.github.io' # Website URL
+baseurl: 'clintonwatkins.com' # Website URL
 copyright: '© (2021) Clinton Watkins' # Footer text, e.g. '© {year} Me'
 
 canonifyurls: true
