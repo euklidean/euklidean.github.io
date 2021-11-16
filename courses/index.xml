@@ -158,6 +158,47 @@
     </item>
     
     <item>
+      <title>💰 Finance Data Workshop</title>
+      <link>/courses/fd/finance-data-workshop/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>/courses/fd/finance-data-workshop/</guid>
+      <description>
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;../courses/fd/rsd.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;course-overview&#34;&gt;Course overview&lt;/h2&gt;
+&lt;p&gt;This is an intensive workshop-style course that gives students hands-on experience in analysing and modelling financial data, and interpreting the results of analyses. Students will work with financial data from the Nikkei NEEDS database that is used by analysts in the finance industry. The course focusses on the analysis of Japanese stock market and listed corporation data. Analyses will be conducted using the statistical programing language R, and will include the estimation of financial econometric models. Students will conduct analyses during the workshop sessions on their own computers, and use R Notebooks to produce HTLM documents containing their code, results and interpretation. This process develops the understanding of basic concepts related to producing verifiable and reproducible empirical analysis.&lt;/p&gt;
+&lt;h2 id=&#34;reasons-you-may-wish-to-take-this-course&#34;&gt;Reasons you may wish to take this course&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Develop you ability to conduct empirical analyses and interpret results.&lt;/li&gt;
+&lt;li&gt;Gain an understanding of stock market data and selected financial models.&lt;/li&gt;
+&lt;li&gt;Gain familiarity with the methodology of empirical research and coding in R.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;faqs&#34;&gt;FAQs&lt;/h2&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-1&#34;&gt;
+  &lt;summary&gt;How should I prepare to take the course?&lt;/summary&gt;
+  &lt;p&gt;Students will need their own computer running Windows, Mac OS, or Linux. Students must download and install R and RStudio on their computer at least one week prior to the course following the instructions on this page.&lt;/p&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;setting-up-r-and-rstudio&#34;&gt;Setting up R and RStudio&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;../courses/pm/intro-r.html&#34;&gt;How to set up R and RStudio on your computer for the course.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>📚 Undergraduate Seminar</title>
       <link>/courses/se/undergrad-research-seminar/</link>
       <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
