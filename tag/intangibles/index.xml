@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intangibles | Clinton Watkins</title>
+    <link>/tag/intangibles/</link>
+      <atom:link href="/tag/intangibles/index.xml" rel="self" type="application/rss+xml" />
+    <description>Intangibles</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Mon, 20 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <title>Intangibles</title>
+      <link>/tag/intangibles/</link>
+    </image>
+    
+    <item>
+      <title>Does Firm-Level Productivity Predict Stock Returns?</title>
+      <link>/publication/uncat/2021-tfp-ssrn/</link>
+      <pubDate>Mon, 20 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/uncat/2021-tfp-ssrn/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
