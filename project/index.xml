@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>Does Firm-Level Productivity Predict Stock Returns? (with Takashi Hiroki and Kentaro Iwatsubo)</title>
+      <title>Does Firm-Level Productivity Predict Stock Returns?</title>
       <link>/project/japanese-firm-level-productivity-and-stock-returns/</link>
       <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/project/japanese-firm-level-productivity-and-stock-returns/</guid>
@@ -24,7 +24,7 @@
     </item>
     
     <item>
-      <title>Analysis of Japanese firms&#39; dividend and total payout policies (with Jason Bennett)</title>
+      <title>Analysis of Japanese firms&#39; dividend and total payout policies</title>
       <link>/project/japanese-firms-dividend-payout-policy/</link>
       <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/project/japanese-firms-dividend-payout-policy/</guid>
@@ -33,11 +33,30 @@
     </item>
     
     <item>
-      <title>Arbitrage and Liquidity Across International Platinum Markets (with Kentaro Iwatsubo)</title>
+      <title>Arbitrage and Liquidity Across International Platinum Markets</title>
       <link>/project/microstructure-arbitrage-liquidity-platinum-futures/</link>
       <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/project/microstructure-arbitrage-liquidity-platinum-futures/</guid>
       <description>&lt;p&gt;Liquidity and the ability to conduct arbitrage are interrelated. Arbitrage by investors enforces the law of one price. We examine how liquidity and arbitrage influence each other in the platinum futures markets located in New York and Tokyo. Granger causality between the arbitrage and liquidity variables in each direction provides evidence of their endogeneity. Whether arbitrage opportunity leads to an increase or decrease in liquidity depends on the reason the price difference between the two markets has arisen. A demand shock leads to greater liquidity while asymmetric information is toxic to liquidity. Using a Vector Autregression model and intraday data, we show that the relationship between liquidity and arbitrage changes over time in the context of futures based on the same underlying physical commodity.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Commodity Market Microstructure</title>
+      <link>/project/microstructure-of-commodity-markets/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/project/microstructure-of-commodity-markets/</guid>
+      <description>&lt;p&gt;We investigate intraday seasonality in, and relationships between, informational efficiency, volatility, volume and liquidity. Platinum and gold, both traded in overlapping sessions in Tokyo and New York, provide an interesting comparison because Tokyo is an internationally important trading venue for platinum but not for gold. Our analysis indicates that both platinum and gold markets in Tokyo are dominated by uninformed trading, while there is evidence supporting both uninformed and informed trading in New York.&lt;/p&gt;
+&lt;p&gt;We also present evidence on the asymmetric information content of six investor groups&#39; transactions in the gold, platinum, gasoline and rubber futures markets on the Tokyo Commodity Exchange. Microstructure theory suggests that traders with superior information regarding the efficient price should be more profitable in the long run. We find that foreign investors have the greatest influence over the efficient price in the gold market, domestic retail investors in the gasoline market and domestic investment funds in the platinum and rubber markets.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Econometrics of Non-ferrous Metals Futures Markets</title>
+      <link>/project/econometrics-of-non-ferrous-metals-futures-markets/</link>
+      <pubDate>Wed, 01 Jan 2003 00:00:00 +0000</pubDate>
+      <guid>/project/econometrics-of-non-ferrous-metals-futures-markets/</guid>
+      <description>&lt;p&gt;Pricing and volatility of aluminium, copper, lead, nickel, tin and zinc futures on the London Metals Exchange (LME).&lt;/p&gt;
 </description>
     </item>
     
