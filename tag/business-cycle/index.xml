@@ -13,6 +13,15 @@
     </image>
     
     <item>
+      <title>Modelling and forecasting foreign exchange rates</title>
+      <link>/project/modelling-and-forecasting-foreign-exchange-rates/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/project/modelling-and-forecasting-foreign-exchange-rates/</guid>
+      <description>&lt;p&gt;We model and forecast developed market currencies using fundamental equilibrium echange rat and business cycle insights, and develop a backtester for analysing the performance of currency portfolios.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Estimating the Japanese Business Cycle Using R</title>
       <link>/publication/uncat/gnt-estimating-japanese-business-cycle-r/</link>
       <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>

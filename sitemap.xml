@@ -29,11 +29,14 @@
     <loc>/courses/pe/psychology-economic-decision-making/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/project/influence-of-foreign-investors-on-japanese-stock-market/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/project/microstructure-of-commodity-markets/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/econometrics-of-non-ferrous-metals-futures-markets/</loc>
-    <lastmod>2003-01-01T00:00:00+00:00</lastmod>
+    <loc>/project/modelling-and-forecasting-foreign-exchange-rates/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/ae/applied-econometrics/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
@@ -41,8 +44,17 @@
     <loc>/courses/ed/economic-development/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/project/monetary-policy-and-macroeconomics/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/courses/fc/economic-financial-crises/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/econometrics-of-non-ferrous-metals-futures-markets/</loc>
+    <lastmod>2003-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/carbon-emissions-trading-and-renewable-energy/</loc>
+    <lastmod>2003-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/er/economics-readings/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
@@ -275,6 +287,12 @@
     <loc>/tag/futures/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/tag/tokyo-stock-exchange/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/topix/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/publication/journal-article/2020-irfa-who-influences-fundamental-value-commodity-futures-japan/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -377,6 +395,18 @@
     <loc>/talk/intraday-seasonality-in-efficiency-liquidity-volatility-and-volume-platinum-and-gold-futures-in-tokyo-and-new-york-abfc/</loc>
     <lastmod>2017-12-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/tag/currencies/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/currency-portfolio-backtesting/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/foreign-exchange/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/fundamental-equilibrium-exchange-rates/</loc>
+    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/econometric-modelling-of-non-ferrous-metals-prices/</loc>
     <lastmod>2015-01-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -433,6 +463,12 @@
   </url><url>
     <loc>/tag/volatility-forecasting/</loc>
     <lastmod>2008-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/financial-market-surveillance/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/trend-and-cycle/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication-type/1/</loc>
     <lastmod>2007-08-13T00:00:00+00:00</lastmod>
@@ -530,7 +566,22 @@
     <loc>/tag/aluminium/</loc>
     <lastmod>2003-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/tag/biogas/</loc>
+    <lastmod>2003-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/carbon-emissions/</loc>
+    <lastmod>2003-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/carbon-tax/</loc>
+    <lastmod>2003-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/climate-policy/</loc>
+    <lastmod>2003-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tag/copper/</loc>
+    <lastmod>2003-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/hybrid-energy/</loc>
     <lastmod>2003-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/lead/</loc>
@@ -545,7 +596,16 @@
     <loc>/tag/non-ferrous-metals/</loc>
     <lastmod>2003-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/tag/renewable-energy/</loc>
+    <lastmod>2003-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/solar/</loc>
+    <lastmod>2003-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tag/tin/</loc>
+    <lastmod>2003-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tag/wind/</loc>
     <lastmod>2003-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tag/zinc/</loc>
@@ -570,9 +630,6 @@
     <lastmod>2002-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/author/marc-saupin/</loc>
-    <lastmod>2002-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tag/renewable-energy/</loc>
     <lastmod>2002-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication/report/2002-cat-2/</loc>

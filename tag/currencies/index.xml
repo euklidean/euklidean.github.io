@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Currencies | Clinton Watkins</title>
+    <link>/tag/currencies/</link>
+      <atom:link href="/tag/currencies/index.xml" rel="self" type="application/rss+xml" />
+    <description>Currencies</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2021) Clinton Watkins</copyright><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <title>Currencies</title>
+      <link>/tag/currencies/</link>
+    </image>
+    
+    <item>
+      <title>Modelling and forecasting foreign exchange rates</title>
+      <link>/project/modelling-and-forecasting-foreign-exchange-rates/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/project/modelling-and-forecasting-foreign-exchange-rates/</guid>
+      <description>&lt;p&gt;We model and forecast developed market currencies using fundamental equilibrium echange rat and business cycle insights, and develop a backtester for analysing the performance of currency portfolios.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
