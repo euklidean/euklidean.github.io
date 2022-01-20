@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/courses/bf/behavioural-finance/</loc>
-    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/project/japanese-firm-level-productivity-and-stock-returns/</loc>
     <lastmod>2021-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/bf/behavioural-finance/</loc>
+    <lastmod>2021-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/ft/financial-theories-applications/</loc>
     <lastmod>2021-06-05T00:00:00+00:00</lastmod>
