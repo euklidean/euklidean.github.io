@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Market integration | Clinton Watkins</title>
+    <link>/tag/market-integration/</link>
+      <atom:link href="/tag/market-integration/index.xml" rel="self" type="application/rss+xml" />
+    <description>Market integration</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2022) Clinton Watkins</copyright><lastBuildDate>Fri, 09 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
+      <title>Market integration</title>
+      <link>/tag/market-integration/</link>
+    </image>
+    
+    <item>
+      <title>Causality between Arbitrage and Liquidity in Platinum Futures</title>
+      <link>/publication/journal-article/2022-jrfm-causality-between-arbitrage-and-liquidity-in-platinum-futures/</link>
+      <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/2022-jrfm-causality-between-arbitrage-and-liquidity-in-platinum-futures/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

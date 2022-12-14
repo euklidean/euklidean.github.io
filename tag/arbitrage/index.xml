@@ -5,7 +5,7 @@
     <link>/tag/arbitrage/</link>
       <atom:link href="/tag/arbitrage/index.xml" rel="self" type="application/rss+xml" />
     <description>Arbitrage</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2022) Clinton Watkins</copyright><lastBuildDate>Sat, 12 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-au</language><copyright>© (2022) Clinton Watkins</copyright><lastBuildDate>Fri, 09 Dec 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png</url>
       <title>Arbitrage</title>
@@ -29,6 +29,14 @@
       <description>&lt;p&gt;We investigate intraday seasonality in, and relationships between, informational efficiency, volatility, volume and liquidity. Platinum and gold, both traded in overlapping sessions in Tokyo and New York, provide an interesting comparison because Tokyo is an internationally important trading venue for platinum but not for gold. Our analysis indicates that both platinum and gold markets in Tokyo are dominated by uninformed trading, while there is evidence supporting both uninformed and informed trading in New York.&lt;/p&gt;
 &lt;p&gt;We also present evidence on the asymmetric information content of six investor groups&#39; transactions in the gold, platinum, gasoline and rubber futures markets on the Tokyo Commodity Exchange. Microstructure theory suggests that traders with superior information regarding the efficient price should be more profitable in the long run. We find that foreign investors have the greatest influence over the efficient price in the gold market, domestic retail investors in the gasoline market and domestic investment funds in the platinum and rubber markets.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Causality between Arbitrage and Liquidity in Platinum Futures</title>
+      <link>/publication/journal-article/2022-jrfm-causality-between-arbitrage-and-liquidity-in-platinum-futures/</link>
+      <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/2022-jrfm-causality-between-arbitrage-and-liquidity-in-platinum-futures/</guid>
+      <description></description>
     </item>
     
   </channel>
