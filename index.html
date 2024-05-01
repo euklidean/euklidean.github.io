@@ -1,2074 +1,578 @@
-<!DOCTYPE html><html lang="en-au" >
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  
-  
-    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
-  
-
-  
-    <meta name="google-site-verification" content="&lt;meta name=&#34;google-site-verification&#34; content=&#34;i5l0RoDR5Qj_zvDok0dlyC8xvhQLhBhhI9O1bJB32Vo&#34; /&gt;" />
-
-  
-  
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="Clinton Watkins" />
-
-  
-  
-  
-    
-  
-  <meta name="description" content="Clinton Watkins specialises in empirical finance. He is Professor and Director of the Global Business Program at Akita International University in Japan." />
-
-  
-  <link rel="alternate" hreflang="en-au" href="./" />
-
-  
-
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
-
-  
-  
-  
-    <meta name="theme-color" content="#0047ab" />
-  
-
-  
-  
-
-  
-  
-  
-  
-    
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
-
-    
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-        
-      
-    
-
-    
-    
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
-
-    
-
-    
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-        
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-  
-
-  
-  
-  
-    
-      
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
-    
-  
-
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="./css/wowchemy.f1f6e16923fb68d707afffa97f867676.css" />
-
-  
-
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-57990889-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-      dataLayer.push(arguments);
-  }
-
-  function trackOutboundLink(url, target) {
-    gtag('event', 'click', {
-         'event_category': 'outbound',
-         'event_label': url,
-         'transport_type': 'beacon',
-         'event_callback': function () {
-           if (target !== '_blank') {
-             document.location = url;
-           }
-         }
-    });
-    console.debug("Outbound link clicked: " + url);
-  }
-
-  function onClickCallback(event) {
-    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
-      return;
-    }
-    trackOutboundLink(event.target, event.target.getAttribute('target'));  
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'UA-57990889-1', {});
-  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
-
-  
-  document.addEventListener('click', onClickCallback, false);
-</script>
-
-
-  
-<script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MTZW2K4');
-</script>
-
-
-  
-
-  
-
-
-
-
-  
-  
-  
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  
-
-  
-    <link rel="alternate" href="./index.xml" type="application/rss+xml" title="Clinton Watkins" />
-  
-
-  
-    <link rel="manifest" href="./index.webmanifest" />
-  
-
-  <link rel="icon" type="image/png" href="./media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_32x32_fill_lanczos_center_2.png" />
-  <link rel="apple-touch-icon" type="image/png" href="./media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_180x180_fill_lanczos_center_2.png" />
-
-  <link rel="canonical" href="./" />
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-  
-  
-  <meta property="twitter:card" content="summary" />
-  
-    <meta property="twitter:site" content="@@euklidian" />
-    <meta property="twitter:creator" content="@@euklidian" />
-  
-  <meta property="og:site_name" content="Clinton Watkins" />
-  <meta property="og:url" content="/" />
-  <meta property="og:title" content="Clinton Watkins" />
-  <meta property="og:description" content="Clinton Watkins specialises in empirical finance. He is Professor and Director of the Global Business Program at Akita International University in Japan." /><meta property="og:image" content="/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png" />
-    <meta property="twitter:image" content="/media/icon_hu80bd23e09555bb319d875cc46bfdcc58_40588_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-au" />
-  
-    
-      <meta property="og:updated_time" content="2023-11-20T00:00:00&#43;00:00" />
-    
-  
-
-  
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "url": "/"
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.553">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Clinton Watkins</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
 }
-</script>
+</style>
 
 
-  
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/icon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0fba9333d8.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-  
 
-  
-
-
-
-
-
-  <title>Clinton Watkins</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper   "  >
-
-  
-  
-  
-  
-  
-  
-  
-  
-  <script src="./js/wowchemy-init.min.2656b96b9273c77f9f1758e7dfbeb3fe.js"></script>
-
-  
-
-
-<aside class="search-modal" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
-        aria-label="Search...">
-        
-      </div>
-
-      
-      
-
-      
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-
-  <div class="page-header">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container-xl">
-
-    
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="./">Clinton Watkins</a>
-    </div>
-    
-
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
-
-    
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="./">Clinton Watkins</a>
-    </div>
-    
-
-    
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
-
-      
-      <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="./project/"><span>Projects</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="./publication/"><span>Publications</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="./courses/"><span>Courses</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="./event/"><span>Talks</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="./post/"><span>Posts</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="./about/"><span>About</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="./consult/"><span>Consulting</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="./contact/"><span>Contact</span></a>
-        </li>
-
-        
-        
-
-      
-
-        
-      </ul>
-    </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-      
-      
-        
-      
-
-      
-      
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
-
-      
-      
-
-      
-      
-
-    </ul>
-
-  </div>
-</nav>
-
-
-  </div>
-
-  <div class="page-body">
-    
-
-
-
-
-
-
-
-
-
-
-
-  
-<span class="js-widget-page d-none"></span>
-
-
-
-
-
-  
-  
-  
-  
-
-
-
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="featured-pub" class="home-section wg-featured  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0">Recent Publications</h1>
-            
-          </div>
-        
-      
-    
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-<div class="col-12 col-lg-8">
-
-  
-
-  
-    
-      
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="./publication/journal-article/2021-pbfj-foreign-investors-tokyo-stock-price-formation/" >The changing role of foreign investors in Tokyo stock price formation</a>
-    </div>
-
-    
-    <a href="./publication/journal-article/2021-pbfj-foreign-investors-tokyo-stock-price-formation/"  class="summary-link">
-      <div class="article-style">
-        Recent research suggests that foreign investors improve the informational efficiency of national stock markets. We examine how foreign …
-      </div>
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Clinton Watkins</span>
     </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/index.html"> 
+<span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./publications/index.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./talks/index.html"> 
+<span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./teaching/index.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
     
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  <span >
-      <a href="./author/kentaro-iwatsubo/">Kentaro Iwatsubo</a></span>, <span >
-      <a href="./author/clinton-watkins/">Clinton Watkins</a></span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.sciencedirect.com/science/article/pii/S0927538X2100055X" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/journal-article/2021-pbfj-foreign-investors-tokyo-stock-price-formation/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="./project/influence-of-foreign-investors-on-japanese-stock-market/">
-    Project
+<!-- main -->
+<div class="quarto-about-trestles content">
+  <div class="about-entity">
+    <img src="images/cw20230220a.jpg" class="about-image
+  rounded " style="width: 20em;">
+    <div class="about-links">
+  <a href="/contact/index.html" class="about-link" rel="" target="">
+    <i class="bi bi-envelope"></i>
+     <span class="about-link-text">e-mail</span>
   </a>
-  
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/http://dx.doi.org/10.1016/j.pacfin.2021.101548" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="./publication/journal-article/2021-pbfj-foreign-investors-tokyo-stock-price-formation/" >
-      <img src="./publication/journal-article/2021-pbfj-foreign-investors-tokyo-stock-price-formation/featured_huc68c082ec04b27e8e3eac20a6670ad6e_902983_150x0_resize_lanczos_2.png" alt="The changing role of foreign investors in Tokyo stock price formation" loading="lazy">
-    </a>
-    
-  </div>
 </div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="./publication/journal-article/2022-pbfj-does-firm-level-productivity-predict-stock-returns-japan/" >Does firm-level productivity predict stock returns?</a>
-    </div>
-
-    
-    <a href="./publication/journal-article/2022-pbfj-does-firm-level-productivity-predict-stock-returns-japan/"  class="summary-link">
-      <div class="article-style">
-        Contrary to the findings of previous U.S. studies, we show that the firm-level total factor productivity (TFP) of Japanese …
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  <span >
-      <a href="./author/takeshi-hiroki/">Takeshi Hiroki</a></span>, <span >
-      <a href="./author/kentaro-iwatsubo/">Kentaro Iwatsubo</a></span>, <span >
-      <a href="./author/clinton-watkins/">Clinton Watkins</a></span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.sciencedirect.com/science/article/pii/S0927538X22000051" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/journal-article/2022-pbfj-does-firm-level-productivity-predict-stock-returns-japan/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="./project/japanese-firm-level-productivity-and-stock-returns/">
-    Project
-  </a>
-  
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/https://doi.org/10.1016/j.pacfin.2022.101710" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-
-    </div>
-    
-
   </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="./publication/journal-article/2022-pbfj-does-firm-level-productivity-predict-stock-returns-japan/" >
-      <img src="./publication/journal-article/2022-pbfj-does-firm-level-productivity-predict-stock-returns-japan/featured_hufe6b09d0ec220371dc828a9ef4b110d6_200683_150x0_resize_lanczos_2.png" alt="Does firm-level productivity predict stock returns?" loading="lazy">
-    </a>
-    
-  </div>
+  <div class="about-contents"><main class="content" id="quarto-document-content">
+<p>
+<strong>Clinton Watkins PhD</strong><br> Professor (Finance)<br> Director, Global Business Program<br> Faculty of International Liberal Arts<br> Akita International University<br> Akita-city, Japan
+</p>
+<!-- <p><em>**Consulting on:**</em></p> -->
+<ul>
+<li>Financial Markets &amp; Corporate Finance<br></li>
+<li>Macroeconomics &amp; Monetary Policy<br></li>
+<li>Investment Management &amp; Banking<br></li>
+<li>Quantitative Modelling &amp; Analytics<br></li>
+<li>International Business</li>
+</ul>
+<p>
+<strong>ワトキンス クリントン 博士</strong><br> 教授 (金融)<br> グローバル・ビジネス領域長<br> 国際教養学部 国際教養大学<br> 秋田市雄和椿川字奥椿岱
+</p>
+
+
+</main></div>
 </div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="./publication/journal-article/2023-si-raising-global-citizens-at-home/" >Raising Global Citizens at Home: Exploring a methodological approach</a>
+ <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/clintonwatkins\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2020-2024, Clinton Watkins</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
     </div>
-
-    
-    <a href="./publication/journal-article/2023-si-raising-global-citizens-at-home/"  class="summary-link">
-      <div class="article-style">
-        Views on how to balance the needs of humans and the environment differ widely. Global citizenship supports the transition to a …
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  <span >
-      <a href="./author/ingrid-van-rompay-bartels/">Ingrid Van Rompay-Bartels</a></span>, <span >
-      <a href="./author/clinton-watkins/">Clinton Watkins</a></span>, <span >
-      <a href="./author/jannemieke-geessink/">Jannemieke Geessink</a></span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.sciencedirect.com/science/article/pii/S2949697723000127" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/journal-article/2023-si-raising-global-citizens-at-home/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/https://doi.org/10.1016/j.socimp.2023.100012" target="_blank" rel="noopener">
-  DOI
-</a>
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="./publication/journal-article/2023-si-raising-global-citizens-at-home/" >
-      <img src="./publication/journal-article/2023-si-raising-global-citizens-at-home/featured_hub6f13503fde6e65e11b114b841f2279c_2275330_150x0_resize_lanczos_2.png" alt="Raising Global Citizens at Home: Exploring a methodological approach" loading="lazy">
-    </a>
-    
-  </div>
+    <div class="nav-footer-right">
+<p>Built using <a href="https://www.r-project.org/">R</a> and <a href="https://quarto.org/" target="_blank" rel="noopener noreferrer">Quarto</a></p>
 </div>
-
-    
-  
-
-  
-  
-  
-
-</div>
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="featured-post" class="home-section wg-featured  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-      <div class="row  ">
-      
-        
-          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
-            <h1 class="mb-0">Featured Posts</h1>
-            
-          </div>
-        
-      
-    
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-<div class="col-12 col-lg-8">
-
-  
-
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="./post/2021-generalised-impulse-response-function-r/" >Generalised impulse response function in R.</a>
-    </div>
-
-    
-    <a href="./post/2021-generalised-impulse-response-function-r/"  class="summary-link">
-      <div class="article-style">
-        R code for creating generalised impulse response functions (GIRF) from VARS package outputs.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    May 2021
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="./category/r/">R</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
   </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="./post/2020-japan-exchange-group-commodity-market-microstructure/" >Summary of our commodity market microstructure research on the JPX website.</a>
-    </div>
-
-    
-    <a href="./post/2020-japan-exchange-group-commodity-market-microstructure/"  class="summary-link">
-      <div class="article-style">
-        Summary of our commodity market microstructure research on the Japan Exchange Group website.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    May 2020
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="./post/2019-nikkei-newspaper-commodity-research-kobe/" >Nikkei Newspaper article</a>
-    </div>
-
-    
-    <a href="./post/2019-nikkei-newspaper-commodity-research-kobe/"  class="summary-link">
-      <div class="article-style">
-        Nikkei Newspaper article on commodity derivative research at Kobe University.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    June 2019
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="./category/media/">Media</a></span>
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-
-  
-  
-  
-
-</div>
-
-
-    
-      </div>
-    
-
-    </div>
-  </section>
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  <section id="about" class="home-section wg-about  "  >
-   <div class="home-section-bg " ></div>
-    <div class="container">
-
-    
-
-      
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-
-      
-
-      <div class="portrait-title">
-        <h2>Clinton Watkins</h2>
-        <h3>Professor <BR> Director, Global Business Program</h3>
-
-        
-        <h3>
-          <a href="https://www.aiu.ac.jp/" target="_blank" rel="noopener">
-          <span>Akita International University, Japan</span>
-          </a>
-        </h3>
-        
-      </div>
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="./contact/"  aria-label="envelope">
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://scholar.google.co.jp/citations?user=dj3LIc0AAAAJ" target="_blank" rel="noopener" aria-label="graduation-cap">
-            <i class="fas fa-graduation-cap big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://www.linkedin.com/in/clinton-watkins-4528766b" target="_blank" rel="noopener" aria-label="linkedin">
-            <i class="fab fa-linkedin big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
-
-    </div>
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-    
-
-    <div class="article-style">
-      
-    </div>
-
-    <div class="row">
-
-      
-      <div class="col-md-5">
-        <div class="section-subheading">Interests</div>
-        <ul class="ul-interests mb-0">
-          
-          <li>Empirical finance</li>
-          
-          <li>Market microstructure</li>
-          
-          <li>Applied econometrics</li>
-          
-          <li>Commodity, equity and foreign exchange markets</li>
-          
-        </ul>
-      </div>
-      
-
-      
-      <div class="col-md-7">
-        <div class="section-subheading">Education</div>
-        <ul class="ul-edu fa-ul mb-0">
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD, 2003</p>
-              <p class="institution">University of Western Australia</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">MEc, 1995</p>
-              <p class="institution">University of Western Australia</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BEc, 1992</p>
-              <p class="institution">University of Western Australia</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </div>
-  </div>
-</div>
-
-
-    
-
-    </div>
-  </section>
-
-
-
-  </div>
-
-  <div class="page-footer">
-    
-    
-    <div class="container">
-      <footer class="site-footer">
-
-  
-
-  
-
-  
-  <p class="powered-by">
-    © (2022) Clinton Watkins
-  </p>
-  
-
-  
-  
-
-
-
-
-
-
-  <p class="powered-by">
-    
-    
-    
-      
-      
-      
-      
-      
-      
-      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
-    
-  </p>
 </footer>
 
-    </div>
-    
-  </div>
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-      
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
-
-      
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      
-
-      
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-      
-
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/latex.min.js"></script>
-        
-      
-
-    
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
-    
-
-    
-    
-
-    
-    
-    
-      
-      <script id="search-hit-fuse-template" type="text/x-template">
-        <div class="search-hit" id="summary-{{key}}">
-          <div class="search-hit-content">
-            <div class="search-hit-name">
-              <a href="{{relpermalink}}">{{title}}</a>
-              <div class="article-metadata search-hit-type">{{type}}</div>
-              <p class="search-hit-description">{{snippet}}</p>
-            </div>
-          </div>
-        </div>
-      </script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-      
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-    <script src="./js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
-
-    
-    
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="./en/js/wowchemy.min.71e713848164e269bc250f377042949d.js"></script>
-
-    
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 
 
-
-</body>
-</html>
+</body></html>
