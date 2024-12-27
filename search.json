@@ -1,271 +1,5 @@
 [
   {
-    "objectID": "posts/2021-generalised-impulse-response-function-R/index.html",
-    "href": "posts/2021-generalised-impulse-response-function-R/index.html",
-    "title": "Generalised impulse response function in R.",
-    "section": "",
-    "text": "This function is a replacement for vars:::.irf that estimates Pesaran and Shin (1998) orthogonalised and generalised IRFs and is intended to be slotted into the vars:::.boot function to bootstrap confidence intervals for IRFs.\nI referred to the Matlab code posted by Ken Nyholm.\n\n# orthog = FALSE gives GIRF.\n\npsGIRF &lt;- function(x, n.ahead = 20, cumulative = TRUE, orthog = FALSE){\n\n  y.names &lt;- colnames(x$y)\n  impulse &lt;- y.names\n  response &lt;- y.names\n  \n  # Ensure n.ahead is an integer\n  n.ahead &lt;- abs(as.integer(n.ahead))\n  \n  # Create arrays to hold calculations     \n  # [1:nlags, 1:nvariables, shocked variable ] \n  \n  IRF_o  = array(data = 0, dim = c(n.ahead,x$K,x$K),\n                 dimnames = list(NULL,y.names,y.names))       \n  IRF_g  = array(data = 0, dim = c(n.ahead,x$K,x$K),\n                 dimnames = list(NULL,y.names,y.names))\n  IRF_g1 = array(data = 0, dim = c(n.ahead,x$K,x$K))\n  \n  # Estimation of orthogonalised and generalised IRFs\n  SpecMA &lt;- Phi(x, n.ahead)\n  params &lt;- ncol(x$datamat[, -c(1:x$K)])\n  sigma.u &lt;- crossprod(resid(x))/(x$obs - params)\n  P &lt;- t(chol(sigma.u))\n  sig_jj &lt;- diag(sigma.u)\n  \n  for (jj in 1:x$K){\n    indx_      &lt;- matrix(0,x$K,1)\n    indx_[jj,1] &lt;- 1\n    \n    for (kk in 1:n.ahead){  #kk counts the lag\n      \n      IRF_o[kk, ,jj] &lt;- SpecMA[, ,kk]%*%P%*%indx_  # Peseran-Shin eqn 7 (OIRF)\n      \n      IRF_g1[kk, ,jj] &lt;- SpecMA[, ,kk]%*%sigma.u%*%indx_\n      IRF_g[kk, ,jj] &lt;- sig_jj[jj]^(-0.5)*IRF_g1[kk, ,jj]  # Peseran-Shin eqn 10 (GIRF)\n      \n    }\n  }\n  \n  if(orthog==TRUE){\n    irf &lt;- IRF_o\n  } else if(orthog==FALSE) {\n    irf &lt;- IRF_g\n  } else {\n    stop(\"\\nError! Orthogonalised or generalised IRF?\\n\")\n  }\n  \n  idx &lt;- length(impulse)\n  irs &lt;- list()\n  for (ii in 1:idx) {\n    irs[[ii]] &lt;- matrix(irf[1:(n.ahead), response, impulse[ii]], nrow = n.ahead)\n    colnames(irs[[ii]]) &lt;- response\n    if (cumulative) {\n      if (length(response) &gt; 1) \n        irs[[ii]] &lt;- apply(irs[[ii]], 2, cumsum)\n      if (length(response) == 1) {\n        tmp &lt;- matrix(cumsum(irs[[ii]]))\n        colnames(tmp) &lt;- response\n        irs[[ii]] &lt;- tmp\n      }\n    }\n  }\n  names(irs) &lt;- impulse\n  result &lt;- irs\n  return(result)\n \n}\n\n\n\n\nAn example of the output from our recent article"
-  },
-  {
-    "objectID": "teaching/pm/index.html",
-    "href": "teaching/pm/index.html",
-    "title": "Portfolio Management (Investment)",
-    "section": "",
-    "text": "Download the Syllabus Setting up R and RStudio"
-  },
-  {
-    "objectID": "teaching/pm/index.html#what-you-will-learn",
-    "href": "teaching/pm/index.html#what-you-will-learn",
-    "title": "Portfolio Management (Investment)",
-    "section": "What you will learn",
-    "text": "What you will learn\nThis course is about the theory and practice of investment management. The course covers investment theory and concepts including security valuation, Modern Portfolio Theory, the risk/return trade-off, diversification, and the Black-Litterman Model. We will use these theories to construct portfolios using securities data in excel and R, and create portfolio analytics using R. We will discuss practical aspects of investment management, as well as the current situation of the investment management business in Japan and overseas. We also cover practical aspects of investment management such as investment philosophy, portfolio design, risk management, performance evaluation, ethics and fiduciary duty."
-  },
-  {
-    "objectID": "teaching/pm/index.html#objectives",
-    "href": "teaching/pm/index.html#objectives",
-    "title": "Portfolio Management (Investment)",
-    "section": "Objectives",
-    "text": "Objectives\nBy the end of this course, students should have a clear understanding of how financial assets are combined into portfolios, and the issues involved in real world portfolio management. Students should be competent in understanding, analysing and constructing investment portfolios comprised of stocks, bonds and alternative assets."
-  },
-  {
-    "objectID": "teaching/pm/index.html#faqs",
-    "href": "teaching/pm/index.html#faqs",
-    "title": "Portfolio Management (Investment)",
-    "section": "FAQs",
-    "text": "FAQs\n\n\n\n\n\n\nAre there prerequisites?\n\n\n\n\n\nMathematics, Statistics and Financial Theories and Applications"
-  },
-  {
-    "objectID": "teaching/macro/index.html",
-    "href": "teaching/macro/index.html",
-    "title": "Macroeconomics",
-    "section": "",
-    "text": "Download the Syllabus"
-  },
-  {
-    "objectID": "teaching/macro/index.html#course-overview",
-    "href": "teaching/macro/index.html#course-overview",
-    "title": "Macroeconomics",
-    "section": "Course overview",
-    "text": "Course overview\nThis course introduces advanced macroeconomic modelling techniques and their application to the the analysis of business cycle fluctuations. The course has three main parts. We cover:\n\nthe approaches to macroeconomic modelling and analysis;\nthe empirical properties and modelling of macroeconomic variables, and analyse their interrelationships using vector autoregression and other econometric methods in the software language R;\nthe standard theoretical macroeconomic models with an emphasis on business cycles, inflation, monetary and fiscal policy."
-  },
-  {
-    "objectID": "teaching/macro/index.html#course-objectives",
-    "href": "teaching/macro/index.html#course-objectives",
-    "title": "Macroeconomics",
-    "section": "Course Objectives",
-    "text": "Course Objectives\n\nfamiliar with standard frameworks for macroeconomic modelling and analysis;\nable to understand, model (using R) and interpret the empirical behaviour of important macroeconomic variables;\nconversant with the mathematical structure and solution of the macroeconomic models covered in the course and familiar with the simulation of macroeconomic models in R;\ncapable of analysing and interpreting the impact of changes in important variables on the macroeconomy, including the impacts of fiscal and monetary policy."
-  },
-  {
-    "objectID": "teaching/index.html",
-    "href": "teaching/index.html",
-    "title": "Clinton Watkins",
-    "section": "",
-    "text": "Course\n\n\nContent\n\n\n\n\n\n\n\n\nFinancial Theories & Applications\n\n\nThis is an introductory course in finance that focuses on financial markets and instruments. The course provides students with an understanding of the roles of financial markets, how financial securities are priced and traded, and their role in the global financial system. We cover the financial system, interest rate determinsation, money markets, bonds, stocks, futures and options.\n\n\n\n\n\n\n\nPortfolio Management (Investment)\n\n\nThis course is about investment and portfollio theory from a practitioner’s perspective. We cover risk and return, diversification, Modern Portfolio Theory, the Black-Litterman Model, investment philosophy, portfolio design, risk management, performance evaluation, ethics and fiduciary duty. We use these concepts to construct portfolios and examine portfolio anayltics in R using securities data from Nikkei NEEDS.\n\n\n\n\n\n\n\nBehavioural Finance\n\n\nResearchers such as Daniel Kahneman, Amos Tversky, Robert Shiller and Richard Thaler pioneered the application of concepts from psychology to economic and financial decision-making. In behavioural economics and finance, we use principles from psychology to describe how individuals actually make economic and financial decisions, in contrast to the way rational agent models suggest individuals should make decisions.\n\n\n\n\n\n\n\nFinance Data Workshop\n\n\nThis is an intensive workshop-style course that gives students hands-on experience in analysing and modelling financial data, and interpreting the results of analyses. Students will work with financial data from the Nikkei NEEDS database that is used by analysts in the finance industry. The course covers one topic in depth, such as factor analysis, panel regression or the Fama Macbeth model.\n\n\n\n\n\n\n\nCrossing Borders Without Crossing Borders\n\n\nThis is an Intercultural Virtual Collaboration course. Students in Japan and the Netherlands work together in small teams on a business case project analysing the differences in marketing and communications related to the UN Sustainable Development Goals. The course aims to develop students intercultural competencies via learning by doing in a cross-border and cross-cultural context.\n\n\n\n\n\n\n\nUndergraduate Seminar\n\n\nStudents write their undergraduate research paper under my guidance on a topic within the seminar theme ‘Empirical Analyses in Finance, Economics and Business.’ The course includes sessions on empirical research methods. Students learn the priniples of reproducible research while completing their project, using R, RStudio and Quarto.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "teaching/index.html#current-courses",
-    "href": "teaching/index.html#current-courses",
-    "title": "Clinton Watkins",
-    "section": "",
-    "text": "Course\n\n\nContent\n\n\n\n\n\n\n\n\nFinancial Theories & Applications\n\n\nThis is an introductory course in finance that focuses on financial markets and instruments. The course provides students with an understanding of the roles of financial markets, how financial securities are priced and traded, and their role in the global financial system. We cover the financial system, interest rate determinsation, money markets, bonds, stocks, futures and options.\n\n\n\n\n\n\n\nPortfolio Management (Investment)\n\n\nThis course is about investment and portfollio theory from a practitioner’s perspective. We cover risk and return, diversification, Modern Portfolio Theory, the Black-Litterman Model, investment philosophy, portfolio design, risk management, performance evaluation, ethics and fiduciary duty. We use these concepts to construct portfolios and examine portfolio anayltics in R using securities data from Nikkei NEEDS.\n\n\n\n\n\n\n\nBehavioural Finance\n\n\nResearchers such as Daniel Kahneman, Amos Tversky, Robert Shiller and Richard Thaler pioneered the application of concepts from psychology to economic and financial decision-making. In behavioural economics and finance, we use principles from psychology to describe how individuals actually make economic and financial decisions, in contrast to the way rational agent models suggest individuals should make decisions.\n\n\n\n\n\n\n\nFinance Data Workshop\n\n\nThis is an intensive workshop-style course that gives students hands-on experience in analysing and modelling financial data, and interpreting the results of analyses. Students will work with financial data from the Nikkei NEEDS database that is used by analysts in the finance industry. The course covers one topic in depth, such as factor analysis, panel regression or the Fama Macbeth model.\n\n\n\n\n\n\n\nCrossing Borders Without Crossing Borders\n\n\nThis is an Intercultural Virtual Collaboration course. Students in Japan and the Netherlands work together in small teams on a business case project analysing the differences in marketing and communications related to the UN Sustainable Development Goals. The course aims to develop students intercultural competencies via learning by doing in a cross-border and cross-cultural context.\n\n\n\n\n\n\n\nUndergraduate Seminar\n\n\nStudents write their undergraduate research paper under my guidance on a topic within the seminar theme ‘Empirical Analyses in Finance, Economics and Business.’ The course includes sessions on empirical research methods. Students learn the priniples of reproducible research while completing their project, using R, RStudio and Quarto.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "teaching/index.html#executive-workshop",
-    "href": "teaching/index.html#executive-workshop",
-    "title": "Clinton Watkins",
-    "section": "Executive workshop",
-    "text": "Executive workshop\n\n\n\n\n\nCourse\n\n\nContent\n\n\n\n\n\n\n\n\nThe Psychology of Economic Decision-making\n\n\nThis session will bring economics down to earth and get you thinking about how we think about our world. Mixing human psychology with a practical understanding of economic incentives and market behaviour, we will explore how understanding human miscalculations can help us make smarter decisions in both our private and professional lives.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "teaching/index.html#previous-courses",
-    "href": "teaching/index.html#previous-courses",
-    "title": "Clinton Watkins",
-    "section": "Previous courses",
-    "text": "Previous courses\n\n\n\n\n\nCourse\n\n\nContent\n\n\n\n\n\n\n\n\nEconometrics\n\n\nThis course exposes students to common econometric techniques that economists use to estimate, test, and forecast relationships between variables in economics and finance. We cover applied econometrics and selective intermediate theory. Students will apply theory to empirical problems using economic and financial data in class and in assignments using the statistical programming language R and the RStudio IDE.\n\n\n\n\n\n\n\nMacroeconomics\n\n\nThis course introduces advanced macroeconomic modelling techniques and their application to the the analysis of business cycle fluctuations. We cover the approaches to macroeconomic modelling and analysis, analyse the interrelationships between macroeconomic variables using vector autoregression, and examine the standard theoretical macroeconomic models with an emphasis on business cycles, inflation, monetary and fiscal policy.\n\n\n\n\n\n\n\nEconomic & Financial Crises\n\n\nWe will examine the salient features of crises in both emerging and developed economies and cover Hyman Minsky’s financial instability model. The course touches on economic history, international macroeconomics, international finance, banking, financial markets, regulation, government finances, international relations and politics. Students will develop a deep understanding of economic and financial crises, their causes and consequences.\n\n\n\n\n\n\n\nInternational Business\n\n\nThis is an introductory course in international business that examines the economic, management and commercial aspects of international businesses. We will take a global perspective, but also emphasise the perspective of Asian firms and doing business in Asia. Working through Asia-relevant case studies about international businesses is a key part of the course.\n\n\n\n\n\n\n\nFinancial Markets Workshop\n\n\nThis course will develop students’ skills in applying economic and financial theory to the real time analysis of macroeconomics, financial markets and investment strategy. The course is conducted in a workshop style. The class sessions be a combination of lectures given by me, student presentations and student led discussion. We will develop a strategy for interpreting and forecasting developments in financial markets and important economies, focussing on cycles and trends.\n\n\n\n\n\n\n\nEconomics Readings in English\n\n\nThis course develops non-native English speaking undergraduates’ ability and confidence in discussing and comprehending economics in English. The course focuses on discussing economics related topics, not teaching the English language. Students are required to read, present and discuss various economics topics in English.\n\n\n\n\n\n\n\nEconomic Development\n\n\nThis course covers the microfoundations of development. We examine theoretical and empirical issues applicable in less-developed economies. Topics surveyed include current issues, agriculture and rural development, education, human capital investment, employment and labour markets, population, poverty alleviation, health, credit and financial markets, dealing with risk, technological change, and project design and evaluation.\n\n\n\n\n\n\n\nInternational Trade\n\n\nThis course surveys a number of major issues in trade theory and policy, as well as empirical tests of trade models, in the light of recent developments in international economics. Through this course, students should become familiar with the theoretical models of international trade, current issues in trade policy, and application of the theory to less developed country economies.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "teaching/fta/index.html",
-    "href": "teaching/fta/index.html",
-    "title": "Financial Theories & Applications",
-    "section": "",
-    "text": "Syllabus"
-  },
-  {
-    "objectID": "teaching/fta/index.html#reasons-to-take-the-course",
-    "href": "teaching/fta/index.html#reasons-to-take-the-course",
-    "title": "Financial Theories & Applications",
-    "section": "Reasons to take the course",
-    "text": "Reasons to take the course\n\nGain a fundamental level of financial literacy that will be helpful in:\n\nfuture business, government or NPO career, and\nmanaging your personal finances.\n\nPrepare for more advanced study of finance, such as courses in Portfolio Management and Behavioural Finance at AIU, or finance courses during study abroad.\nLearn about the functioning of the global financial system so you can understand news about financial developments and the implications for the global economy and society."
-  },
-  {
-    "objectID": "teaching/fta/index.html#learning-objectives",
-    "href": "teaching/fta/index.html#learning-objectives",
-    "title": "Financial Theories & Applications",
-    "section": "Learning objectives",
-    "text": "Learning objectives\n\nUnderstand the roles of various financial markets and institutions.\nUnderstand the theory behind valuing financial securities.\nBe able to calculate valuations for financial securities.\nUnderstand how financial securities are traded.\nUnderstand the characteristics of various financial markets.\nGain a broad understanding of the global financial system."
-  },
-  {
-    "objectID": "teaching/fta/index.html#interactive-tools",
-    "href": "teaching/fta/index.html#interactive-tools",
-    "title": "Financial Theories & Applications",
-    "section": "Interactive tools",
-    "text": "Interactive tools\n\nBond pricing visualisation.\nGeneric futures pricing calculator.\nOptions pricing visualisation."
-  },
-  {
-    "objectID": "teaching/fta/index.html#faqs",
-    "href": "teaching/fta/index.html#faqs",
-    "title": "Financial Theories & Applications",
-    "section": "FAQs",
-    "text": "FAQs\n\n\n\n\n\n\nAre there prerequisites?\n\n\n\n\n\n\nMicroeconomics, mathematics and statistics are recommended."
-  },
-  {
-    "objectID": "teaching/fdw/index.html",
-    "href": "teaching/fdw/index.html",
-    "title": "Finance Data Workshop",
-    "section": "",
-    "text": "Download the Syllabus Setting up R and RStudio"
-  },
-  {
-    "objectID": "teaching/fdw/index.html#course-overview",
-    "href": "teaching/fdw/index.html#course-overview",
-    "title": "Finance Data Workshop",
-    "section": "Course overview",
-    "text": "Course overview\nThis is an intensive workshop-style course that gives students hands-on experience in analysing and modelling financial data, and interpreting the results of analyses. Students will work with financial data from the Nikkei NEEDS database that is used by analysts in the finance industry. The course focusses on the analysis of Japanese stock market and listed corporation data. Analyses will be conducted using the statistical programing language R, and will include the estimation of financial econometric models. Students will conduct analyses during the workshop sessions on their own computers, and use R Notebooks to produce HTML documents containing their code, results and interpretation. This process develops the understanding of basic concepts related to producing verifiable and reproducible empirical analysis."
-  },
-  {
-    "objectID": "teaching/fdw/index.html#reasons-you-may-wish-to-take-this-course",
-    "href": "teaching/fdw/index.html#reasons-you-may-wish-to-take-this-course",
-    "title": "Finance Data Workshop",
-    "section": "Reasons you may wish to take this course",
-    "text": "Reasons you may wish to take this course\n\nDevelop you ability to conduct empirical analyses and interpret results.\nGain an understanding of stock market data and selected financial models.\nGain familiarity with the methodology of empirical research and coding in R."
-  },
-  {
-    "objectID": "teaching/fdw/index.html#faqs",
-    "href": "teaching/fdw/index.html#faqs",
-    "title": "Finance Data Workshop",
-    "section": "FAQs",
-    "text": "FAQs\n\n\n\n\n\n\nHow should I prepare for the course?\n\n\n\n\n\nStudents will need their own computer running Windows, Mac OS, or Linux. Students must download and install R and RStudio on their computer at least one week prior to the course following the instructions on this page."
-  },
-  {
-    "objectID": "teaching/efc/index.html",
-    "href": "teaching/efc/index.html",
-    "title": "Economic & Financial Crises",
-    "section": "",
-    "text": "Download the Syllabus"
-  },
-  {
-    "objectID": "teaching/efc/index.html#course-overview",
-    "href": "teaching/efc/index.html#course-overview",
-    "title": "Economic & Financial Crises",
-    "section": "Course overview",
-    "text": "Course overview\nWe will examine the salient features of past crises in both emerging and developed economies and cover Hyman Minsky’s financial instability model in detail. The course will include aspects of economic history, international macroeconomics, international finance, banking and financial markets, regulation, government finances, international relations and politics. By successfully completing this course, students will develop a deep understanding of economic and financial crises, their causes and consequences."
-  },
-  {
-    "objectID": "teaching/efc/index.html#course-objectives",
-    "href": "teaching/efc/index.html#course-objectives",
-    "title": "Economic & Financial Crises",
-    "section": "Course objectives",
-    "text": "Course objectives\nBy the end of the course, students should be able to identify and and knowledgeably discuss:\n\nthe warning signs ahead of a crisis.\nthe nature of asset price bubbles.\nthe stages of a typical crisis and the different types of crises.\neconomic theories of crises, including Minsky’s Financial Instability Hypothesis.\nimplications of crises for the macroeconomy and financial markets.\npros and cons of policy measures used to deal with a crises.\nthe history and lessons of various financial crises."
-  },
-  {
-    "objectID": "teaching/ec/index.html",
-    "href": "teaching/ec/index.html",
-    "title": "Econometrics",
-    "section": "",
-    "text": "Download the Syllabus"
-  },
-  {
-    "objectID": "teaching/ec/index.html#course-overview",
-    "href": "teaching/ec/index.html#course-overview",
-    "title": "Econometrics",
-    "section": "Course overview",
-    "text": "Course overview\nThis course exposes students to common econometric techniques that economists use to estimate, test, and forecast relationships between variables in economics and finance. We cover applied econometrics and selective intermediate theory. Students will apply theory to empirical problems using economic and financial data in class and in assignments using the language R and RStudio."
-  },
-  {
-    "objectID": "teaching/ec/index.html#course-objectives",
-    "href": "teaching/ec/index.html#course-objectives",
-    "title": "Econometrics",
-    "section": "Course Objectives",
-    "text": "Course Objectives\n\nUnderstand intermediate econometric theory.\nUnderstand the approaches to econometric methodology.\nLearn to apply theory appropriately to empirical problems.\nLearn to teach yourself new econometric techniques via replication.\nBecome competent using R and associated tools for applied econometrics."
-  },
-  {
-    "objectID": "teaching/bf/index.html",
-    "href": "teaching/bf/index.html",
-    "title": "Behavioural Finance",
-    "section": "",
-    "text": "Download the Syllabus"
-  },
-  {
-    "objectID": "teaching/bf/index.html#overview",
-    "href": "teaching/bf/index.html#overview",
-    "title": "Behavioural Finance",
-    "section": "Overview",
-    "text": "Overview\nResearchers such as Daniel Kahneman (winner of the 2002 Nobel Prize in Economics), Robert Shiller (joint winner of the 2013 Nobel Prize in Economics) and Richard Thaler (winner of the 2017 Nobel Prize in Economics) pioneered the application of concepts from psychology to economic and financial decision-making. In behavioural economics and finance, we use principles from psychology to describe how individuals actually make economic and financial decisions, in contrast to the way rational agent models suggest individuals should make decisions."
-  },
-  {
-    "objectID": "teaching/bf/index.html#objectives",
-    "href": "teaching/bf/index.html#objectives",
-    "title": "Behavioural Finance",
-    "section": "Objectives",
-    "text": "Objectives\n\ndistinguish between the approaches and assumptions of conventional and behavioural finance, and discuss the relationship between the two fields.\nexplain the behavioural and psychological influences on economic and financial decision-making.\napply behavioural finance research and psychological concepts to problems in finance.\ninterpret experimental evidence generated by researchers in behavioural economics & finance."
-  },
-  {
-    "objectID": "teaching/bf/index.html#faqs",
-    "href": "teaching/bf/index.html#faqs",
-    "title": "Behavioural Finance",
-    "section": "FAQs",
-    "text": "FAQs\n\n\n\n\n\n\nWhat will we do in this course?\n\n\n\n\n\nWe will do examine how psychological factors influence economic and financial decision-making. We will interpret key research findings and run decision-making experiments during class.\n\n\n\n\n\n\n\n\n\nAre there prerequisites?\n\n\n\n\n\nFinancial Theories and Applications is recomended but not mandatory."
-  },
-  {
-    "objectID": "publications/index.html",
-    "href": "publications/index.html",
-    "title": "Clinton Watkins",
-    "section": "",
-    "text": "Ingrid Van Rompay-Bartels, Clinton Watkins\n        (2025)\n        How can we raise global citizens at home? Evidence from an intercultural virtual collaboration between the Netherlands and Japan.\n        \n          forthcoming in Intercultural Global Learning: Achieving the UN Sustainable Development Goals, Elena Douvlou and Kelly Tzoumis (Eds.), Springer Nature Press.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Ingrid Van Rompay-Bartels, Clinton Watkins, Laurens Zijlstra, Jannemieke Geessink\n        (2024)\n        Assessing the Impact of Intercultural Virtual Collaboration on Global Citizenship Education.\n        \n          Understanding Multiculturalism and Interculturalism in Cross Cultures, Ingrid Muenstermann (Ed.), IntechOpen.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2024)\n        Multinationality and cash holdings: Evidence from Japan.\n        \n          Available at SSRN: https://ssrn.com/abstract=4947102.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Ingrid Van Rompay-Bartels, Clinton Watkins, Jannemieke Geessink\n        (2023)\n        Raising Global Citizens at Home: Exploring a methodological approach.\n        \n          Societal Impacts, 100012.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Kentaro Iwatsubo, Clinton Watkins\n        (2022)\n        Causality between Arbitrage and Liquidity in Platinum Futures.\n        \n           Journal of Risk and Financial Management , 15, 593.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Takeshi Hiroki, Kentaro Iwatsubo, Clinton Watkins\n        (2022)\n        Does firm-level productivity predict stock returns?.\n        \n           Pacific Basin Finance Journal , 72, 101710.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Takashi Hiroki, Kentaro Iwatsubo, Clinton Watkins\n        (2021)\n        Does Firm-Level Productivity Predict Stock Returns?.\n        \n          Available at SSRN: https://ssrn.com/abstract=3927541.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Kentaro Iwatsubo, Clinton Watkins\n        (2021)\n        The changing role of foreign investors in Tokyo stock price formation.\n        \n           Pacific Basin Finance Journal , 67, 101548.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Michael McAleer, Tamotsu Nakamura, Clinton Watkins\n        (2020)\n        Size, internationalization, and university rankings: evaluating and predicting Times Higher Education (THE) data for Japan.\n        \n           Sustainability of the Theories Developed by Mathematical Finance and Mathematical Economics with Applications\", MDPI, 105-116.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Kentaro Iwatsubo, Clinton Watkins\n        (2020)\n        Who influences the fundamental value of commodity futures in Japan?.\n        \n           International Review of Financial Analysis , 67, 101404.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2019)\n        Estimating the Japanese Business Cycle Using R.\n        \n          経済学・経営学学習のために (Gakusyu-No-Tameni), 神戸大学経済経営学会 (Research Institute of Economics and Business, Kobe University), October, 55-66.\n        \n      \n\n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n       PDF\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Michael McAleer, Tamotsu Nakamura, Clinton Watkins\n        (2019)\n        Size, internationalization, and university rankings: evaluating and predicting Times Higher Education (THE) data for Japan.\n        \n           Sustainability , 11(5), 1366.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Kentaro Iwatsubo, Clinton Watkins, Tao Xu\n        (2018)\n        Intraday seasonality in efficiency, liquidity, volatility and volume: Platinum and gold futures in Tokyo and New York.\n        \n           Journal of Commodity Markets , 11, 59-71.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Beck Nuritov, Massimiliano Porto\n        (2018)\n        Business Cycle and Value Insights for Forecasting Currency Returns.\n        \n           Joint Sumitomo Mitsui Asset Management -- Kobe University Research Project on Currency Forecasting.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2018)\n        Currency Portfolio Backtesting Software Manual.\n        \n           Joint Sumitomo Mitsui Asset Management -- Kobe University Research Project on Currency Forecasting.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2008)\n        Using financial market information in monetary policy: some examples from New Zealand.\n        \n           Financial Market Developments and their Implications for Monetary Policy, BIS Papers, 39, 142-166.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2008)\n        How has volatility in metals markets changed?.\n        \n           Mathematics and Computers in Simulation, 78(2), 237-249.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2007)\n        Using financial market information in monetary policy: some examples from New Zealand.\n        \n          Financial Market Developments and Their Implications for Monetary Policy -- BNM-BIS Conference Proceedings.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2006)\n        Pricing of non-ferrous metals futures on the London Metal Exchange.\n        \n           Applied Financial Economics , 16(12), 853-880.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2005)\n        Have aluminium and copper futures markets become more volatile over time?.\n        \n          In A. Zerger and R. Argent (eds.), MODSIM 2005 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, December, 170-176. ISBN: 0-9758400-2-9.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2005)\n        Related commodity markets and conditional correlations.\n        \n           Mathematics and Computers in Simulation , 68(5-6), 567-579.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2004)\n        Econometric modelling of non-ferrous metal prices.\n        \n           Journal of Economics Surveys , 18(5), 651-701.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2003)\n        Climate Change and International Trade: Australia and Japan.\n        \n          In Post, D. A. (ed) MODSIM 2003 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, July. ISBN: 1 74052 098 X:.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2003)\n        Correlation in volatility among related commodity markets.\n        \n          In Post, D. A. (ed) MODSIM 2003 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, July. ISBN: 1 74052 098 X.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2003)\n        Climate Change Policy Developments in Japan.\n        \n          Australasian Emissions Trading Forum Review, June/July.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        L. Wilson, M. Mellor, Clinton Watkins\n        (2002)\n        Emissions Trading and Indigenous Communities.\n        \n           EcoCarbon Inc. and Centre for Appropriate Technology.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Marc Saupin, Heath Lang, Clinton Watkins\n        (2002)\n        Renewable Energy Certificates Created Within Indigenous Communities: Applicability and Feasibility Issues.\n        \n           Australian Cooperative Research Centre for Renewable Energy Ltd and Centre for Appropriate Technology.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2002)\n        Modelling prices, returns and volatility in futures markets for industrial metals.\n        \n           Submitted for the degree of Doctor of Philosophy, University of Western Australia .\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Trevor Pryor, Clinton Watkins, Heath Lang\n        (2002)\n        Estimating tradeable certificates created by small-scale renewable energy systems.\n        \n          In Rizzoli, A.E., and Jakeman, A.J. (eds), iEMSs 2002 International Congress Integrated Assessment and Decision Support. Proceedings of the 1st biennial meeting of the International Environmental Modelling and Software Society, Lugano, Switzerland, June 2002, 460-465. ISBN 88-900787-0-7\".\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2002)\n        Modelling time-varying volatility in non-ferrous metals markets.\n        \n          In Rizzoli, A.E., and Jakeman, A.J. (eds), iEMSs 2002 International Congress Integrated Assessment and Decision Support. Proceedings of the 1st biennial meeting of the International Environmental Modelling and Software Society, Lugano, Switzerland, June 2002, 550-555. ISBN 88-900787-0-7.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Simon Dawkins\n        (2002)\n        Early Greenhouse Abatement Action.\n        \n           EcoCarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Frank Reid\n        (2002)\n        Response to the Draft Report of the COAG Energy Market Review Panel.\n        \n           Australian Cooperative Research Centre for Renewable Energy Ltd and EcoCarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2002)\n        Japan Embarks on the Kyoto Path.\n        \n          Australasian Emissions Trading Forum Review, June/July.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Craig McBurnie, Clinton Watkins\n        (2002)\n        Lessons from Carbon Risk Management Simulation.\n        \n          Australasian Emissions Trading Forum Review, June/July.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Craig McBurnie, Clinton Watkins\n        (2002)\n        Report on the VETP Workshop on GHG Emissions Risk Management at the Eye-for-Energy Emissions Trading Conference.\n        \n           EcoCarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Craig McBurnie, Clinton Watkins\n        (2002)\n        Report on the VETP Workshop on GHG Emissions Risk Management at the Commercialising Sustainable Energy Conference.\n        \n           Ecocarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Craig McBurnie. Clinton Watkins\n        (2002)\n        Report on the VETP Workshop on GHG Emissions Risk Management at Western Power Corporation.\n        \n           EcoCarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2002)\n        Comment on the South West Power Project Strategic Environmental Review.\n        \n           EcoCarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Frank Reid, Alix Rhodes, Clinton Watkins\n        (2002)\n        Submission to the State Greenhouse Strategy.\n        \n           Australian Cooperative Research Centre for Renewable Energy Ltd, EcoCarbon Inc. and Renewable Energy Technology and Innovation Network of Australia.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2002)\n        Cointegration analysis of metals futures.\n        \n           Mathematics and Computers in Simulation , 59(1-3), 207-221.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2001)\n        Carbon emissions markets: a simulation approach.\n        \n          In Ghassemi, F., Whetton, P., Little, R. and M. Littleboy (eds), Proceedings of the International Congress on Modelling and Simulation, Volume 3, Socioeconomic Systems. Modelling and Simulation Society of Australia and New Zealand, December 2005, Canberra, Australia, 3, 1071-1078. ISBN: 0-867405252.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n       PDF\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2001)\n        Forecasting commodity market volatility in the presence of extreme observations.\n        \n          In Ghassemi, F., Whetton, P., Little, R. and M. Littleboy (eds), Proceedings of the International Congress on Modelling and Simulation, Volume 3, Socioeconomic Systems. Modelling and Simulation Society of Australia and New Zealand, December 2005, Canberra, Australia, 3, 1525-1530. ISBN: 0-867405252.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Frand Reid\n        (2001)\n        Harnessing Green Energy Opportunities in Western Australia.\n        \n           Australian Cooperative Research Centre for Renewable Energy Ltd and EcoCarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Marc Saupin, Heath Lang, Clinton Watkins\n        (2001)\n        Installation of a Demonstration Mini Hybrid Renewable Energy System at Hluleka Nature Reserve, Eastern Cape, South Africa.\n        \n           Australian Cooperative Research Centre for Renewable Energy Ltd.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Heath Lang, Clinton Watkins\n        (2001)\n        Performance Evaluation of Hybrid Renewable Energy Systems.\n        \n           International Centre for Application of Solar Energy and Provincial Electrification Authority of Thailand.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Gordon Thompson, Clinton Watkins\n        (2001)\n        An Overview of Australian Greenpower Schemes.\n        \n           World Bank and International Centre for Application of Solar Energy.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Marc Saupin, Clinton Watkins\n        (2000)\n        The Australian Experience in Developing a Policy Framework for Greenhouse Gas Mitigation: A Renewable Energy Target.\n        \n           World Bank and International Centre for Application of Solar Energy.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Marc Saupin, Heath Lang, Clinton Watkins\n        (2000)\n        Survey of Island Electrification Needs and Socioeconomic Conditions.\n        \n           International Centre for Application of Solar Energy and Provincial Electrification Authority of Thailand.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Marc Saupin, Ken Butler, Heath Lang, Clinton Watkins\n        (2000)\n        Socioeconomic Evaluation of Capacity Building and Institutional Strengthening at Kemiri, Irian Jaya.\n        \n           International Centre for Application of Solar Energy.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (1999)\n        Estimating long run pricing models for copper futures prices.\n        \n          In Oxley, L. (ed), MODSIM 1999 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, December 1999, 483-488. ISBN: 0-86422-948-8.\n        \n      \n\n      \n\n      \n\n      \n\n      \n       PDF\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (1997)\n        Pricing in futures and forward markets for non-ferrous metals: an empirical critique.\n        \n          In McDonald, D.A. and M. McAleer (eds), MODSIM 1997 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, December, 1385-1390. ISBN: 0 86422 826 0.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n       PDF\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (1997)\n        The term structure of interest rates and economic activity: An empirical critique.\n        \n           Mathematics and Computers in Simulation, 43(3-6), 487-493.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (1995)\n        Human capital and screening theories of education: an empirical critique.\n        \n          In Binning, P., Bridgman, H. and B. Williams (eds), MODSIM 1995 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, December, 4, 291-296.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (1995)\n        The term structure of interest rates and economic activity: an empirical critique.\n        \n          In Binning, P., Bridgman, H. and B. Williams (eds), MODSIM 1995 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, December, 4, 95-100.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n       PDF\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "publications/2024-Assessing-the-Impact-of-IVC/index.html",
-    "href": "publications/2024-Assessing-the-Impact-of-IVC/index.html",
-    "title": "Assessing the Impact of Intercultural Virtual Collaboration on Global Citizenship Education",
-    "section": "",
-    "text": "Abstract: The development of the capabilities necessary to foster global citizenship in undergraduate university students is an important goal of many higher education institutions. We assess the impact of intercultural virtual collaboration (IVC) courses on the three key competencies of students – collaborative skills, ethical and social responsibility, and intercultural proficiency – that underpin global citizenship (GC). We analyse pre- and post-course test data related to the learning goals of three IVCs between the universities in the Netherlands and Japan, Spain and the USA, respectively. Using one-tailed paired sample t-tests, we find statistically significant improvements in each of these competencies and conclude that IVC supports the development of GC in university students, even if they have prior international experience.\nKeywords: Empirical assessment, Global citizenship, Higher education, Intercultural competence, Internationalisation at home, Sustainable Development Goals, Virtual collaboration"
-  },
-  {
-    "objectID": "publications/2007-bnm-financial-market-information-monetary-policy/index.html",
-    "href": "publications/2007-bnm-financial-market-information-monetary-policy/index.html",
-    "title": "Using financial market information in monetary policy: some examples from New Zealand",
-    "section": "",
-    "text": "Keywords: Financial markets, Monetary policy, Information extraction, Analytical tools\nSummary: Central bankers have long recognised that financial markets contain useful information for macroeconomic surveillance and the conduct of monetary policy. Financial markets provide a valuable window for timely information on (domestic and global) economic and financial conditions. This is due to the vast amount of information aggregated by markets, to their forward looking nature, and to the fact that future asset returns are sensitive to economic conditions. Central bankers also pay close regard to financial markets because certain key markets are important initial linkages in the monetary policy transmission mechanism in many economies."
-  },
-  {
-    "objectID": "posts/20240501-termstructure/index.html",
-    "href": "posts/20240501-termstructure/index.html",
-    "title": "Forecasting recessions with the yield curve",
-    "section": "",
-    "text": "I’ve always been interested in extracting information from financial prices and yields. Forecasting recessions with the yield curve develops a model using publicly available interest rate data to forecast the probability of recession in the United States. This has been topical recently as markets attempt to forecast the impact of tighter monetary policy by the US Fed.\nAt present, the yield curve suggests around a 0.5 probability of a recession 6 months ahead. This is a little higher than the probabilities indicated around the Lehman shock and in the early 2000s."
-  },
-  {
-    "objectID": "posts/2020-Japan-Exchange-Group-intraday-commodity-seasonality/index.html",
-    "href": "posts/2020-Japan-Exchange-Group-intraday-commodity-seasonality/index.html",
-    "title": "Summary of our intraday commodity seasonality research on the JPX website.",
-    "section": "",
-    "text": "Read a summary (in Japanese) of a recent research project “Intraday seasonality in efficiency, liquidity, volatility and volume: Platinum and gold futures in Tokyo and New York” with Ken Iwatsubo and Tao Xu on the Japan Exchange Futures and Options Report website."
-  },
-  {
-    "objectID": "posts/2019-times-higher-edication-internationalisation/index.html",
-    "href": "posts/2019-times-higher-edication-internationalisation/index.html",
-    "title": "Times Higher Education article",
-    "section": "",
-    "text": "My co-author Michael McAleer was interviewed by Times Higher Education reporter Ellie Bothwell in connection with our article “Size, internationalization, and university rankings: evaluating and predicting Times Higher Education (THE) data for Japan”.\nYou can read the article published on-line on 21 November 2019 on the THE website."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Clinton Watkins",
-    "section": "",
-    "text": "Clinton Watkins PhD Professor (Finance) Director, Global Business Program Faculty of International Liberal Arts Akita International University Akita-city, Japan\n\n\n\nFinancial Markets & Corporate Finance\nMacroeconomics & Monetary Policy\nInvestment Management & Banking\nQuantitative Modelling & Analytics\nInternational Business\n\n\nワトキンス クリントン 教授 (金融) グローバル・ビジネス領域長 国際教養学部 国際教養大学 秋田市雄和椿川字奥椿岱"
-  },
-  {
     "objectID": "publications/2024-How-can-we-raise-global-citizens-at-home/index.html",
     "href": "publications/2024-How-can-we-raise-global-citizens-at-home/index.html",
     "title": "How can we raise global citizens at home? Evidence from an intercultural virtual collaboration between the Netherlands and Japan",
@@ -441,6 +175,580 @@
     "text": "Intertemporal asset pricing models, relating macroeconomic variables to asset returns and the term structure of interest rates, suggest that the term structure (yield curve) contains forecast-enhancing information about the future growth rate of real economic activity. Empirical evidence that the term structure contains information regarding a variety of macroeconomic variables has been presented in the literature over the last two decades. Recent empirical studies on the information content of the yield spread have been conducted using simple linear univariate forecasting models. U.S and G7 data have been found to support a leading association between the term structure of interest rates and changes in the level of future real economic activity. However, many of the econometric models presented in the literature are far from adequate; in particular, several empirical studies of the term structure have not adequately accounted for important explanatory variables. The purpose of the paper is to evaluate the significance of these empirical models. Published empirical research is evaluated in the light of the data used, choice of both dependent and explanatory variables, important omited explanatory variables, type of model chosen, economic hypotheses tested, methods of estimation and calculation of standard errors for inference (including generated regressors), reported descriptive statistics, use of diagnostic tests of auxiliary assumptions, use of nested and non-nested tests and information criteria, and empirical implications.\nKeywords: Asset pricing, Econometric modelling, Interest rates, Term structure, Forecasting"
   },
   {
+    "objectID": "teaching/sem/index.html",
+    "href": "teaching/sem/index.html",
+    "title": "Undergraduate Seminar",
+    "section": "",
+    "text": "Download the Syllabus Download the Study Plan"
+  },
+  {
+    "objectID": "teaching/sem/index.html#this-is-a-research-seminar",
+    "href": "teaching/sem/index.html#this-is-a-research-seminar",
+    "title": "Undergraduate Seminar",
+    "section": "This is a research seminar",
+    "text": "This is a research seminar\nThis seminar course is designed for you to write a research paper on an appropriate research topic of your choice. Potential research areas include finance (financial markets and corporate finance), applied econometrics and other areas of empirical analysis in business."
+  },
+  {
+    "objectID": "teaching/sem/index.html#objectives",
+    "href": "teaching/sem/index.html#objectives",
+    "title": "Undergraduate Seminar",
+    "section": "Objectives",
+    "text": "Objectives\nObjectives include developing research, writing, presentation, communication and planning skills. The overall objective is to learn how to conduct, discuss and present research, and produce a high quality research paper."
+  },
+  {
+    "objectID": "teaching/sem/index.html#preparation",
+    "href": "teaching/sem/index.html#preparation",
+    "title": "Undergraduate Seminar",
+    "section": "Preparation",
+    "text": "Preparation\nStudents will have undertaken appropriate coursework in their area of research interest to prepare for the seminar course. In particular, a good understanding of empirical methods is very important."
+  },
+  {
+    "objectID": "teaching/sem/index.html#pitching-research",
+    "href": "teaching/sem/index.html#pitching-research",
+    "title": "Undergraduate Seminar",
+    "section": "Pitching research",
+    "text": "Pitching research\nWe will use the “Pitching Research” framework developed by Professor Robert Faff of the University of Queensland to organise and develop your research project. Check Professor Faff’s Pitching Research website."
+  },
+  {
+    "objectID": "teaching/sem/index.html#faqs",
+    "href": "teaching/sem/index.html#faqs",
+    "title": "Undergraduate Seminar",
+    "section": "FAQs",
+    "text": "FAQs\n\n\n\n\n\n\nHow do I find a research topic?\n\n\n\n\n\nRead as many research papers as possible in subjects in which you have taken courses. Discuss research with your professors and adviser. Ask your adviser’s opinion on whether your topic ideas are feasilbe, and how they can be improved. Your research question must be clear."
+  },
+  {
+    "objectID": "teaching/pedm/index.html",
+    "href": "teaching/pedm/index.html",
+    "title": "The Psychology of Economic Decision-making",
+    "section": "",
+    "text": "This session will bring economics down to earth and get you thinking about how we think about our world. Three recent winners of the Nobel Prize in Economics, Daniel Kahneman (2002), Robert Shiller (2013) and Richard Thaler (2017), have pioneered the application of behavioural insights from psychology to economic decision-making. Mixing human psychology with a practical understanding of economic incentives and market behaviour, we will explore how understanding human miscalculations can help us make smarter decisions in both our private and professional lives."
+  },
+  {
+    "objectID": "teaching/pedm/index.html#overview",
+    "href": "teaching/pedm/index.html#overview",
+    "title": "The Psychology of Economic Decision-making",
+    "section": "",
+    "text": "This session will bring economics down to earth and get you thinking about how we think about our world. Three recent winners of the Nobel Prize in Economics, Daniel Kahneman (2002), Robert Shiller (2013) and Richard Thaler (2017), have pioneered the application of behavioural insights from psychology to economic decision-making. Mixing human psychology with a practical understanding of economic incentives and market behaviour, we will explore how understanding human miscalculations can help us make smarter decisions in both our private and professional lives."
+  },
+  {
+    "objectID": "teaching/pedm/index.html#objectives",
+    "href": "teaching/pedm/index.html#objectives",
+    "title": "The Psychology of Economic Decision-making",
+    "section": "Objectives",
+    "text": "Objectives\n\nExplore the biases and heuristics that influence how we perceive the world.\n\nUnderstand how these biases and heuristics affect economic and financial decision-making.\nLearn how to make better decisions for ourselves and our clients or stakeholders."
+  },
+  {
+    "objectID": "teaching/it/index.html",
+    "href": "teaching/it/index.html",
+    "title": "International Trade",
+    "section": "",
+    "text": "Download the Syllabus"
+  },
+  {
+    "objectID": "teaching/it/index.html#course-overview",
+    "href": "teaching/it/index.html#course-overview",
+    "title": "International Trade",
+    "section": "Course overview",
+    "text": "Course overview\nThis course surveys a number of major issues in trade theory and policy, as well as empirical tests of trade models, in the light of recent developments in international economics. Through this course, students should become familiar with the theoretical models of international trade, current issues in trade policy, and application of the theory to less developed country economies."
+  },
+  {
+    "objectID": "teaching/ib/index.html",
+    "href": "teaching/ib/index.html",
+    "title": "International Business",
+    "section": "",
+    "text": "Download the Syllabus"
+  },
+  {
+    "objectID": "teaching/ib/index.html#course-overview",
+    "href": "teaching/ib/index.html#course-overview",
+    "title": "International Business",
+    "section": "Course overview",
+    "text": "Course overview\nThis is an introductory course in international business that examines the economic, management and commercial aspects of international businesses. We will take a global perspective, but also emphasise the perspective of Asian firms and doing business in Asia. Working through Asia-relevant case studies about international businesses is a key part of the course."
+  },
+  {
+    "objectID": "teaching/fmw/index.html",
+    "href": "teaching/fmw/index.html",
+    "title": "Financial Markets Workshop",
+    "section": "",
+    "text": "Download the Syllabus"
+  },
+  {
+    "objectID": "teaching/fmw/index.html#course-overview",
+    "href": "teaching/fmw/index.html#course-overview",
+    "title": "Financial Markets Workshop",
+    "section": "Course overview",
+    "text": "Course overview\nThis course will develop students’ skills in applying economic and financial theory to the real time analysis of macroeconomics, financial markets and investment strategy. The course is conducted in a workshop style. The class sessions be a combination of lectures given by me, student presentations and student led discussion. We will develop a strategy for interpreting and forecasting developments in financial markets and important economies, focussing on cycles and trends."
+  },
+  {
+    "objectID": "teaching/fmw/index.html#course-objectives",
+    "href": "teaching/fmw/index.html#course-objectives",
+    "title": "Financial Markets Workshop",
+    "section": "Course objectives",
+    "text": "Course objectives\nBy the end of the course, students should: 1. be familiar with the pattern of economic news that shapes the consensus views on future financial asset returns. 2. be able to differentiate signal from noise in the economic news and data flow. 3. understand the importance and patterns of economic cycles and trends, financial market fluctuations and exogenous shocks. 4. be able to discuss well-reasoned views about what is happening in international financial markets, and be able to present valid counter-views to consensus."
+  },
+  {
+    "objectID": "teaching/er/index.html",
+    "href": "teaching/er/index.html",
+    "title": "Economics Readings in English",
+    "section": "",
+    "text": "Download the Syllabus Download the List of Topics"
+  },
+  {
+    "objectID": "teaching/er/index.html#course-overview",
+    "href": "teaching/er/index.html#course-overview",
+    "title": "Economics Readings in English",
+    "section": "Course overview",
+    "text": "Course overview\nThis course aims to develop the the ability and confidence of non-native English speaking undergraduates to comprehend and discuss economics in English. The course focuses on discussing economics related topics, not teaching English language. You are required to read, present and discuss various economics topics in English."
+  },
+  {
+    "objectID": "teaching/ed/index.html",
+    "href": "teaching/ed/index.html",
+    "title": "Economic Development",
+    "section": "",
+    "text": "Download the Syllabus"
+  },
+  {
+    "objectID": "teaching/ed/index.html#course-overview",
+    "href": "teaching/ed/index.html#course-overview",
+    "title": "Economic Development",
+    "section": "Course overview",
+    "text": "Course overview\nThis course covers the microfoundations of development, examining theoretical and empirical issues applicable in less-developed country economies. Topics surveyed will include current issues, agriculture and rural development, education, human capital investment, employment and labour markets, population, poverty alleviation, health, credit and financial markets, dealing with risk, technological change and the design and evaluation of development projects."
+  },
+  {
+    "objectID": "teaching/cbwcb/index.html",
+    "href": "teaching/cbwcb/index.html",
+    "title": "Crossing Borders Without Crossing Borders",
+    "section": "",
+    "text": "Download the Syllabus Download the Course Flyer"
+  },
+  {
+    "objectID": "teaching/cbwcb/index.html#course-overview",
+    "href": "teaching/cbwcb/index.html#course-overview",
+    "title": "Crossing Borders Without Crossing Borders",
+    "section": "Course overview",
+    "text": "Course overview\nAIU students will work online on a six-week business case project in international teams with students from HAN University of Applied Sciences, the Netherlands, with instructors from both universities. Dr. Ingrid Van Rompay-Bartels from HAN and Dr. Clinton Watkins from AIU will run the course.\nThe business case addresses the role and importance of culture in marketing communication related to consumer product promotion and Sustainable Development Goals. How do large international firms communicate their commitment to sustainable development goals while promoting their products in different countries? What role does culture play in their adaptation of their messaging and marketing across countries?\nFor example, how do firms in different countries promote their commitment to reducing plastics pollution?\nStudents will work through a series of individual and teamwork guided tasks and reflection. that stimulate intercultural awareness in a business setting and build the business case. An important component of this course is boosting students’ cultural competence and ability to work effectively in international cross-cultural teams in a business setting."
+  },
+  {
+    "objectID": "teaching/cbwcb/index.html#reasons-to-take-this-course",
+    "href": "teaching/cbwcb/index.html#reasons-to-take-this-course",
+    "title": "Crossing Borders Without Crossing Borders",
+    "section": "Reasons to take this course",
+    "text": "Reasons to take this course\n\nUnderstand the importance of cultural competence (intercultural knowledge, skills, awareness and attitudes) in effective cross-border teamwork in a business setting.\nLearn about the influence culture has on their actions and on actions of others, and how to adjust behaviour to enhance the quality of work in a culturally diverse team.\nUnderstand the role of culture in marketing communication, theories and concepts on the nature of culture and cultural differences.\nLearn about the United Nations Sustainable Development Goals (SDGs) as they pertain to business, materiality under different approaches and issues such as greenwashing."
+  },
+  {
+    "objectID": "teaching/cbwcb/index.html#faqs",
+    "href": "teaching/cbwcb/index.html#faqs",
+    "title": "Crossing Borders Without Crossing Borders",
+    "section": "FAQs",
+    "text": "FAQs\n\n\n\n\n\n\nWhat will we do in class?\n\n\n\n\n\nClasses will be held jointly for students in Japan and the Netherlands. The sessions will include lectures plus individual and teamwork tasks. Students will be mentored by the instructors during the individual and teamwork tasks.\n\n\n\n\n\n\n\n\n\nWho will be in my group for the teamwork?\n\n\n\n\n\nGroups will include about five or six students from AIU and HAN.\n\n\n\n\n\n\n\n\n\nHow will we meet for the course?\n\n\n\n\n\nWe will use MS Teams for this course. All teamwork should be done during the class sessions."
+  },
+  {
+    "objectID": "teaching/cbwcb/index.html#published-research",
+    "href": "teaching/cbwcb/index.html#published-research",
+    "title": "Crossing Borders Without Crossing Borders",
+    "section": "Published Research",
+    "text": "Published Research\nResearch on Intercultural Virtual Collaboration (IVC) based on the course can be found here."
+  },
+  {
+    "objectID": "teaching/cbwcb/index.html#media-coverage",
+    "href": "teaching/cbwcb/index.html#media-coverage",
+    "title": "Crossing Borders Without Crossing Borders",
+    "section": "Media Coverage",
+    "text": "Media Coverage\nRead about Dr. Ingrid Van Rompay-Bartels’ teaching and research work related to this course."
+  },
+  {
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Clinton Watkins",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nVenue\n\n\nLocation\n\n\n\n\n\n\nDecember 2024\n\n\nModelling Japanese firms’ dividend payout policies using new data\n\n\n2024 Meeting of the World Finance & Banking Symposium, Abu Dhabi School of Management\n\n\nAbu Dhabi, United Arab Emirates\n\n\n\n\nDecember 2024\n\n\nComments on: Factor momentum in commodity futures markets by Yiyan Qian, Ying Jiang and Xiaoquan Liu\n\n\n2024 Meeting of the World Finance & Banking Symposium, Abu Dhabi School of Management\n\n\nAbu Dhabi, United Arab Emirates\n\n\n\n\nNovember 2024\n\n\nMultinationality and cash holdings: Evidence from Japan\n\n\nResearch Showcase (Online), Akita International University\n\n\nAkita, Japan\n\n\n\n\nNovember 2024\n\n\nMultinationality and cash holdings: Evidence from Japan\n\n\n6th Nippon Finance Association Fall Conference, Kyushu University\n\n\nFukuoka, Japan\n\n\n\n\nNovember 2024\n\n\nComments on: How does currency depreciation affect bank lending? Impact of bank net foreign exchange position by Cristeta Bagsic, Veronica Bayangos, Ramon Moreno, Hazel Parcon-Santos\n\n\n19th East Asia Economic Association International Conference, Thammasat University\n\n\nBangkok, Thailand\n\n\n\n\nNovember 2024\n\n\nMultinationality and cash holdings: Evidence from Japan\n\n\n19th East Asia Economic Association International Conference, Thammasat University\n\n\nBangkok, Thailand\n\n\n\n\nSeptember 2024\n\n\nMultinationality and cash holdings: Evidence from Japan\n\n\n1st Modern Finance Conference, Kozminski University\n\n\nWarsaw, Poland\n\n\n\n\nSeptember 2024\n\n\nComments on: Monetary Policy and Inflation: Are Central Banks Failing? by Michael Lloyd and Viara Bojkova\n\n\n1st Modern Finance Conference, Kozminski University\n\n\nWarsaw, Poland\n\n\n\n\nDecember 2023\n\n\nCash holdings and corporate culture in Japan\n\n\nWorld Finance and Banking Symposium, Vilnius University\n\n\nVilnius, Lithuania\n\n\n\n\nDecember 2023\n\n\nDiscussant for ‘The Impact of Currency Carry Trade Activity on the Transmission of Monetary Policy’ by Maximilian Boeck, Alina Steshkova, and Thomas O. Zörner\n\n\nWorld Finance and Banking Symposium, Vilnius University\n\n\nVilnius, Lithuania\n\n\n\n\nFebruary 2023\n\n\nGuest lectures for undergraduate students at HAN\n\n\nInternational School of Business  HAN University of Applied Sciences\n\n\nArnhem, the Netherlands\n\n\n\n\nAugust 2022\n\n\nDoes Firm-Level Productivity Predict Stock Returns?\n\n\nAccounting, Economics and Finance Seminar Series,  Curtin Business School, Curtin University\n\n\nPerth, Australia\n\n\n\n\nNovember 2021\n\n\nDiscussant comments on: ‘The Economic Consequences of Firms’ Commitment to ESG Policies’ by Dan Amiram, Ilanit Gavious, Chao Jin, Xinlei Li\n\n\nThe Fourth Conference on CSR, the Economy and Financial Markets\n\n\nTokyo, Japan (online)\n\n\n\n\nOctober 2021\n\n\nDoes Firm-Level Productivity Predict Stock Returns?\n\n\nGlobal Business Program Brown Bag Lunch, Akita International University\n\n\nOnline\n\n\n\n\nOctober 2020\n\n\nStudy of a Small and Innovative International Trading Firm\n\n\nGuest lecture for MKW 2431 BUSINESS MARKETING  Monash University Malaysia\n\n\nOnline\n\n\n\n\nSeptember 2020\n\n\nThe Changing Role of Foreign Investors in Tokyo Stock Price Formation\n\n\nWorld Finance Conference 2020  University of Malta\n\n\nOnline\n\n\n\n\nNovember 2019\n\n\nThe Changing Role of Foreign Investors in Tokyo Stock Price Formation\n\n\nNippon Finance Association 1st Fall Conference  Osaka University\n\n\nOsaka, Japan\n\n\n\n\nDecember 2018\n\n\nWho Influences the Fundamental Value of Commodity Futures in Japan?\n\n\n31st Australasian Banking and Finance Conference\n\n\nSydney, Australia\n\n\n\n\nDecember 2018\n\n\nDiscussant comments on ‘Hurdle Rate, the Zero Lower Bound and investors Active Risk Taking’ by Woo Sau Leung and Zhongyan Zhu\n\n\n2nd INFINITI Conference on International Finance Asia-Pacific  University of Sydney\n\n\nSydney, Australia\n\n\n\n\nMay 2018\n\n\nWho Influences the Fundamental Value of Commodity Futures in Japan?\n\n\nInstitute for Advanced Study Focused Program on Time Series Analysis of Higher Moments and Distributions of Financial Data (Invited paper)  Hong Kong University of Science and Technology\n\n\nHong Kong, China\n\n\n\n\nDecember 2017\n\n\nIntraday Seasonality in Efficiency, Liquidity, Volatility and Volume: Platinum and Gold Futures in Tokyo and New York\n\n\n30th Australasian Banking and Finance Conference\n\n\nSydney, Australia\n\n\n\n\nJanuary 2015\n\n\nEconometric Modelling of Non-ferrous Metals Prices\n\n\nRokko Forum  Graduate School of Economics, Kobe University\n\n\nKobe, Japan\n\n\n\n\nOctober 2013\n\n\nA lesson from the financial crisis for business management\n\n\nSeminar, Akita International University\n\n\nAkita, Japan\n\n\n\n\nApril 2013\n\n\nA Macro View on Global Financial Markets\n\n\nWaseda University Finance Alumni Association Practitioner Course, Waseda University MBA Program\n\n\nTokyo, Japan\n\n\n\n\nApril 2012\n\n\nA Macro View on Global Financial Markets\n\n\nWaseda University Finance Alumni Association Practitioner Course, Waseda University MBA Program\n\n\nTokyo, Japan\n\n\n\n\nMay 2011\n\n\nA Macro View on Global Financial Markets\n\n\nWaseda University Finance Alumni Association Practitioner Course, Waseda University MBA Program\n\n\nTokyo, Japan\n\n\n\n\nDecember 2010\n\n\nOutlook for the US dollar in 2011\n\n\nState Administration of Foreign Exchange Global Perspective 2011 Conference\n\n\nSanya, Hainan, China\n\n\n\n\nMay 2010\n\n\nA Macro View on Global Financial Markets\n\n\nWaseda University Finance Alumni Association Practitioner Course, Waseda University MBA Program\n\n\nTokyo, Japan\n\n\n\n\nMay 2009\n\n\nA Macro View on Global Financial Markets\n\n\nWaseda University Finance Alumni Association Practitioner Course, Waseda University MBA Program\n\n\nTokyo, Japan\n\n\n\n\nJuly 2007\n\n\nUsing financial market information in monetary policy: some examples from New Zealand\n\n\nBank for International Settlements and Bank Negara Malaysia Conference on Financial Market Developments and their Implications for Monetary Policy\n\n\nKuala Lumpur, Malaysia\n\n\n\n\nJune 2007\n\n\nComments on ‘A Yield Curve Perspective on Uncovered Interest Parity’ by Leo Kripner\n\n\nNew Zealand Association of Economists Annual Conference\n\n\nChristchurch, New Zealand\n\n\n\n\nDecember 2005\n\n\nHave aluminium and copper futures markets become more volatile over time?\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 2005  University of Melbourne\n\n\nMelbourne, Australia\n\n\n\n\nSeptember 2005\n\n\nInvestment and Natural Gas Markets\n\n\nProject Financing Session, APEC Gas Forum (APGAS)\n\n\nPerth, Australia\n\n\n\n\nNovember 2003\n\n\nRecent financial market developments: a New Zealand dollar story\n\n\nAustralia New Zealand Chamber of Commerce in Japan Finance Committee Roundtable\n\n\nTokyo, Japan\n\n\n\n\nJuly 2003\n\n\nCorrelation in volatility among related commodity markets\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 2003\n\n\nTownsville, Australia\n\n\n\n\nJuly 2003\n\n\nClimate change and trade relations between Australia and Japan\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 2003\n\n\nTownsville, Australia\n\n\n\n\nApril 2003\n\n\nBuilding confidence in markets\n\n\nFifth Annual Emissions Trading Summit\n\n\nSydney, Australia\n\n\n\n\nDecember 2002\n\n\nCooperative Research Centres and technology commercialisation in Australia\n\n\nEcotechnology System Laboratory Annual Research Conference\n\n\nYokohama, Japan\n\n\n\n\nNovember 2002\n\n\nVirtual emissions trading simulation workshop\n\n\nEmissions Trading Asia Pacific 2002\n\n\nSydney, Australia\n\n\n\n\nNovember 2002\n\n\nAn overview of Australia’s greenhouse response\n\n\nCapacity Building Workshop for the Ministry of Non-Conventional Energy Sources, Government of India\n\n\nPerth, Australia\n\n\n\n\nAugust 2002\n\n\nImplications for our trading relationship with Japan and others\n\n\nAustralasian Emissions Trading Forum Seminar: Dealing with Kyoto and Non-Kyoto Markets\n\n\nMelbourne, Australia\n\n\n\n\nJune 2002\n\n\nVolatility of a market index and its components: an application to non-ferrous metals markets\n\n\nComputational Economics and Finance 2002\n\n\nAix-en-Provence, France\n\n\n\n\nJune 2002\n\n\nModelling time-varying volatility in non-ferrous metals markets\n\n\nInternational Environmental Modelling and Software Society Conference\n\n\nLugano, Switzerland\n\n\n\n\nJune 2002\n\n\nEstimating tradeable certificates created by small-scale renewable energy systems\n\n\nInternational Environmental Modelling and Software Society Conference\n\n\nLugano, Switzerland\n\n\n\n\nApril 2002\n\n\nAn overview of emissions trading systems\n\n\nCommercialising Sustainable Energy 2002\n\n\nSydney, Australia\n\n\n\n\nApril 2002\n\n\nVirtual emissions trading simulation workshop\n\n\nCommercialising Sustainable Energy 2002\n\n\nSydney, Australia\n\n\n\n\nJanuary 2002\n\n\nAn overview of Australia’s greenhouse response\n\n\nCapacity Building Workshop for the Ministry of Non-Conventional Energy Sources, Government of India\n\n\nPerth, Australia\n\n\n\n\nDecember 2001\n\n\nCarbon constraints, emissions trading and the macroeconomy\n\n\nEconomic Research Department Seminar Series  Reserve Bank of Australia\n\n\nSydney, Australia\n\n\n\n\nDecember 2001\n\n\nForecasting commodity market volatility in the presence of extreme observations\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 2001  Australian National University\n\n\nCanberra, Australia\n\n\n\n\nDecember 2001\n\n\nCarbon emissions markets: a simulation approach\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 2001  Australian National University\n\n\nCanberra, Australia\n\n\n\n\nSeptember 2001\n\n\nDevelopments in emissions trading\n\n\nRegional Timber Industry Association Seminar\n\n\nAlbany, Australia\n\n\n\n\nJuly 2001\n\n\nVolatility of a market index and its components: an application to commodity markets\n\n\nFar Eastern Meeting of the Econometrics Society 2001\n\n\nKobe, Japan\n\n\n\n\nJune 2001\n\n\nHarnessing green energy opportunities in Western Australia\n\n\nWestern Australian Power Conference\n\n\nPerth, Australia\n\n\n\n\nApril 2001\n\n\nSurvey of electrification needs and local socioeconomic conditions\n\n\nProvincial Electrification Authority Island Electrification Project Capacity Building Workshop\n\n\nPerth, Australia\n\n\n\n\nDecember 2000\n\n\nVolatility of a market index and its components: an application to commodity markets\n\n\nQuantitative Methods in Finance & Bernoulli Society Conference 2000\n\n\nSydney, Australia\n\n\n\n\nDecember 2000\n\n\nEconomic evaluation of rural electrification projects\n\n\nProvincial Electrification Authority Island Electrification Project Workshop\n\n\nBangkok, Thailand\n\n\n\n\nJuly 2000\n\n\nEstimating long run pricing models for metals futures contracts\n\n\nApplied Econometrics Association Industrial Econometrics Conference  University of Luxembourg\n\n\nLuxembourg\n\n\n\n\nDecember 1999\n\n\nEstimating long run pricing models for copper futures contracts\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 1999  University of Waikato\n\n\nHamilton, New Zealand\n\n\n\n\nJuly 1999\n\n\nHybrid renewable energy system and village workshop in Kemiri, Irian Jaya\n\n\nInternational Greenhouse Partnership Office - Forum Secretariat Workshop on the Clean Development Mechanism\n\n\nNadi, Fiji\n\n\n\n\nDecember 1997\n\n\nPricing in futures and forward markets for non-ferrous metals: an empirical critique\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 1997  University of Tasmania\n\n\nHobart, Australia\n\n\n\n\nNovember 1995\n\n\nThe term structure of interest rates and economic activity: an empirical critique\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 1995  University of Newcastle\n\n\nNewcastle, Australia\n\n\n\n\nNovember 1995\n\n\nHuman capital and screening theories of education: an empirical critique\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 1995  University of Newcastle, Australia\n\n\nNewcastle, Australia\n\n\n\n\nAugust 1994\n\n\nThe term structure of interest rates and economic activity: an empirical critique\n\n\nFifth International Conference on Statistical Methods for the Environmental Sciences and Fourth General Meeting of the International Environmetrics Society\n\n\nBurlington, Ontario, Canada\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/2013-aiu/index.html",
+    "href": "talks/2013-aiu/index.html",
+    "title": "A lesson from the financial crisis for business management",
+    "section": "",
+    "text": "Download pdf"
+  },
+  {
+    "objectID": "publications/2024-multinationality-and-cash-holdings-ssrn/index.html",
+    "href": "publications/2024-multinationality-and-cash-holdings-ssrn/index.html",
+    "title": "Multinationality and cash holdings: Evidence from Japan",
+    "section": "",
+    "text": "Abstract: Investors frequently criticise Japanese corporations for excessive cash holdings. On average and on aggregate, cash holdings have increased over the last decade. However, there is substantial variation in cash holdings within and between firms. At the same time, many large Japanese firms’ businesses have become more international. This research examines how international factors influence firms’ cash holdings via the precautionary motive – through overseas sales, foreign ownership, and cultural differences between the parent corporation and its overseas affiliates. Random effects within-between regression is used to jointly estimate the relationships within firms over time and between firms in the cross-section. Internationalisation through overseas sales has positive within and between firm relationships with cash holdings, but foreign shareholding is associated with lower cash holdings in the time series. Positive within-firm effects dominate the relationship between cash holdings and cultural heterogeneity.\nKeywords: Cash holdings, Cultural heterogeneity, Foreign shareholding, Internationalisation, Japanese corporation, Multinationals, Overseas sales, Random effects within-between regression\n\n\n\n\nThe cash holdings of Japanese listed firms have increased over time."
+  },
+  {
+    "objectID": "publications/2022-pbfj-Does-firm-level-productivity-predict-stock-returns-Japan/index.html",
+    "href": "publications/2022-pbfj-Does-firm-level-productivity-predict-stock-returns-Japan/index.html",
+    "title": "Does firm-level productivity predict stock returns?",
+    "section": "",
+    "text": "Abstract: Contrary to the findings of previous U.S. studies, we show that the firm-level total factor productivity (TFP) of Japanese manufacturers positively predicts their future stock returns in the cross-section when controlling for relevant risk factors, including those of Fama and French (2015). Risks related to intangible expenditure, primarily those for research and development (R&D) and personnel, explain a substantial fraction of the predictive power of firm-level TFP, while bankruptcy, macroeconomic, and capital expenditure risks do not. More productive firms trade at a significant premium to less productive firms. This premium compensates investors for risks associated with innovation and human and organizational capital formation.\nKeywords: Firm-level productivity, Total factor productivity (TFP), Cross-section of returns, Intangibles, Research and development (R&D), Organizational capital, Japanese stocks\nSummary:\n\nWe show that firm-level TFP positively predicts future stock returns in Japan.\nThis result is robust even when controlling for relevant risk factors, including those of Fama and French (2015).\nThis finding is in contrast to those of previous studies in the U.S.\nRisks related to intangible expenditure, primarily those for R&D and personnel, explain a substantial fraction of the predictive power of TFP.\nThe premium on high TFP stocks compensates investors for risks associated with innovation and human and organizational capital formation.\n\n\n\n\n\nTFP has explanatory power for the future returns of Japanese manufacturing firms beyond the accepted stock risk factors."
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Clinton Watkins",
+    "section": "",
+    "text": "Forecasting recessions with the yield curve\n\n\n\n\n\n\nR\n\n\nForecasting\n\n\nTerm structure\n\n\nYield curve\n\n\nRecession\n\n\n\nA note on extracting information about future reessions from the term structure of interest rates including R code and analysis of US data.\n\n\n\n\n\n1 May 2024\n\n\n\n\n\n\n\n\n\n\n\n\nGeneralised impulse response function in R.\n\n\n\n\n\n\nR\n\n\nEconometrics\n\n\n\nR code for creating generalised impulse response functions (GIRF) from VARS package outputs.\n\n\n\n\n\n25 May 2021\n\n\n\n\n\n\n\n\n\n\n\n\nConway’s GOL\n\n\n\n\n\n\nR\n\n\n\n\n\n\n\n\n\n20 May 2021\n\n\n\n\n\n\n\n\n\n\n\n\nSummary of our commodity market microstructure research on the JPX website.\n\n\n\n\n\n\ncommodities\n\n\nJPX\n\n\nMedia\n\n\n\nSummary of our commodity market microstructure research on the Japan Exchange Group website.\n\n\n\n\n\n1 May 2020\n\n\n\n\n\n\n\n\n\n\n\n\nSummary of our intraday commodity seasonality research on the JPX website.\n\n\n\n\n\n\ncommodities\n\n\nJPX\n\n\nMedia\n\n\n\nSummary of our intraday commodity seasonality research on the Japan Exchange Group website.\n\n\n\n\n\n1 April 2020\n\n\n\n\n\n\n\n\n\n\n\n\nTimes Higher Education article\n\n\n\n\n\n\nUniversity rankings\n\n\nMedia\n\n\n\nMy co-author Michael McAleer was interviewed in connection with our article on university rankings.\n\n\n\n\n\n21 November 2019\n\n\n\n\n\n\n\n\n\n\n\n\nNikkei Newspaper article on commodity derivative research at Kobe University\n\n\n\n\n\n\ncommodities\n\n\nNikkei\n\n\nMedia\n\n\n\n\n\n\n\n\n\n5 June 2019\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2021-generalised-impulse-response-function-R/index.html",
+    "href": "posts/2021-generalised-impulse-response-function-R/index.html",
+    "title": "Generalised impulse response function in R.",
+    "section": "",
+    "text": "This function is a replacement for the vars package irf function, , that estimates Pesaran and Shin (1998) orthogonalised and generalised IRFs and is intended to be slotted into the vars package boot function, , to bootstrap confidence intervals for IRFs.\nI referred to the Matlab code posted by Ken Nyholm.\n\n# orthog = FALSE gives GIRF.\n\npsGIRF &lt;- function(x, n.ahead = 20, cumulative = TRUE, orthog = FALSE){\n\n  y.names &lt;- colnames(x$y)\n  impulse &lt;- y.names\n  response &lt;- y.names\n  \n  # Ensure n.ahead is an integer\n  n.ahead &lt;- abs(as.integer(n.ahead))\n  \n  # Create arrays to hold calculations     \n  # [1:nlags, 1:nvariables, shocked variable ] \n  \n  IRF_o  = array(data = 0, dim = c(n.ahead,x$K,x$K),\n                 dimnames = list(NULL,y.names,y.names))       \n  IRF_g  = array(data = 0, dim = c(n.ahead,x$K,x$K),\n                 dimnames = list(NULL,y.names,y.names))\n  IRF_g1 = array(data = 0, dim = c(n.ahead,x$K,x$K))\n  \n  # Estimation of orthogonalised and generalised IRFs\n  SpecMA &lt;- Phi(x, n.ahead)\n  params &lt;- ncol(x$datamat[, -c(1:x$K)])\n  sigma.u &lt;- crossprod(resid(x))/(x$obs - params)\n  P &lt;- t(chol(sigma.u))\n  sig_jj &lt;- diag(sigma.u)\n  \n  for (jj in 1:x$K){\n    indx_      &lt;- matrix(0,x$K,1)\n    indx_[jj,1] &lt;- 1\n    \n    for (kk in 1:n.ahead){  #kk counts the lag\n      \n      IRF_o[kk, ,jj] &lt;- SpecMA[, ,kk]%*%P%*%indx_  # Peseran-Shin eqn 7 (OIRF)\n      \n      IRF_g1[kk, ,jj] &lt;- SpecMA[, ,kk]%*%sigma.u%*%indx_\n      IRF_g[kk, ,jj] &lt;- sig_jj[jj]^(-0.5)*IRF_g1[kk, ,jj]  # Peseran-Shin eqn 10 (GIRF)\n      \n    }\n  }\n  \n  if(orthog==TRUE){\n    irf &lt;- IRF_o\n  } else if(orthog==FALSE) {\n    irf &lt;- IRF_g\n  } else {\n    stop(\"\\nError! Orthogonalised or generalised IRF?\\n\")\n  }\n  \n  idx &lt;- length(impulse)\n  irs &lt;- list()\n  for (ii in 1:idx) {\n    irs[[ii]] &lt;- matrix(irf[1:(n.ahead), response, impulse[ii]], nrow = n.ahead)\n    colnames(irs[[ii]]) &lt;- response\n    if (cumulative) {\n      if (length(response) &gt; 1) \n        irs[[ii]] &lt;- apply(irs[[ii]], 2, cumsum)\n      if (length(response) == 1) {\n        tmp &lt;- matrix(cumsum(irs[[ii]]))\n        colnames(tmp) &lt;- response\n        irs[[ii]] &lt;- tmp\n      }\n    }\n  }\n  names(irs) &lt;- impulse\n  result &lt;- irs\n  return(result)\n \n}\n\n\n\n\nAn example of the output from our recent article"
+  },
+  {
+    "objectID": "posts/2020-Japan-Exchange-Group-intraday-commodity-seasonality/index.html",
+    "href": "posts/2020-Japan-Exchange-Group-intraday-commodity-seasonality/index.html",
+    "title": "Summary of our intraday commodity seasonality research on the JPX website.",
+    "section": "",
+    "text": "Read a summary (in Japanese) of a recent research project “Intraday seasonality in efficiency, liquidity, volatility and volume: Platinum and gold futures in Tokyo and New York” with Ken Iwatsubo and Tao Xu on the Japan Exchange Futures and Options Report website."
+  },
+  {
+    "objectID": "posts/2019-times-higher-edication-internationalisation/index.html",
+    "href": "posts/2019-times-higher-edication-internationalisation/index.html",
+    "title": "Times Higher Education article",
+    "section": "",
+    "text": "My co-author Michael McAleer was interviewed by Times Higher Education reporter Ellie Bothwell in connection with our article “Size, internationalization, and university rankings: evaluating and predicting Times Higher Education (THE) data for Japan”.\nYou can read the article published on-line on 21 November 2019 on the THE website."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Clinton Watkins",
+    "section": "",
+    "text": "Clinton Watkins PhD Professor (Finance) Director, Global Business Program Faculty of International Liberal Arts Akita International University Akita-city, Japan\n\n\n\nFinancial Markets & Corporate Finance\nMacroeconomics & Monetary Policy\nInvestment Management & Banking\nQuantitative Modelling & Analytics\nInternational Business\n\n\nワトキンス クリントン 教授 (金融) グローバル・ビジネス領域長 国際教養学部 国際教養大学 秋田市雄和椿川字奥椿岱"
+  },
+  {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "Clinton Watkins",
+    "section": "",
+    "text": "I am Professor (Finance) and Director of the Global Business Program at Akita International University (AIU) in Japan. My research focusses on the analysis of financial market data, primarily the stock and commodities markets at the moment. I teach undergraduate courses in finance and business. I’m also an adviser for Acumain Inc., a San Francisco-based investment management startup.\nPreviously, I held Associate Professor positions in Graduate School of Economics at Kobe University and at AIU.\nPrior to academia, I was a Director at BlackRock Japan, formerly with Barclays Global Investors Japan. I produced investment signal research and strategy for a large multi-asset class systematic global macro hedge fund. I worked closely with the Global Market Strategy Group teams in San Franciso, London and Sydney.\nBefore moving to Japan I was an Adviser at the Reserve Bank of New Zealand in Wellington. I worked in the Markets Analysis and Research team, providing guidance on the conduct of monetary and financial stability policy from a financial markets perspective. At the Bank, I also helped coordinate EMEAP (high-level interaction between Asia-Pacific central banks) and manage the Professorial Fellowship program.\nEven before that, I worked in emissions trading, energy economics, renewable energy, economic development, international trade and held management positions in businesses in Australia.\nMy PhD thesis is on the empirical finance of non-ferrous metals markets and was completed at the University of Western Australia under the supervision of prominent econometrician Professor Michael McAleer.\n\n\n\n\n\n\n\n\n\ne-mail"
+  },
+  {
+    "objectID": "about/index.html#bio-sketch",
+    "href": "about/index.html#bio-sketch",
+    "title": "Clinton Watkins",
+    "section": "",
+    "text": "I am Professor (Finance) and Director of the Global Business Program at Akita International University (AIU) in Japan. My research focusses on the analysis of financial market data, primarily the stock and commodities markets at the moment. I teach undergraduate courses in finance and business. I’m also an adviser for Acumain Inc., a San Francisco-based investment management startup.\nPreviously, I held Associate Professor positions in Graduate School of Economics at Kobe University and at AIU.\nPrior to academia, I was a Director at BlackRock Japan, formerly with Barclays Global Investors Japan. I produced investment signal research and strategy for a large multi-asset class systematic global macro hedge fund. I worked closely with the Global Market Strategy Group teams in San Franciso, London and Sydney.\nBefore moving to Japan I was an Adviser at the Reserve Bank of New Zealand in Wellington. I worked in the Markets Analysis and Research team, providing guidance on the conduct of monetary and financial stability policy from a financial markets perspective. At the Bank, I also helped coordinate EMEAP (high-level interaction between Asia-Pacific central banks) and manage the Professorial Fellowship program.\nEven before that, I worked in emissions trading, energy economics, renewable energy, economic development, international trade and held management positions in businesses in Australia.\nMy PhD thesis is on the empirical finance of non-ferrous metals markets and was completed at the University of Western Australia under the supervision of prominent econometrician Professor Michael McAleer.\n\n\n\n\n\n\n\n\n\ne-mail"
+  },
+  {
+    "objectID": "about/index.html#links",
+    "href": "about/index.html#links",
+    "title": "Clinton Watkins",
+    "section": "Links",
+    "text": "Links\n Contact me   Curriculum Vitae  LinkedIn\n\n  Google Scholar   RePEc   ORCID  ResearchMap   ResearchGate   SSRN\n Global Business Research Group  AIU Researcher Database"
+  },
+  {
+    "objectID": "about/index.html#practitioner-experience",
+    "href": "about/index.html#practitioner-experience",
+    "title": "Clinton Watkins",
+    "section": "Practitioner experience",
+    "text": "Practitioner experience\n\nFinancial Markets & Corporate Finance\nInvestment Management & Banking\nMacroeconomics, Monetary Policy & Financial Stabilty\nQuantitative Modelling & Analytics\nRenewable Energy, Emissions Trading & Energy Economics\nDevelopment Economics\nInternational Business & Trade\nSmall Business Management"
+  },
+  {
+    "objectID": "about/index.html#academic-research-interests",
+    "href": "about/index.html#academic-research-interests",
+    "title": "Clinton Watkins",
+    "section": "Academic research interests",
+    "text": "Academic research interests\n\nCommodity, Equity & Foreign Exchange Modelling\nMarket Microstructure & Efficiency\nCorporate Finance, Factor Models\nRisk\nQuantitative Modelling & Analytics, Applied Econometrics\nIntercultural Competencies in Business & Education"
+  },
+  {
+    "objectID": "about/index.html#consulting",
+    "href": "about/index.html#consulting",
+    "title": "Clinton Watkins",
+    "section": "Consulting",
+    "text": "Consulting\nI have worked as a consultant in various areas of finance, including investment strategy & research, investment management, banking & technology, data science, quantitative modelling and research report writing. Please   Contact me to discuss my services."
+  },
+  {
+    "objectID": "about/index.html#academic-genealogy",
+    "href": "about/index.html#academic-genealogy",
+    "title": "Clinton Watkins",
+    "section": "Academic Genealogy",
+    "text": "Academic Genealogy\nMy ‘academic genealogy’ goes back to Robert Solow and Wassily Leontief."
+  },
+  {
+    "objectID": "about/index.html#tools",
+    "href": "about/index.html#tools",
+    "title": "Clinton Watkins",
+    "section": "Tools",
+    "text": "Tools\nI do virtually all of my work using R, RStudio, Quarto, LaTeX, JabRef and Joplin."
+  },
+  {
+    "objectID": "about/index.html#hobbies",
+    "href": "about/index.html#hobbies",
+    "title": "Clinton Watkins",
+    "section": "Hobbies",
+    "text": "Hobbies\nI am also interested in photography using film cameras and making prints in the darkroom , as well as sailing and cycling, especially cycling in snow.\nSometimes I like to run as long as there is some walking involved. I’ve joined some events including the Akita Trail Running Festival (mid course: 2023 & 2024), Tazawako Marathon (half: 2023 & 2023), Yamanakako Marathon (half:2023 & 2024), Dalian Marathon (half, 2018), Kochi Ryoma Marathon (full, 2018), Naha Marathon (2019 failed!), Iwakuni Road Race (2012), Kouzushima Aquathlon (2016 to 2019), Izu-Oshima Marathon (10km: 2020)."
+  },
+  {
+    "objectID": "contact/index.html",
+    "href": "contact/index.html",
+    "title": "Clinton Watkins",
+    "section": "",
+    "text": "Loading…"
+  },
+  {
+    "objectID": "posts/2019-nikkei-newspaper-commodity-research-kobe/nikkei.html",
+    "href": "posts/2019-nikkei-newspaper-commodity-research-kobe/nikkei.html",
+    "title": "Nikkei Newspaper article on commodity derivative research at Kobe University",
+    "section": "",
+    "text": "Nikkei Newspaper article on commodity derivative research at Kobe University.\nNikkei Newspaper Staff Writer Shuhei Yamamoto came to Kobe University to interview Kentaro Iwatsubo, Yasuo Takatsuki and myself about our work on commodity derivatives.\nYou can find the article about our work published 25 June 2019 in the Nikkei or by copying this URL: https://www.nikkei.com/article/ DGXMZO46496130U9A620C1000000/"
+  },
+  {
+    "objectID": "posts/2020-Japan-Exchange-Group-commodity-market-microstructure/index.html",
+    "href": "posts/2020-Japan-Exchange-Group-commodity-market-microstructure/index.html",
+    "title": "Summary of our commodity market microstructure research on the JPX website.",
+    "section": "",
+    "text": "Read a summary (in Japanese) of a recent research project “Who influences the fundamental value of commodity futures in Japan?” with Ken Iwatsubo on the Japan Exchange Futures and Options Report website."
+  },
+  {
+    "objectID": "posts/2021-conway-GOL/index.html",
+    "href": "posts/2021-conway-GOL/index.html",
+    "title": "Conway’s GOL",
+    "section": "",
+    "text": "Here on R Bloggers is some code simulating Conway’s Game of Life. The code produces the animated gif above that shows the evolution of a pattern determined only by its initial conditions."
+  },
+  {
+    "objectID": "posts/20240501-termstructure/index.html",
+    "href": "posts/20240501-termstructure/index.html",
+    "title": "Forecasting recessions with the yield curve",
+    "section": "",
+    "text": "I’ve always been interested in extracting information from financial prices and yields. Forecasting recessions with the yield curve develops a model using publicly available interest rate data to forecast the probability of recession in the United States. This has been topical recently as markets attempt to forecast the impact of tighter monetary policy by the US Fed.\nAt present, the yield curve suggests around a 0.5 probability of a recession 6 months ahead. This is a little higher than the probabilities indicated around the Lehman shock and in the early 2000s."
+  },
+  {
+    "objectID": "publications/2007-bnm-financial-market-information-monetary-policy/index.html",
+    "href": "publications/2007-bnm-financial-market-information-monetary-policy/index.html",
+    "title": "Using financial market information in monetary policy: some examples from New Zealand",
+    "section": "",
+    "text": "Keywords: Financial markets, Monetary policy, Information extraction, Analytical tools\nSummary: Central bankers have long recognised that financial markets contain useful information for macroeconomic surveillance and the conduct of monetary policy. Financial markets provide a valuable window for timely information on (domestic and global) economic and financial conditions. This is due to the vast amount of information aggregated by markets, to their forward looking nature, and to the fact that future asset returns are sensitive to economic conditions. Central bankers also pay close regard to financial markets because certain key markets are important initial linkages in the monetary policy transmission mechanism in many economies."
+  },
+  {
+    "objectID": "publications/2024-Assessing-the-Impact-of-IVC/index.html",
+    "href": "publications/2024-Assessing-the-Impact-of-IVC/index.html",
+    "title": "Assessing the Impact of Intercultural Virtual Collaboration on Global Citizenship Education",
+    "section": "",
+    "text": "Abstract: The development of the capabilities necessary to foster global citizenship in undergraduate university students is an important goal of many higher education institutions. We assess the impact of intercultural virtual collaboration (IVC) courses on the three key competencies of students – collaborative skills, ethical and social responsibility, and intercultural proficiency – that underpin global citizenship (GC). We analyse pre- and post-course test data related to the learning goals of three IVCs between the universities in the Netherlands and Japan, Spain and the USA, respectively. Using one-tailed paired sample t-tests, we find statistically significant improvements in each of these competencies and conclude that IVC supports the development of GC in university students, even if they have prior international experience.\nKeywords: Empirical assessment, Global citizenship, Higher education, Intercultural competence, Internationalisation at home, Sustainable Development Goals, Virtual collaboration"
+  },
+  {
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "Clinton Watkins",
+    "section": "",
+    "text": "Ingrid Van Rompay-Bartels, Clinton Watkins\n        (2025)\n        How can we raise global citizens at home? Evidence from an intercultural virtual collaboration between the Netherlands and Japan.\n        \n          forthcoming in Intercultural Global Learning: Achieving the UN Sustainable Development Goals, Elena Douvlou and Kelly Tzoumis (Eds.), Springer Nature Press.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Ingrid Van Rompay-Bartels, Clinton Watkins, Laurens Zijlstra, Jannemieke Geessink\n        (2024)\n        Assessing the Impact of Intercultural Virtual Collaboration on Global Citizenship Education.\n        \n          Understanding Multiculturalism and Interculturalism in Cross Cultures, Ingrid Muenstermann (Ed.), IntechOpen.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2024)\n        Multinationality and cash holdings: Evidence from Japan.\n        \n          Available at SSRN: https://ssrn.com/abstract=4947102.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Ingrid Van Rompay-Bartels, Clinton Watkins, Jannemieke Geessink\n        (2023)\n        Raising Global Citizens at Home: Exploring a methodological approach.\n        \n          Societal Impacts, 100012.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Kentaro Iwatsubo, Clinton Watkins\n        (2022)\n        Causality between Arbitrage and Liquidity in Platinum Futures.\n        \n           Journal of Risk and Financial Management , 15, 593.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Takeshi Hiroki, Kentaro Iwatsubo, Clinton Watkins\n        (2022)\n        Does firm-level productivity predict stock returns?.\n        \n           Pacific Basin Finance Journal , 72, 101710.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Takashi Hiroki, Kentaro Iwatsubo, Clinton Watkins\n        (2021)\n        Does Firm-Level Productivity Predict Stock Returns?.\n        \n          Available at SSRN: https://ssrn.com/abstract=3927541.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Kentaro Iwatsubo, Clinton Watkins\n        (2021)\n        The changing role of foreign investors in Tokyo stock price formation.\n        \n           Pacific Basin Finance Journal , 67, 101548.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Michael McAleer, Tamotsu Nakamura, Clinton Watkins\n        (2020)\n        Size, internationalization, and university rankings: evaluating and predicting Times Higher Education (THE) data for Japan.\n        \n           Sustainability of the Theories Developed by Mathematical Finance and Mathematical Economics with Applications\", MDPI, 105-116.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Kentaro Iwatsubo, Clinton Watkins\n        (2020)\n        Who influences the fundamental value of commodity futures in Japan?.\n        \n           International Review of Financial Analysis , 67, 101404.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2019)\n        Estimating the Japanese Business Cycle Using R.\n        \n          経済学・経営学学習のために (Gakusyu-No-Tameni), 神戸大学経済経営学会 (Research Institute of Economics and Business, Kobe University), October, 55-66.\n        \n      \n\n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n       PDF\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Michael McAleer, Tamotsu Nakamura, Clinton Watkins\n        (2019)\n        Size, internationalization, and university rankings: evaluating and predicting Times Higher Education (THE) data for Japan.\n        \n           Sustainability , 11(5), 1366.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Kentaro Iwatsubo, Clinton Watkins, Tao Xu\n        (2018)\n        Intraday seasonality in efficiency, liquidity, volatility and volume: Platinum and gold futures in Tokyo and New York.\n        \n           Journal of Commodity Markets , 11, 59-71.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Beck Nuritov, Massimiliano Porto\n        (2018)\n        Business Cycle and Value Insights for Forecasting Currency Returns.\n        \n           Joint Sumitomo Mitsui Asset Management -- Kobe University Research Project on Currency Forecasting.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2018)\n        Currency Portfolio Backtesting Software Manual.\n        \n           Joint Sumitomo Mitsui Asset Management -- Kobe University Research Project on Currency Forecasting.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2008)\n        Using financial market information in monetary policy: some examples from New Zealand.\n        \n           Financial Market Developments and their Implications for Monetary Policy, BIS Papers, 39, 142-166.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2008)\n        How has volatility in metals markets changed?.\n        \n           Mathematics and Computers in Simulation, 78(2), 237-249.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2007)\n        Using financial market information in monetary policy: some examples from New Zealand.\n        \n          Financial Market Developments and Their Implications for Monetary Policy -- BNM-BIS Conference Proceedings.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2006)\n        Pricing of non-ferrous metals futures on the London Metal Exchange.\n        \n           Applied Financial Economics , 16(12), 853-880.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2005)\n        Have aluminium and copper futures markets become more volatile over time?.\n        \n          In A. Zerger and R. Argent (eds.), MODSIM 2005 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, December, 170-176. ISBN: 0-9758400-2-9.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2005)\n        Related commodity markets and conditional correlations.\n        \n           Mathematics and Computers in Simulation , 68(5-6), 567-579.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2004)\n        Econometric modelling of non-ferrous metal prices.\n        \n           Journal of Economics Surveys , 18(5), 651-701.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2003)\n        Climate Change and International Trade: Australia and Japan.\n        \n          In Post, D. A. (ed) MODSIM 2003 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, July. ISBN: 1 74052 098 X:.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2003)\n        Correlation in volatility among related commodity markets.\n        \n          In Post, D. A. (ed) MODSIM 2003 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, July. ISBN: 1 74052 098 X.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2003)\n        Climate Change Policy Developments in Japan.\n        \n          Australasian Emissions Trading Forum Review, June/July.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        L. Wilson, M. Mellor, Clinton Watkins\n        (2002)\n        Emissions Trading and Indigenous Communities.\n        \n           EcoCarbon Inc. and Centre for Appropriate Technology.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Marc Saupin, Heath Lang, Clinton Watkins\n        (2002)\n        Renewable Energy Certificates Created Within Indigenous Communities: Applicability and Feasibility Issues.\n        \n           Australian Cooperative Research Centre for Renewable Energy Ltd and Centre for Appropriate Technology.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2002)\n        Modelling prices, returns and volatility in futures markets for industrial metals.\n        \n           Submitted for the degree of Doctor of Philosophy, University of Western Australia .\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Trevor Pryor, Clinton Watkins, Heath Lang\n        (2002)\n        Estimating tradeable certificates created by small-scale renewable energy systems.\n        \n          In Rizzoli, A.E., and Jakeman, A.J. (eds), iEMSs 2002 International Congress Integrated Assessment and Decision Support. Proceedings of the 1st biennial meeting of the International Environmental Modelling and Software Society, Lugano, Switzerland, June 2002, 460-465. ISBN 88-900787-0-7\".\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2002)\n        Modelling time-varying volatility in non-ferrous metals markets.\n        \n          In Rizzoli, A.E., and Jakeman, A.J. (eds), iEMSs 2002 International Congress Integrated Assessment and Decision Support. Proceedings of the 1st biennial meeting of the International Environmental Modelling and Software Society, Lugano, Switzerland, June 2002, 550-555. ISBN 88-900787-0-7.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Simon Dawkins\n        (2002)\n        Early Greenhouse Abatement Action.\n        \n           EcoCarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Frank Reid\n        (2002)\n        Response to the Draft Report of the COAG Energy Market Review Panel.\n        \n           Australian Cooperative Research Centre for Renewable Energy Ltd and EcoCarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2002)\n        Japan Embarks on the Kyoto Path.\n        \n          Australasian Emissions Trading Forum Review, June/July.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Craig McBurnie, Clinton Watkins\n        (2002)\n        Lessons from Carbon Risk Management Simulation.\n        \n          Australasian Emissions Trading Forum Review, June/July.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Craig McBurnie, Clinton Watkins\n        (2002)\n        Report on the VETP Workshop on GHG Emissions Risk Management at the Eye-for-Energy Emissions Trading Conference.\n        \n           EcoCarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Craig McBurnie, Clinton Watkins\n        (2002)\n        Report on the VETP Workshop on GHG Emissions Risk Management at the Commercialising Sustainable Energy Conference.\n        \n           Ecocarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Craig McBurnie. Clinton Watkins\n        (2002)\n        Report on the VETP Workshop on GHG Emissions Risk Management at Western Power Corporation.\n        \n           EcoCarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2002)\n        Comment on the South West Power Project Strategic Environmental Review.\n        \n           EcoCarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Frank Reid, Alix Rhodes, Clinton Watkins\n        (2002)\n        Submission to the State Greenhouse Strategy.\n        \n           Australian Cooperative Research Centre for Renewable Energy Ltd, EcoCarbon Inc. and Renewable Energy Technology and Innovation Network of Australia.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2002)\n        Cointegration analysis of metals futures.\n        \n           Mathematics and Computers in Simulation , 59(1-3), 207-221.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (2001)\n        Carbon emissions markets: a simulation approach.\n        \n          In Ghassemi, F., Whetton, P., Little, R. and M. Littleboy (eds), Proceedings of the International Congress on Modelling and Simulation, Volume 3, Socioeconomic Systems. Modelling and Simulation Society of Australia and New Zealand, December 2005, Canberra, Australia, 3, 1071-1078. ISBN: 0-867405252.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n       PDF\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Michael McAleer\n        (2001)\n        Forecasting commodity market volatility in the presence of extreme observations.\n        \n          In Ghassemi, F., Whetton, P., Little, R. and M. Littleboy (eds), Proceedings of the International Congress on Modelling and Simulation, Volume 3, Socioeconomic Systems. Modelling and Simulation Society of Australia and New Zealand, December 2005, Canberra, Australia, 3, 1525-1530. ISBN: 0-867405252.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins, Frand Reid\n        (2001)\n        Harnessing Green Energy Opportunities in Western Australia.\n        \n           Australian Cooperative Research Centre for Renewable Energy Ltd and EcoCarbon Inc.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Marc Saupin, Heath Lang, Clinton Watkins\n        (2001)\n        Installation of a Demonstration Mini Hybrid Renewable Energy System at Hluleka Nature Reserve, Eastern Cape, South Africa.\n        \n           Australian Cooperative Research Centre for Renewable Energy Ltd.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Heath Lang, Clinton Watkins\n        (2001)\n        Performance Evaluation of Hybrid Renewable Energy Systems.\n        \n           International Centre for Application of Solar Energy and Provincial Electrification Authority of Thailand.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Gordon Thompson, Clinton Watkins\n        (2001)\n        An Overview of Australian Greenpower Schemes.\n        \n           World Bank and International Centre for Application of Solar Energy.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Marc Saupin, Clinton Watkins\n        (2000)\n        The Australian Experience in Developing a Policy Framework for Greenhouse Gas Mitigation: A Renewable Energy Target.\n        \n           World Bank and International Centre for Application of Solar Energy.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Marc Saupin, Heath Lang, Clinton Watkins\n        (2000)\n        Survey of Island Electrification Needs and Socioeconomic Conditions.\n        \n           International Centre for Application of Solar Energy and Provincial Electrification Authority of Thailand.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Marc Saupin, Ken Butler, Heath Lang, Clinton Watkins\n        (2000)\n        Socioeconomic Evaluation of Capacity Building and Institutional Strengthening at Kemiri, Irian Jaya.\n        \n           International Centre for Application of Solar Energy.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (1999)\n        Estimating long run pricing models for copper futures prices.\n        \n          In Oxley, L. (ed), MODSIM 1999 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, December 1999, 483-488. ISBN: 0-86422-948-8.\n        \n      \n\n      \n\n      \n\n      \n\n      \n       PDF\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (1997)\n        Pricing in futures and forward markets for non-ferrous metals: an empirical critique.\n        \n          In McDonald, D.A. and M. McAleer (eds), MODSIM 1997 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, December, 1385-1390. ISBN: 0 86422 826 0.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n       PDF\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (1997)\n        The term structure of interest rates and economic activity: An empirical critique.\n        \n           Mathematics and Computers in Simulation, 43(3-6), 487-493.\n        \n      \n\n      \n      \n       DOI\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (1995)\n        Human capital and screening theories of education: an empirical critique.\n        \n          In Binning, P., Bridgman, H. and B. Williams (eds), MODSIM 1995 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, December, 4, 291-296.\n        \n      \n\n      \n\n      \n\n      \n\n      \n\n      \n      \n       Cite\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n  \n    \n      \n        Clinton Watkins\n        (1995)\n        The term structure of interest rates and economic activity: an empirical critique.\n        \n          In Binning, P., Bridgman, H. and B. Williams (eds), MODSIM 1995 International Congress on Modelling and Simulation. Modelling and Simulation Society of Australia and New Zealand, December, 4, 95-100.\n        \n      \n\n      \n\n      \n      \n       Link\n      \n\n      \n\n      \n       PDF\n      \n\n      \n\n      \n      \n      \n      \n      \n\n    \n    \n  \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "teaching/bf/index.html",
+    "href": "teaching/bf/index.html",
+    "title": "Behavioural Finance",
+    "section": "",
+    "text": "Download the Syllabus"
+  },
+  {
+    "objectID": "teaching/bf/index.html#overview",
+    "href": "teaching/bf/index.html#overview",
+    "title": "Behavioural Finance",
+    "section": "Overview",
+    "text": "Overview\nResearchers such as Daniel Kahneman (winner of the 2002 Nobel Prize in Economics), Robert Shiller (joint winner of the 2013 Nobel Prize in Economics) and Richard Thaler (winner of the 2017 Nobel Prize in Economics) pioneered the application of concepts from psychology to economic and financial decision-making. In behavioural economics and finance, we use principles from psychology to describe how individuals actually make economic and financial decisions, in contrast to the way rational agent models suggest individuals should make decisions."
+  },
+  {
+    "objectID": "teaching/bf/index.html#objectives",
+    "href": "teaching/bf/index.html#objectives",
+    "title": "Behavioural Finance",
+    "section": "Objectives",
+    "text": "Objectives\n\ndistinguish between the approaches and assumptions of conventional and behavioural finance, and discuss the relationship between the two fields.\nexplain the behavioural and psychological influences on economic and financial decision-making.\napply behavioural finance research and psychological concepts to problems in finance.\ninterpret experimental evidence generated by researchers in behavioural economics & finance."
+  },
+  {
+    "objectID": "teaching/bf/index.html#faqs",
+    "href": "teaching/bf/index.html#faqs",
+    "title": "Behavioural Finance",
+    "section": "FAQs",
+    "text": "FAQs\n\n\n\n\n\n\nWhat will we do in this course?\n\n\n\n\n\nWe will do examine how psychological factors influence economic and financial decision-making. We will interpret key research findings and run decision-making experiments during class.\n\n\n\n\n\n\n\n\n\nAre there prerequisites?\n\n\n\n\n\nFinancial Theories and Applications is recomended but not mandatory."
+  },
+  {
+    "objectID": "teaching/ec/index.html",
+    "href": "teaching/ec/index.html",
+    "title": "Econometrics",
+    "section": "",
+    "text": "Download the Syllabus"
+  },
+  {
+    "objectID": "teaching/ec/index.html#course-overview",
+    "href": "teaching/ec/index.html#course-overview",
+    "title": "Econometrics",
+    "section": "Course overview",
+    "text": "Course overview\nThis course exposes students to common econometric techniques that economists use to estimate, test, and forecast relationships between variables in economics and finance. We cover applied econometrics and selective intermediate theory. Students will apply theory to empirical problems using economic and financial data in class and in assignments using the language R and RStudio."
+  },
+  {
+    "objectID": "teaching/ec/index.html#course-objectives",
+    "href": "teaching/ec/index.html#course-objectives",
+    "title": "Econometrics",
+    "section": "Course Objectives",
+    "text": "Course Objectives\n\nUnderstand intermediate econometric theory.\nUnderstand the approaches to econometric methodology.\nLearn to apply theory appropriately to empirical problems.\nLearn to teach yourself new econometric techniques via replication.\nBecome competent using R and associated tools for applied econometrics."
+  },
+  {
+    "objectID": "teaching/efc/index.html",
+    "href": "teaching/efc/index.html",
+    "title": "Economic & Financial Crises",
+    "section": "",
+    "text": "Download the Syllabus"
+  },
+  {
+    "objectID": "teaching/efc/index.html#course-overview",
+    "href": "teaching/efc/index.html#course-overview",
+    "title": "Economic & Financial Crises",
+    "section": "Course overview",
+    "text": "Course overview\nWe will examine the salient features of past crises in both emerging and developed economies and cover Hyman Minsky’s financial instability model in detail. The course will include aspects of economic history, international macroeconomics, international finance, banking and financial markets, regulation, government finances, international relations and politics. By successfully completing this course, students will develop a deep understanding of economic and financial crises, their causes and consequences."
+  },
+  {
+    "objectID": "teaching/efc/index.html#course-objectives",
+    "href": "teaching/efc/index.html#course-objectives",
+    "title": "Economic & Financial Crises",
+    "section": "Course objectives",
+    "text": "Course objectives\nBy the end of the course, students should be able to identify and and knowledgeably discuss:\n\nthe warning signs ahead of a crisis.\nthe nature of asset price bubbles.\nthe stages of a typical crisis and the different types of crises.\neconomic theories of crises, including Minsky’s Financial Instability Hypothesis.\nimplications of crises for the macroeconomy and financial markets.\npros and cons of policy measures used to deal with a crises.\nthe history and lessons of various financial crises."
+  },
+  {
+    "objectID": "teaching/fdw/index.html",
+    "href": "teaching/fdw/index.html",
+    "title": "Finance Data Workshop",
+    "section": "",
+    "text": "Download the Syllabus Setting up R and RStudio"
+  },
+  {
+    "objectID": "teaching/fdw/index.html#course-overview",
+    "href": "teaching/fdw/index.html#course-overview",
+    "title": "Finance Data Workshop",
+    "section": "Course overview",
+    "text": "Course overview\nThis is an intensive workshop-style course that gives students hands-on experience in analysing and modelling financial data, and interpreting the results of analyses. Students will work with financial data from the Nikkei NEEDS database that is used by analysts in the finance industry. The course focusses on the analysis of Japanese stock market and listed corporation data. Analyses will be conducted using the statistical programing language R, and will include the estimation of financial econometric models. Students will conduct analyses during the workshop sessions on their own computers, and use R Notebooks to produce HTML documents containing their code, results and interpretation. This process develops the understanding of basic concepts related to producing verifiable and reproducible empirical analysis."
+  },
+  {
+    "objectID": "teaching/fdw/index.html#reasons-you-may-wish-to-take-this-course",
+    "href": "teaching/fdw/index.html#reasons-you-may-wish-to-take-this-course",
+    "title": "Finance Data Workshop",
+    "section": "Reasons you may wish to take this course",
+    "text": "Reasons you may wish to take this course\n\nDevelop you ability to conduct empirical analyses and interpret results.\nGain an understanding of stock market data and selected financial models.\nGain familiarity with the methodology of empirical research and coding in R."
+  },
+  {
+    "objectID": "teaching/fdw/index.html#faqs",
+    "href": "teaching/fdw/index.html#faqs",
+    "title": "Finance Data Workshop",
+    "section": "FAQs",
+    "text": "FAQs\n\n\n\n\n\n\nHow should I prepare for the course?\n\n\n\n\n\nStudents will need their own computer running Windows, Mac OS, or Linux. Students must download and install R and RStudio on their computer at least one week prior to the course following the instructions on this page."
+  },
+  {
+    "objectID": "teaching/fta/index.html",
+    "href": "teaching/fta/index.html",
+    "title": "Financial Theories & Applications",
+    "section": "",
+    "text": "Syllabus"
+  },
+  {
+    "objectID": "teaching/fta/index.html#reasons-to-take-the-course",
+    "href": "teaching/fta/index.html#reasons-to-take-the-course",
+    "title": "Financial Theories & Applications",
+    "section": "Reasons to take the course",
+    "text": "Reasons to take the course\n\nGain a fundamental level of financial literacy that will be helpful in:\n\nfuture business, government or NPO career, and\nmanaging your personal finances.\n\nPrepare for more advanced study of finance, such as courses in Portfolio Management and Behavioural Finance at AIU, or finance courses during study abroad.\nLearn about the functioning of the global financial system so you can understand news about financial developments and the implications for the global economy and society."
+  },
+  {
+    "objectID": "teaching/fta/index.html#learning-objectives",
+    "href": "teaching/fta/index.html#learning-objectives",
+    "title": "Financial Theories & Applications",
+    "section": "Learning objectives",
+    "text": "Learning objectives\n\nUnderstand the roles of various financial markets and institutions.\nUnderstand the theory behind valuing financial securities.\nBe able to calculate valuations for financial securities.\nUnderstand how financial securities are traded.\nUnderstand the characteristics of various financial markets.\nGain a broad understanding of the global financial system."
+  },
+  {
+    "objectID": "teaching/fta/index.html#interactive-tools",
+    "href": "teaching/fta/index.html#interactive-tools",
+    "title": "Financial Theories & Applications",
+    "section": "Interactive tools",
+    "text": "Interactive tools\n\nBond pricing visualisation.\nGeneric futures pricing calculator.\nOptions pricing visualisation."
+  },
+  {
+    "objectID": "teaching/fta/index.html#faqs",
+    "href": "teaching/fta/index.html#faqs",
+    "title": "Financial Theories & Applications",
+    "section": "FAQs",
+    "text": "FAQs\n\n\n\n\n\n\nAre there prerequisites?\n\n\n\n\n\n\nMicroeconomics, mathematics and statistics are recommended."
+  },
+  {
+    "objectID": "teaching/index.html",
+    "href": "teaching/index.html",
+    "title": "Clinton Watkins",
+    "section": "",
+    "text": "Course\n\n\nContent\n\n\n\n\n\n\n\n\nFinancial Theories & Applications\n\n\nThis is an introductory course in finance that focuses on financial markets and instruments. The course provides students with an understanding of the roles of financial markets, how financial securities are priced and traded, and their role in the global financial system. We cover the financial system, interest rate determinsation, money markets, bonds, stocks, futures and options.\n\n\n\n\n\n\n\nPortfolio Management (Investment)\n\n\nThis course is about investment and portfollio theory from a practitioner’s perspective. We cover risk and return, diversification, Modern Portfolio Theory, the Black-Litterman Model, investment philosophy, portfolio design, risk management, performance evaluation, ethics and fiduciary duty. We use these concepts to construct portfolios and examine portfolio anayltics in R using securities data from Nikkei NEEDS.\n\n\n\n\n\n\n\nBehavioural Finance\n\n\nResearchers such as Daniel Kahneman, Amos Tversky, Robert Shiller and Richard Thaler pioneered the application of concepts from psychology to economic and financial decision-making. In behavioural economics and finance, we use principles from psychology to describe how individuals actually make economic and financial decisions, in contrast to the way rational agent models suggest individuals should make decisions.\n\n\n\n\n\n\n\nFinance Data Workshop\n\n\nThis is an intensive workshop-style course that gives students hands-on experience in analysing and modelling financial data, and interpreting the results of analyses. Students will work with financial data from the Nikkei NEEDS database that is used by analysts in the finance industry. The course covers one topic in depth, such as factor analysis, panel regression or the Fama Macbeth model.\n\n\n\n\n\n\n\nCrossing Borders Without Crossing Borders\n\n\nThis is an Intercultural Virtual Collaboration course. Students in Japan and the Netherlands work together in small teams on a business case project analysing the differences in marketing and communications related to the UN Sustainable Development Goals. The course aims to develop students intercultural competencies via learning by doing in a cross-border and cross-cultural context.\n\n\n\n\n\n\n\nUndergraduate Seminar\n\n\nStudents write their undergraduate research paper under my guidance on a topic within the seminar theme ‘Empirical Analyses in Finance, Economics and Business.’ The course includes sessions on empirical research methods. Students learn the priniples of reproducible research while completing their project, using R, RStudio and Quarto.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "teaching/index.html#current-courses",
+    "href": "teaching/index.html#current-courses",
+    "title": "Clinton Watkins",
+    "section": "",
+    "text": "Course\n\n\nContent\n\n\n\n\n\n\n\n\nFinancial Theories & Applications\n\n\nThis is an introductory course in finance that focuses on financial markets and instruments. The course provides students with an understanding of the roles of financial markets, how financial securities are priced and traded, and their role in the global financial system. We cover the financial system, interest rate determinsation, money markets, bonds, stocks, futures and options.\n\n\n\n\n\n\n\nPortfolio Management (Investment)\n\n\nThis course is about investment and portfollio theory from a practitioner’s perspective. We cover risk and return, diversification, Modern Portfolio Theory, the Black-Litterman Model, investment philosophy, portfolio design, risk management, performance evaluation, ethics and fiduciary duty. We use these concepts to construct portfolios and examine portfolio anayltics in R using securities data from Nikkei NEEDS.\n\n\n\n\n\n\n\nBehavioural Finance\n\n\nResearchers such as Daniel Kahneman, Amos Tversky, Robert Shiller and Richard Thaler pioneered the application of concepts from psychology to economic and financial decision-making. In behavioural economics and finance, we use principles from psychology to describe how individuals actually make economic and financial decisions, in contrast to the way rational agent models suggest individuals should make decisions.\n\n\n\n\n\n\n\nFinance Data Workshop\n\n\nThis is an intensive workshop-style course that gives students hands-on experience in analysing and modelling financial data, and interpreting the results of analyses. Students will work with financial data from the Nikkei NEEDS database that is used by analysts in the finance industry. The course covers one topic in depth, such as factor analysis, panel regression or the Fama Macbeth model.\n\n\n\n\n\n\n\nCrossing Borders Without Crossing Borders\n\n\nThis is an Intercultural Virtual Collaboration course. Students in Japan and the Netherlands work together in small teams on a business case project analysing the differences in marketing and communications related to the UN Sustainable Development Goals. The course aims to develop students intercultural competencies via learning by doing in a cross-border and cross-cultural context.\n\n\n\n\n\n\n\nUndergraduate Seminar\n\n\nStudents write their undergraduate research paper under my guidance on a topic within the seminar theme ‘Empirical Analyses in Finance, Economics and Business.’ The course includes sessions on empirical research methods. Students learn the priniples of reproducible research while completing their project, using R, RStudio and Quarto.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "teaching/index.html#executive-workshop",
+    "href": "teaching/index.html#executive-workshop",
+    "title": "Clinton Watkins",
+    "section": "Executive workshop",
+    "text": "Executive workshop\n\n\n\n\n\nCourse\n\n\nContent\n\n\n\n\n\n\n\n\nThe Psychology of Economic Decision-making\n\n\nThis session will bring economics down to earth and get you thinking about how we think about our world. Mixing human psychology with a practical understanding of economic incentives and market behaviour, we will explore how understanding human miscalculations can help us make smarter decisions in both our private and professional lives.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "teaching/index.html#previous-courses",
+    "href": "teaching/index.html#previous-courses",
+    "title": "Clinton Watkins",
+    "section": "Previous courses",
+    "text": "Previous courses\n\n\n\n\n\nCourse\n\n\nContent\n\n\n\n\n\n\n\n\nEconometrics\n\n\nThis course exposes students to common econometric techniques that economists use to estimate, test, and forecast relationships between variables in economics and finance. We cover applied econometrics and selective intermediate theory. Students will apply theory to empirical problems using economic and financial data in class and in assignments using the statistical programming language R and the RStudio IDE.\n\n\n\n\n\n\n\nMacroeconomics\n\n\nThis course introduces advanced macroeconomic modelling techniques and their application to the the analysis of business cycle fluctuations. We cover the approaches to macroeconomic modelling and analysis, analyse the interrelationships between macroeconomic variables using vector autoregression, and examine the standard theoretical macroeconomic models with an emphasis on business cycles, inflation, monetary and fiscal policy.\n\n\n\n\n\n\n\nEconomic & Financial Crises\n\n\nWe will examine the salient features of crises in both emerging and developed economies and cover Hyman Minsky’s financial instability model. The course touches on economic history, international macroeconomics, international finance, banking, financial markets, regulation, government finances, international relations and politics. Students will develop a deep understanding of economic and financial crises, their causes and consequences.\n\n\n\n\n\n\n\nInternational Business\n\n\nThis is an introductory course in international business that examines the economic, management and commercial aspects of international businesses. We will take a global perspective, but also emphasise the perspective of Asian firms and doing business in Asia. Working through Asia-relevant case studies about international businesses is a key part of the course.\n\n\n\n\n\n\n\nFinancial Markets Workshop\n\n\nThis course will develop students’ skills in applying economic and financial theory to the real time analysis of macroeconomics, financial markets and investment strategy. The course is conducted in a workshop style. The class sessions be a combination of lectures given by me, student presentations and student led discussion. We will develop a strategy for interpreting and forecasting developments in financial markets and important economies, focussing on cycles and trends.\n\n\n\n\n\n\n\nEconomics Readings in English\n\n\nThis course develops non-native English speaking undergraduates’ ability and confidence in discussing and comprehending economics in English. The course focuses on discussing economics related topics, not teaching the English language. Students are required to read, present and discuss various economics topics in English.\n\n\n\n\n\n\n\nEconomic Development\n\n\nThis course covers the microfoundations of development. We examine theoretical and empirical issues applicable in less-developed economies. Topics surveyed include current issues, agriculture and rural development, education, human capital investment, employment and labour markets, population, poverty alleviation, health, credit and financial markets, dealing with risk, technological change, and project design and evaluation.\n\n\n\n\n\n\n\nInternational Trade\n\n\nThis course surveys a number of major issues in trade theory and policy, as well as empirical tests of trade models, in the light of recent developments in international economics. Through this course, students should become familiar with the theoretical models of international trade, current issues in trade policy, and application of the theory to less developed country economies.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "teaching/macro/index.html",
+    "href": "teaching/macro/index.html",
+    "title": "Macroeconomics",
+    "section": "",
+    "text": "Download the Syllabus"
+  },
+  {
+    "objectID": "teaching/macro/index.html#course-overview",
+    "href": "teaching/macro/index.html#course-overview",
+    "title": "Macroeconomics",
+    "section": "Course overview",
+    "text": "Course overview\nThis course introduces advanced macroeconomic modelling techniques and their application to the the analysis of business cycle fluctuations. The course has three main parts. We cover:\n\nthe approaches to macroeconomic modelling and analysis;\nthe empirical properties and modelling of macroeconomic variables, and analyse their interrelationships using vector autoregression and other econometric methods in the software language R;\nthe standard theoretical macroeconomic models with an emphasis on business cycles, inflation, monetary and fiscal policy."
+  },
+  {
+    "objectID": "teaching/macro/index.html#course-objectives",
+    "href": "teaching/macro/index.html#course-objectives",
+    "title": "Macroeconomics",
+    "section": "Course Objectives",
+    "text": "Course Objectives\n\nfamiliar with standard frameworks for macroeconomic modelling and analysis;\nable to understand, model (using R) and interpret the empirical behaviour of important macroeconomic variables;\nconversant with the mathematical structure and solution of the macroeconomic models covered in the course and familiar with the simulation of macroeconomic models in R;\ncapable of analysing and interpreting the impact of changes in important variables on the macroeconomy, including the impacts of fiscal and monetary policy."
+  },
+  {
+    "objectID": "teaching/pm/index.html",
+    "href": "teaching/pm/index.html",
+    "title": "Portfolio Management (Investment)",
+    "section": "",
+    "text": "Download the Syllabus Setting up R and RStudio"
+  },
+  {
+    "objectID": "teaching/pm/index.html#what-you-will-learn",
+    "href": "teaching/pm/index.html#what-you-will-learn",
+    "title": "Portfolio Management (Investment)",
+    "section": "What you will learn",
+    "text": "What you will learn\nThis course is about the theory and practice of investment management. The course covers investment theory and concepts including security valuation, Modern Portfolio Theory, the risk/return trade-off, diversification, and the Black-Litterman Model. We will use these theories to construct portfolios using securities data in excel and R, and create portfolio analytics using R. We will discuss practical aspects of investment management, as well as the current situation of the investment management business in Japan and overseas. We also cover practical aspects of investment management such as investment philosophy, portfolio design, risk management, performance evaluation, ethics and fiduciary duty."
+  },
+  {
+    "objectID": "teaching/pm/index.html#objectives",
+    "href": "teaching/pm/index.html#objectives",
+    "title": "Portfolio Management (Investment)",
+    "section": "Objectives",
+    "text": "Objectives\nBy the end of this course, students should have a clear understanding of how financial assets are combined into portfolios, and the issues involved in real world portfolio management. Students should be competent in understanding, analysing and constructing investment portfolios comprised of stocks, bonds and alternative assets."
+  },
+  {
+    "objectID": "teaching/pm/index.html#faqs",
+    "href": "teaching/pm/index.html#faqs",
+    "title": "Portfolio Management (Investment)",
+    "section": "FAQs",
+    "text": "FAQs\n\n\n\n\n\n\nAre there prerequisites?\n\n\n\n\n\nMathematics, Statistics and Financial Theories and Applications"
+  },
+  {
     "objectID": "publications/1997-matcom-term-structure-interest-rates-economic-activity/index.html",
     "href": "publications/1997-matcom-term-structure-interest-rates-economic-activity/index.html",
     "title": "The term structure of interest rates and economic activity: An empirical critique",
@@ -607,313 +915,5 @@
     "title": "Raising Global Citizens at Home: Exploring a methodological approach",
     "section": "",
     "text": "Abstract: Views on how to balance the needs of humans and the environment differ widely. Global citizenship supports the transition to a sustainable society as the substantial and complex challenges facing the world transcend national borders. Global citizenship is a key response in contemporary higher education which aims to prepare students to address present and future challenges. We outline the design, international virtual collaboration, for an undergraduate course to develop students’ global citizenship competencies. International virtual collaboration works as an open-source instrument that provides an inclusive, equitable and low environmental impact solution to the internationalization of university students at home. We explain an iterative Participatory Action Research methodology to develop and enhance the present and anticipated positive societal impact of the course. The positive societal impacts include reduced environmental impact (by reduced need to travel), improved partnerships (by better understanding of cultural differences that may make working together across borders difficult), quality education (by improved educational design and approach), equality and diversity (by improved access, lower cost, for education that develops global citizenship competencies).\nKeywords: Higher education, Global Citizenship (GC), Intercultural competence, Intercultural Virtual Collaboration (IVC), Sustainability, Sustainable Development Goals (SDG)\nData: Data on student mobility for Japan."
-  },
-  {
-    "objectID": "contact/index.html",
-    "href": "contact/index.html",
-    "title": "Clinton Watkins",
-    "section": "",
-    "text": "Loading…"
-  },
-  {
-    "objectID": "about/index.html",
-    "href": "about/index.html",
-    "title": "Clinton Watkins",
-    "section": "",
-    "text": "I am Professor (Finance) and Director of the Global Business Program at Akita International University (AIU) in Japan. My research focusses on the analysis of financial market data, primarily the stock and commodities markets at the moment. I teach undergraduate courses in finance and business. I’m also an adviser for Acumain Inc., a San Francisco-based investment management startup.\nPreviously, I held Associate Professor positions in Graduate School of Economics at Kobe University and at AIU.\nPrior to academia, I was a Director at BlackRock Japan, formerly with Barclays Global Investors Japan. I produced investment signal research and strategy for a large multi-asset class systematic global macro hedge fund. I worked closely with the Global Market Strategy Group teams in San Franciso, London and Sydney.\nBefore moving to Japan I was an Adviser at the Reserve Bank of New Zealand in Wellington. I worked in the Markets Analysis and Research team, providing guidance on the conduct of monetary and financial stability policy from a financial markets perspective. At the Bank, I also helped coordinate EMEAP (high-level interaction between Asia-Pacific central banks) and manage the Professorial Fellowship program.\nEven before that, I worked in emissions trading, energy economics, renewable energy, economic development, international trade and held management positions in businesses in Australia.\nMy PhD thesis is on the empirical finance of non-ferrous metals markets and was completed at the University of Western Australia under the supervision of prominent econometrician Professor Michael McAleer.\n\n\n\n\n\n\n\n\n\ne-mail"
-  },
-  {
-    "objectID": "about/index.html#bio-sketch",
-    "href": "about/index.html#bio-sketch",
-    "title": "Clinton Watkins",
-    "section": "",
-    "text": "I am Professor (Finance) and Director of the Global Business Program at Akita International University (AIU) in Japan. My research focusses on the analysis of financial market data, primarily the stock and commodities markets at the moment. I teach undergraduate courses in finance and business. I’m also an adviser for Acumain Inc., a San Francisco-based investment management startup.\nPreviously, I held Associate Professor positions in Graduate School of Economics at Kobe University and at AIU.\nPrior to academia, I was a Director at BlackRock Japan, formerly with Barclays Global Investors Japan. I produced investment signal research and strategy for a large multi-asset class systematic global macro hedge fund. I worked closely with the Global Market Strategy Group teams in San Franciso, London and Sydney.\nBefore moving to Japan I was an Adviser at the Reserve Bank of New Zealand in Wellington. I worked in the Markets Analysis and Research team, providing guidance on the conduct of monetary and financial stability policy from a financial markets perspective. At the Bank, I also helped coordinate EMEAP (high-level interaction between Asia-Pacific central banks) and manage the Professorial Fellowship program.\nEven before that, I worked in emissions trading, energy economics, renewable energy, economic development, international trade and held management positions in businesses in Australia.\nMy PhD thesis is on the empirical finance of non-ferrous metals markets and was completed at the University of Western Australia under the supervision of prominent econometrician Professor Michael McAleer.\n\n\n\n\n\n\n\n\n\ne-mail"
-  },
-  {
-    "objectID": "about/index.html#links",
-    "href": "about/index.html#links",
-    "title": "Clinton Watkins",
-    "section": "Links",
-    "text": "Links\n Contact me   Curriculum Vitae  LinkedIn\n\n  Google Scholar   RePEc   ORCID  ResearchMap   ResearchGate   SSRN\n Global Business Research Group  AIU Researcher Database"
-  },
-  {
-    "objectID": "about/index.html#practitioner-experience",
-    "href": "about/index.html#practitioner-experience",
-    "title": "Clinton Watkins",
-    "section": "Practitioner experience",
-    "text": "Practitioner experience\n\nFinancial Markets & Corporate Finance\nInvestment Management & Banking\nMacroeconomics, Monetary Policy & Financial Stabilty\nQuantitative Modelling & Analytics\nRenewable Energy, Emissions Trading & Energy Economics\nDevelopment Economics\nInternational Business & Trade\nSmall Business Management"
-  },
-  {
-    "objectID": "about/index.html#academic-research-interests",
-    "href": "about/index.html#academic-research-interests",
-    "title": "Clinton Watkins",
-    "section": "Academic research interests",
-    "text": "Academic research interests\n\nCommodity, Equity & Foreign Exchange Modelling\nMarket Microstructure & Efficiency\nCorporate Finance, Factor Models\nRisk\nQuantitative Modelling & Analytics, Applied Econometrics\nIntercultural Competencies in Business & Education"
-  },
-  {
-    "objectID": "about/index.html#consulting",
-    "href": "about/index.html#consulting",
-    "title": "Clinton Watkins",
-    "section": "Consulting",
-    "text": "Consulting\nI have worked as a consultant in various areas of finance, including investment strategy & research, investment management, banking & technology, data science, quantitative modelling and research report writing. Please   Contact me to discuss my services."
-  },
-  {
-    "objectID": "about/index.html#academic-genealogy",
-    "href": "about/index.html#academic-genealogy",
-    "title": "Clinton Watkins",
-    "section": "Academic Genealogy",
-    "text": "Academic Genealogy\nMy ‘academic genealogy’ goes back to Robert Solow and Wassily Leontief."
-  },
-  {
-    "objectID": "about/index.html#tools",
-    "href": "about/index.html#tools",
-    "title": "Clinton Watkins",
-    "section": "Tools",
-    "text": "Tools\nI do virtually all of my work using R, RStudio, Quarto, LaTeX, JabRef and Joplin."
-  },
-  {
-    "objectID": "about/index.html#hobbies",
-    "href": "about/index.html#hobbies",
-    "title": "Clinton Watkins",
-    "section": "Hobbies",
-    "text": "Hobbies\nI am also interested in photography using film cameras and making prints in the darkroom , as well as sailing and cycling, especially cycling in snow.\nSometimes I like to run as long as there is some walking involved. I’ve joined some events including the Akita Trail Running Festival (mid course: 2023), Tazawako Marathon (half: 2023 & 2023), Yamanakako Marathon (half:2023 & 2024), Dalian Marathon (half), Kochi Ryoma Marathon, Naha Marathon (2019 failed!), Iwakuni Road Race, Kouzushima Aquathlon, Izu-Oshima Marathon (10km: 2020)."
-  },
-  {
-    "objectID": "posts/2019-nikkei-newspaper-commodity-research-kobe/nikkei.html",
-    "href": "posts/2019-nikkei-newspaper-commodity-research-kobe/nikkei.html",
-    "title": "Nikkei Newspaper article on commodity derivative research at Kobe University",
-    "section": "",
-    "text": "Nikkei Newspaper article on commodity derivative research at Kobe University.\nNikkei Newspaper Staff Writer Shuhei Yamamoto came to Kobe University to interview Kentaro Iwatsubo, Yasuo Takatsuki and myself about our work on commodity derivatives.\nYou can find the article about our work published 25 June 2019 in the Nikkei or by copying this URL: https://www.nikkei.com/article/ DGXMZO46496130U9A620C1000000/"
-  },
-  {
-    "objectID": "posts/2020-Japan-Exchange-Group-commodity-market-microstructure/index.html",
-    "href": "posts/2020-Japan-Exchange-Group-commodity-market-microstructure/index.html",
-    "title": "Summary of our commodity market microstructure research on the JPX website.",
-    "section": "",
-    "text": "Read a summary (in Japanese) of a recent research project “Who influences the fundamental value of commodity futures in Japan?” with Ken Iwatsubo on the Japan Exchange Futures and Options Report website."
-  },
-  {
-    "objectID": "posts/2021-conway-GOL/index.html",
-    "href": "posts/2021-conway-GOL/index.html",
-    "title": "Conway’s GOL",
-    "section": "",
-    "text": "Here on R Bloggers is some code simulating Conway’s Game of Life. The code produces the animated gif above that shows the evolution of a pattern determined only by its initial conditions."
-  },
-  {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "Clinton Watkins",
-    "section": "",
-    "text": "Forecasting recessions with the yield curve\n\n\n\n\n\n\nR\n\n\nForecasting\n\n\nTerm structure\n\n\nYield curve\n\n\nRecession\n\n\n\nA note on extracting information about future reessions from the term structure of interest rates including R code and analysis of US data.\n\n\n\n\n\n1 May 2024\n\n\n\n\n\n\n\n\n\n\n\n\nGeneralised impulse response function in R.\n\n\n\n\n\n\nR\n\n\nEconometrics\n\n\n\nR code for creating generalised impulse response functions (GIRF) from VARS package outputs.\n\n\n\n\n\n25 May 2021\n\n\n\n\n\n\n\n\n\n\n\n\nConway’s GOL\n\n\n\n\n\n\nR\n\n\n\n\n\n\n\n\n\n20 May 2021\n\n\n\n\n\n\n\n\n\n\n\n\nSummary of our commodity market microstructure research on the JPX website.\n\n\n\n\n\n\ncommodities\n\n\nJPX\n\n\nMedia\n\n\n\nSummary of our commodity market microstructure research on the Japan Exchange Group website.\n\n\n\n\n\n1 May 2020\n\n\n\n\n\n\n\n\n\n\n\n\nSummary of our intraday commodity seasonality research on the JPX website.\n\n\n\n\n\n\ncommodities\n\n\nJPX\n\n\nMedia\n\n\n\nSummary of our intraday commodity seasonality research on the Japan Exchange Group website.\n\n\n\n\n\n1 April 2020\n\n\n\n\n\n\n\n\n\n\n\n\nTimes Higher Education article\n\n\n\n\n\n\nUniversity rankings\n\n\nMedia\n\n\n\nMy co-author Michael McAleer was interviewed in connection with our article on university rankings.\n\n\n\n\n\n21 November 2019\n\n\n\n\n\n\n\n\n\n\n\n\nNikkei Newspaper article on commodity derivative research at Kobe University\n\n\n\n\n\n\ncommodities\n\n\nNikkei\n\n\nMedia\n\n\n\n\n\n\n\n\n\n5 June 2019\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "publications/2022-pbfj-Does-firm-level-productivity-predict-stock-returns-Japan/index.html",
-    "href": "publications/2022-pbfj-Does-firm-level-productivity-predict-stock-returns-Japan/index.html",
-    "title": "Does firm-level productivity predict stock returns?",
-    "section": "",
-    "text": "Abstract: Contrary to the findings of previous U.S. studies, we show that the firm-level total factor productivity (TFP) of Japanese manufacturers positively predicts their future stock returns in the cross-section when controlling for relevant risk factors, including those of Fama and French (2015). Risks related to intangible expenditure, primarily those for research and development (R&D) and personnel, explain a substantial fraction of the predictive power of firm-level TFP, while bankruptcy, macroeconomic, and capital expenditure risks do not. More productive firms trade at a significant premium to less productive firms. This premium compensates investors for risks associated with innovation and human and organizational capital formation.\nKeywords: Firm-level productivity, Total factor productivity (TFP), Cross-section of returns, Intangibles, Research and development (R&D), Organizational capital, Japanese stocks\nSummary:\n\nWe show that firm-level TFP positively predicts future stock returns in Japan.\nThis result is robust even when controlling for relevant risk factors, including those of Fama and French (2015).\nThis finding is in contrast to those of previous studies in the U.S.\nRisks related to intangible expenditure, primarily those for R&D and personnel, explain a substantial fraction of the predictive power of TFP.\nThe premium on high TFP stocks compensates investors for risks associated with innovation and human and organizational capital formation.\n\n\n\n\n\nTFP has explanatory power for the future returns of Japanese manufacturing firms beyond the accepted stock risk factors."
-  },
-  {
-    "objectID": "publications/2024-multinationality-and-cash-holdings-ssrn/index.html",
-    "href": "publications/2024-multinationality-and-cash-holdings-ssrn/index.html",
-    "title": "Multinationality and cash holdings: Evidence from Japan",
-    "section": "",
-    "text": "Abstract: Investors frequently criticise Japanese corporations for excessive cash holdings. On average and on aggregate, cash holdings have increased over the last decade. However, there is substantial variation in cash holdings within and between firms. At the same time, many large Japanese firms’ businesses have become more international. This research examines how international factors influence firms’ cash holdings via the precautionary motive – through overseas sales, foreign ownership, and cultural differences between the parent corporation and its overseas affiliates. Random effects within-between regression is used to jointly estimate the relationships within firms over time and between firms in the cross-section. Internationalisation through overseas sales has positive within and between firm relationships with cash holdings, but foreign shareholding is associated with lower cash holdings in the time series. Positive within-firm effects dominate the relationship between cash holdings and cultural heterogeneity.\nKeywords: Cash holdings, Cultural heterogeneity, Foreign shareholding, Internationalisation, Japanese corporation, Multinationals, Overseas sales, Random effects within-between regression\n\n\n\n\nThe cash holdings of Japanese listed firms have increased over time."
-  },
-  {
-    "objectID": "talks/2013-aiu/index.html",
-    "href": "talks/2013-aiu/index.html",
-    "title": "A lesson from the financial crisis for business management",
-    "section": "",
-    "text": "Download pdf"
-  },
-  {
-    "objectID": "talks/index.html",
-    "href": "talks/index.html",
-    "title": "Clinton Watkins",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nVenue\n\n\nLocation\n\n\n\n\n\n\nDecember 2023\n\n\nCash holdings and corporate culture in Japan\n\n\nWorld Finance and Banking Symposium, Vilnius University\n\n\nVilnius, Lithuania\n\n\n\n\nDecember 2023\n\n\nDiscussant for ‘The Impact of Currency Carry Trade Activity on the Transmission of Monetary Policy’ by Maximilian Boeck, Alina Steshkova, and Thomas O. Zörner\n\n\nWorld Finance and Banking Symposium, Vilnius University\n\n\nVilnius, Lithuania\n\n\n\n\nFebruary 2023\n\n\nGuest lectures for undergraduate students at HAN\n\n\nInternational School of Business  HAN University of Applied Sciences\n\n\nArnhem, the Netherlands\n\n\n\n\nAugust 2022\n\n\nDoes Firm-Level Productivity Predict Stock Returns?\n\n\nAccounting, Economics and Finance Seminar Series,  Curtin Business School, Curtin University\n\n\nPerth, Australia\n\n\n\n\nNovember 2021\n\n\nDiscussant comments on: ‘The Economic Consequences of Firms’ Commitment to ESG Policies’ by Dan Amiram, Ilanit Gavious, Chao Jin, Xinlei Li\n\n\nThe Fourth Conference on CSR, the Economy and Financial Markets\n\n\nTokyo, Japan (online)\n\n\n\n\nOctober 2021\n\n\nDoes Firm-Level Productivity Predict Stock Returns?\n\n\nGlobal Business Program Brown Bag Lunch, Akita International University\n\n\nOnline\n\n\n\n\nOctober 2020\n\n\nStudy of a Small and Innovative International Trading Firm\n\n\nGuest lecture for MKW 2431 BUSINESS MARKETING  Monash University Malaysia\n\n\nOnline\n\n\n\n\nSeptember 2020\n\n\nThe Changing Role of Foreign Investors in Tokyo Stock Price Formation\n\n\nWorld Finance Conference 2020  University of Malta\n\n\nOnline\n\n\n\n\nNovember 2019\n\n\nThe Changing Role of Foreign Investors in Tokyo Stock Price Formation\n\n\nNippon Finance Association 1st Fall Conference  Osaka University\n\n\nOsaka, Japan\n\n\n\n\nDecember 2018\n\n\nWho Influences the Fundamental Value of Commodity Futures in Japan?\n\n\n31st Australasian Banking and Finance Conference\n\n\nSydney, Australia\n\n\n\n\nDecember 2018\n\n\nDiscussant comments on ‘Hurdle Rate, the Zero Lower Bound and investors Active Risk Taking’ by Woo Sau Leung and Zhongyan Zhu\n\n\n2nd INFINITI Conference on International Finance Asia-Pacific  University of Sydney\n\n\nSydney, Australia\n\n\n\n\nMay 2018\n\n\nWho Influences the Fundamental Value of Commodity Futures in Japan?\n\n\nInstitute for Advanced Study Focused Program on Time Series Analysis of Higher Moments and Distributions of Financial Data (Invited paper)  Hong Kong University of Science and Technology\n\n\nHong Kong, China\n\n\n\n\nDecember 2017\n\n\nIntraday Seasonality in Efficiency, Liquidity, Volatility and Volume: Platinum and Gold Futures in Tokyo and New York\n\n\n30th Australasian Banking and Finance Conference\n\n\nSydney, Australia\n\n\n\n\nJanuary 2015\n\n\nEconometric Modelling of Non-ferrous Metals Prices\n\n\nRokko Forum  Graduate School of Economics, Kobe University\n\n\nKobe, Japan\n\n\n\n\nOctober 2013\n\n\nA lesson from the financial crisis for business management\n\n\nSeminar, Akita International University\n\n\nAkita, Japan\n\n\n\n\nApril 2013\n\n\nA Macro View on Global Financial Markets\n\n\nWaseda University Finance Alumni Association Practitioner Course, Waseda University MBA Program\n\n\nTokyo, Japan\n\n\n\n\nApril 2012\n\n\nA Macro View on Global Financial Markets\n\n\nWaseda University Finance Alumni Association Practitioner Course, Waseda University MBA Program\n\n\nTokyo, Japan\n\n\n\n\nMay 2011\n\n\nA Macro View on Global Financial Markets\n\n\nWaseda University Finance Alumni Association Practitioner Course, Waseda University MBA Program\n\n\nTokyo, Japan\n\n\n\n\nDecember 2010\n\n\nOutlook for the US dollar in 2011\n\n\nState Administration of Foreign Exchange Global Perspective 2011 Conference\n\n\nSanya, Hainan, China\n\n\n\n\nMay 2010\n\n\nA Macro View on Global Financial Markets\n\n\nWaseda University Finance Alumni Association Practitioner Course, Waseda University MBA Program\n\n\nTokyo, Japan\n\n\n\n\nMay 2009\n\n\nA Macro View on Global Financial Markets\n\n\nWaseda University Finance Alumni Association Practitioner Course, Waseda University MBA Program\n\n\nTokyo, Japan\n\n\n\n\nJuly 2007\n\n\nUsing financial market information in monetary policy: some examples from New Zealand\n\n\nBank for International Settlements and Bank Negara Malaysia Conference on Financial Market Developments and their Implications for Monetary Policy\n\n\nKuala Lumpur, Malaysia\n\n\n\n\nJune 2007\n\n\nComments on ‘A Yield Curve Perspective on Uncovered Interest Parity’ by Leo Kripner\n\n\nNew Zealand Association of Economists Annual Conference\n\n\nChristchurch, New Zealand\n\n\n\n\nDecember 2005\n\n\nHave aluminium and copper futures markets become more volatile over time?\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 2005  University of Melbourne\n\n\nMelbourne, Australia\n\n\n\n\nSeptember 2005\n\n\nInvestment and Natural Gas Markets\n\n\nProject Financing Session, APEC Gas Forum (APGAS)\n\n\nPerth, Australia\n\n\n\n\nNovember 2003\n\n\nRecent financial market developments: a New Zealand dollar story\n\n\nAustralia New Zealand Chamber of Commerce in Japan Finance Committee Roundtable\n\n\nTokyo, Japan\n\n\n\n\nJuly 2003\n\n\nCorrelation in volatility among related commodity markets\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 2003\n\n\nTownsville, Australia\n\n\n\n\nJuly 2003\n\n\nClimate change and trade relations between Australia and Japan\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 2003\n\n\nTownsville, Australia\n\n\n\n\nApril 2003\n\n\nBuilding confidence in markets\n\n\nFifth Annual Emissions Trading Summit\n\n\nSydney, Australia\n\n\n\n\nDecember 2002\n\n\nCooperative Research Centres and technology commercialisation in Australia\n\n\nEcotechnology System Laboratory Annual Research Conference\n\n\nYokohama, Japan\n\n\n\n\nNovember 2002\n\n\nVirtual emissions trading simulation workshop\n\n\nEmissions Trading Asia Pacific 2002\n\n\nSydney, Australia\n\n\n\n\nNovember 2002\n\n\nAn overview of Australia’s greenhouse response\n\n\nCapacity Building Workshop for the Ministry of Non-Conventional Energy Sources, Government of India\n\n\nPerth, Australia\n\n\n\n\nAugust 2002\n\n\nImplications for our trading relationship with Japan and others\n\n\nAustralasian Emissions Trading Forum Seminar: Dealing with Kyoto and Non-Kyoto Markets\n\n\nMelbourne, Australia\n\n\n\n\nJune 2002\n\n\nVolatility of a market index and its components: an application to non-ferrous metals markets\n\n\nComputational Economics and Finance 2002\n\n\nAix-en-Provence, France\n\n\n\n\nJune 2002\n\n\nModelling time-varying volatility in non-ferrous metals markets\n\n\nInternational Environmental Modelling and Software Society Conference\n\n\nLugano, Switzerland\n\n\n\n\nJune 2002\n\n\nEstimating tradeable certificates created by small-scale renewable energy systems\n\n\nInternational Environmental Modelling and Software Society Conference\n\n\nLugano, Switzerland\n\n\n\n\nApril 2002\n\n\nAn overview of emissions trading systems\n\n\nCommercialising Sustainable Energy 2002\n\n\nSydney, Australia\n\n\n\n\nApril 2002\n\n\nVirtual emissions trading simulation workshop\n\n\nCommercialising Sustainable Energy 2002\n\n\nSydney, Australia\n\n\n\n\nJanuary 2002\n\n\nAn overview of Australia’s greenhouse response\n\n\nCapacity Building Workshop for the Ministry of Non-Conventional Energy Sources, Government of India\n\n\nPerth, Australia\n\n\n\n\nDecember 2001\n\n\nCarbon constraints, emissions trading and the macroeconomy\n\n\nEconomic Research Department Seminar Series  Reserve Bank of Australia\n\n\nSydney, Australia\n\n\n\n\nDecember 2001\n\n\nForecasting commodity market volatility in the presence of extreme observations\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 2001  Australian National University\n\n\nCanberra, Australia\n\n\n\n\nDecember 2001\n\n\nCarbon emissions markets: a simulation approach\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 2001  Australian National University\n\n\nCanberra, Australia\n\n\n\n\nSeptember 2001\n\n\nDevelopments in emissions trading\n\n\nRegional Timber Industry Association Seminar\n\n\nAlbany, Australia\n\n\n\n\nJuly 2001\n\n\nVolatility of a market index and its components: an application to commodity markets\n\n\nFar Eastern Meeting of the Econometrics Society 2001\n\n\nKobe, Japan\n\n\n\n\nJune 2001\n\n\nHarnessing green energy opportunities in Western Australia\n\n\nWestern Australian Power Conference\n\n\nPerth, Australia\n\n\n\n\nApril 2001\n\n\nSurvey of electrification needs and local socioeconomic conditions\n\n\nProvincial Electrification Authority Island Electrification Project Capacity Building Workshop\n\n\nPerth, Australia\n\n\n\n\nDecember 2000\n\n\nVolatility of a market index and its components: an application to commodity markets\n\n\nQuantitative Methods in Finance & Bernoulli Society Conference 2000\n\n\nSydney, Australia\n\n\n\n\nDecember 2000\n\n\nEconomic evaluation of rural electrification projects\n\n\nProvincial Electrification Authority Island Electrification Project Workshop\n\n\nBangkok, Thailand\n\n\n\n\nJuly 2000\n\n\nEstimating long run pricing models for metals futures contracts\n\n\nApplied Econometrics Association Industrial Econometrics Conference  University of Luxembourg\n\n\nLuxembourg\n\n\n\n\nDecember 1999\n\n\nEstimating long run pricing models for copper futures contracts\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 1999  University of Waikato\n\n\nHamilton, New Zealand\n\n\n\n\nJuly 1999\n\n\nHybrid renewable energy system and village workshop in Kemiri, Irian Jaya\n\n\nInternational Greenhouse Partnership Office - Forum Secretariat Workshop on the Clean Development Mechanism\n\n\nNadi, Fiji\n\n\n\n\nDecember 1997\n\n\nPricing in futures and forward markets for non-ferrous metals: an empirical critique\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 1997  University of Tasmania\n\n\nHobart, Australia\n\n\n\n\nNovember 1995\n\n\nThe term structure of interest rates and economic activity: an empirical critique\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 1995  University of Newcastle\n\n\nNewcastle, Australia\n\n\n\n\nNovember 1995\n\n\nHuman capital and screening theories of education: an empirical critique\n\n\nInternational Congress on Modelling and Simulation (MODSIM) 1995  University of Newcastle, Australia\n\n\nNewcastle, Australia\n\n\n\n\nAugust 1994\n\n\nThe term structure of interest rates and economic activity: an empirical critique\n\n\nFifth International Conference on Statistical Methods for the Environmental Sciences and Fourth General Meeting of the International Environmetrics Society\n\n\nBurlington, Ontario, Canada\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "teaching/cbwcb/index.html",
-    "href": "teaching/cbwcb/index.html",
-    "title": "Crossing Borders Without Crossing Borders",
-    "section": "",
-    "text": "Download the Syllabus Download the Course Flyer"
-  },
-  {
-    "objectID": "teaching/cbwcb/index.html#course-overview",
-    "href": "teaching/cbwcb/index.html#course-overview",
-    "title": "Crossing Borders Without Crossing Borders",
-    "section": "Course overview",
-    "text": "Course overview\nAIU students will work online on a six-week business case project in international teams with students from HAN University of Applied Sciences, the Netherlands, with instructors from both universities. Dr. Ingrid Van Rompay-Bartels from HAN and Dr. Clinton Watkins from AIU will run the course.\nThe business case addresses the role and importance of culture in marketing communication related to consumer product promotion and Sustainable Development Goals. How do large international firms communicate their commitment to sustainable development goals while promoting their products in different countries? What role does culture play in their adaptation of their messaging and marketing across countries?\nFor example, how do firms in different countries promote their commitment to reducing plastics pollution?\nStudents will work through a series of individual and teamwork guided tasks and reflection. that stimulate intercultural awareness in a business setting and build the business case. An important component of this course is boosting students’ cultural competence and ability to work effectively in international cross-cultural teams in a business setting."
-  },
-  {
-    "objectID": "teaching/cbwcb/index.html#reasons-to-take-this-course",
-    "href": "teaching/cbwcb/index.html#reasons-to-take-this-course",
-    "title": "Crossing Borders Without Crossing Borders",
-    "section": "Reasons to take this course",
-    "text": "Reasons to take this course\n\nUnderstand the importance of cultural competence (intercultural knowledge, skills, awareness and attitudes) in effective cross-border teamwork in a business setting.\nLearn about the influence culture has on their actions and on actions of others, and how to adjust behaviour to enhance the quality of work in a culturally diverse team.\nUnderstand the role of culture in marketing communication, theories and concepts on the nature of culture and cultural differences.\nLearn about the United Nations Sustainable Development Goals (SDGs) as they pertain to business, materiality under different approaches and issues such as greenwashing."
-  },
-  {
-    "objectID": "teaching/cbwcb/index.html#faqs",
-    "href": "teaching/cbwcb/index.html#faqs",
-    "title": "Crossing Borders Without Crossing Borders",
-    "section": "FAQs",
-    "text": "FAQs\n\n\n\n\n\n\nWhat will we do in class?\n\n\n\n\n\nClasses will be held jointly for students in Japan and the Netherlands. The sessions will include lectures plus individual and teamwork tasks. Students will be mentored by the instructors during the individual and teamwork tasks.\n\n\n\n\n\n\n\n\n\nWho will be in my group for the teamwork?\n\n\n\n\n\nGroups will include about five or six students from AIU and HAN.\n\n\n\n\n\n\n\n\n\nHow will we meet for the course?\n\n\n\n\n\nWe will use MS Teams for this course. All teamwork should be done during the class sessions."
-  },
-  {
-    "objectID": "teaching/cbwcb/index.html#published-research",
-    "href": "teaching/cbwcb/index.html#published-research",
-    "title": "Crossing Borders Without Crossing Borders",
-    "section": "Published Research",
-    "text": "Published Research\nResearch on Intercultural Virtual Collaboration (IVC) based on the course can be found here."
-  },
-  {
-    "objectID": "teaching/cbwcb/index.html#media-coverage",
-    "href": "teaching/cbwcb/index.html#media-coverage",
-    "title": "Crossing Borders Without Crossing Borders",
-    "section": "Media Coverage",
-    "text": "Media Coverage\nRead about Dr. Ingrid Van Rompay-Bartels’ teaching and research work related to this course."
-  },
-  {
-    "objectID": "teaching/ed/index.html",
-    "href": "teaching/ed/index.html",
-    "title": "Economic Development",
-    "section": "",
-    "text": "Download the Syllabus"
-  },
-  {
-    "objectID": "teaching/ed/index.html#course-overview",
-    "href": "teaching/ed/index.html#course-overview",
-    "title": "Economic Development",
-    "section": "Course overview",
-    "text": "Course overview\nThis course covers the microfoundations of development, examining theoretical and empirical issues applicable in less-developed country economies. Topics surveyed will include current issues, agriculture and rural development, education, human capital investment, employment and labour markets, population, poverty alleviation, health, credit and financial markets, dealing with risk, technological change and the design and evaluation of development projects."
-  },
-  {
-    "objectID": "teaching/er/index.html",
-    "href": "teaching/er/index.html",
-    "title": "Economics Readings in English",
-    "section": "",
-    "text": "Download the Syllabus Download the List of Topics"
-  },
-  {
-    "objectID": "teaching/er/index.html#course-overview",
-    "href": "teaching/er/index.html#course-overview",
-    "title": "Economics Readings in English",
-    "section": "Course overview",
-    "text": "Course overview\nThis course aims to develop the the ability and confidence of non-native English speaking undergraduates to comprehend and discuss economics in English. The course focuses on discussing economics related topics, not teaching English language. You are required to read, present and discuss various economics topics in English."
-  },
-  {
-    "objectID": "teaching/fmw/index.html",
-    "href": "teaching/fmw/index.html",
-    "title": "Financial Markets Workshop",
-    "section": "",
-    "text": "Download the Syllabus"
-  },
-  {
-    "objectID": "teaching/fmw/index.html#course-overview",
-    "href": "teaching/fmw/index.html#course-overview",
-    "title": "Financial Markets Workshop",
-    "section": "Course overview",
-    "text": "Course overview\nThis course will develop students’ skills in applying economic and financial theory to the real time analysis of macroeconomics, financial markets and investment strategy. The course is conducted in a workshop style. The class sessions be a combination of lectures given by me, student presentations and student led discussion. We will develop a strategy for interpreting and forecasting developments in financial markets and important economies, focussing on cycles and trends."
-  },
-  {
-    "objectID": "teaching/fmw/index.html#course-objectives",
-    "href": "teaching/fmw/index.html#course-objectives",
-    "title": "Financial Markets Workshop",
-    "section": "Course objectives",
-    "text": "Course objectives\nBy the end of the course, students should: 1. be familiar with the pattern of economic news that shapes the consensus views on future financial asset returns. 2. be able to differentiate signal from noise in the economic news and data flow. 3. understand the importance and patterns of economic cycles and trends, financial market fluctuations and exogenous shocks. 4. be able to discuss well-reasoned views about what is happening in international financial markets, and be able to present valid counter-views to consensus."
-  },
-  {
-    "objectID": "teaching/ib/index.html",
-    "href": "teaching/ib/index.html",
-    "title": "International Business",
-    "section": "",
-    "text": "Download the Syllabus"
-  },
-  {
-    "objectID": "teaching/ib/index.html#course-overview",
-    "href": "teaching/ib/index.html#course-overview",
-    "title": "International Business",
-    "section": "Course overview",
-    "text": "Course overview\nThis is an introductory course in international business that examines the economic, management and commercial aspects of international businesses. We will take a global perspective, but also emphasise the perspective of Asian firms and doing business in Asia. Working through Asia-relevant case studies about international businesses is a key part of the course."
-  },
-  {
-    "objectID": "teaching/it/index.html",
-    "href": "teaching/it/index.html",
-    "title": "International Trade",
-    "section": "",
-    "text": "Download the Syllabus"
-  },
-  {
-    "objectID": "teaching/it/index.html#course-overview",
-    "href": "teaching/it/index.html#course-overview",
-    "title": "International Trade",
-    "section": "Course overview",
-    "text": "Course overview\nThis course surveys a number of major issues in trade theory and policy, as well as empirical tests of trade models, in the light of recent developments in international economics. Through this course, students should become familiar with the theoretical models of international trade, current issues in trade policy, and application of the theory to less developed country economies."
-  },
-  {
-    "objectID": "teaching/pedm/index.html",
-    "href": "teaching/pedm/index.html",
-    "title": "The Psychology of Economic Decision-making",
-    "section": "",
-    "text": "This session will bring economics down to earth and get you thinking about how we think about our world. Three recent winners of the Nobel Prize in Economics, Daniel Kahneman (2002), Robert Shiller (2013) and Richard Thaler (2017), have pioneered the application of behavioural insights from psychology to economic decision-making. Mixing human psychology with a practical understanding of economic incentives and market behaviour, we will explore how understanding human miscalculations can help us make smarter decisions in both our private and professional lives."
-  },
-  {
-    "objectID": "teaching/pedm/index.html#overview",
-    "href": "teaching/pedm/index.html#overview",
-    "title": "The Psychology of Economic Decision-making",
-    "section": "",
-    "text": "This session will bring economics down to earth and get you thinking about how we think about our world. Three recent winners of the Nobel Prize in Economics, Daniel Kahneman (2002), Robert Shiller (2013) and Richard Thaler (2017), have pioneered the application of behavioural insights from psychology to economic decision-making. Mixing human psychology with a practical understanding of economic incentives and market behaviour, we will explore how understanding human miscalculations can help us make smarter decisions in both our private and professional lives."
-  },
-  {
-    "objectID": "teaching/pedm/index.html#objectives",
-    "href": "teaching/pedm/index.html#objectives",
-    "title": "The Psychology of Economic Decision-making",
-    "section": "Objectives",
-    "text": "Objectives\n\nExplore the biases and heuristics that influence how we perceive the world.\n\nUnderstand how these biases and heuristics affect economic and financial decision-making.\nLearn how to make better decisions for ourselves and our clients or stakeholders."
-  },
-  {
-    "objectID": "teaching/sem/index.html",
-    "href": "teaching/sem/index.html",
-    "title": "Undergraduate Seminar",
-    "section": "",
-    "text": "Download the Syllabus Download the Study Plan"
-  },
-  {
-    "objectID": "teaching/sem/index.html#this-is-a-research-seminar",
-    "href": "teaching/sem/index.html#this-is-a-research-seminar",
-    "title": "Undergraduate Seminar",
-    "section": "This is a research seminar",
-    "text": "This is a research seminar\nThis seminar course is designed for you to write a research paper on an appropriate research topic of your choice. Potential research areas include finance (financial markets and corporate finance), applied econometrics and other areas of empirical analysis in business."
-  },
-  {
-    "objectID": "teaching/sem/index.html#objectives",
-    "href": "teaching/sem/index.html#objectives",
-    "title": "Undergraduate Seminar",
-    "section": "Objectives",
-    "text": "Objectives\nObjectives include developing research, writing, presentation, communication and planning skills. The overall objective is to learn how to conduct, discuss and present research, and produce a high quality research paper."
-  },
-  {
-    "objectID": "teaching/sem/index.html#preparation",
-    "href": "teaching/sem/index.html#preparation",
-    "title": "Undergraduate Seminar",
-    "section": "Preparation",
-    "text": "Preparation\nStudents will have undertaken appropriate coursework in their area of research interest to prepare for the seminar course. In particular, a good understanding of empirical methods is very important."
-  },
-  {
-    "objectID": "teaching/sem/index.html#pitching-research",
-    "href": "teaching/sem/index.html#pitching-research",
-    "title": "Undergraduate Seminar",
-    "section": "Pitching research",
-    "text": "Pitching research\nWe will use the “Pitching Research” framework developed by Professor Robert Faff of the University of Queensland to organise and develop your research project. Check Professor Faff’s Pitching Research website."
-  },
-  {
-    "objectID": "teaching/sem/index.html#faqs",
-    "href": "teaching/sem/index.html#faqs",
-    "title": "Undergraduate Seminar",
-    "section": "FAQs",
-    "text": "FAQs\n\n\n\n\n\n\nHow do I find a research topic?\n\n\n\n\n\nRead as many research papers as possible in subjects in which you have taken courses. Discuss research with your professors and adviser. Ask your adviser’s opinion on whether your topic ideas are feasilbe, and how they can be improved. Your research question must be clear."
   }
 ]
