@@ -1,5 +1,26 @@
 [
   {
+    "listing": "/teaching/index.html",
+    "items": [
+      "/teaching/fta/index.html",
+      "/teaching/pm/index.html",
+      "/teaching/bf/index.html",
+      "/teaching/fdw/index.html",
+      "/teaching/cbwcb/index.html",
+      "/teaching/sem/index.html",
+      "/teaching/fe/index.html",
+      "/teaching/pedm/index.html",
+      "/teaching/ec/index.html",
+      "/teaching/macro/index.html",
+      "/teaching/efc/index.html",
+      "/teaching/ib/index.html",
+      "/teaching/fmw/index.html",
+      "/teaching/er/index.html",
+      "/teaching/ed/index.html",
+      "/teaching/it/index.html"
+    ]
+  },
+  {
     "listing": "/talks/index.html",
     "items": [
       "/talks/20241218-wfbs-2/index.html",
@@ -136,26 +157,6 @@
       "/publications/1997-matcom-term-structure-interest-rates-economic-activity/index.html",
       "/publications/1995-modsim-human-capital/index.html",
       "/publications/1995-modsim-term-structure-interest-rates/index.html"
-    ]
-  },
-  {
-    "listing": "/teaching/index.html",
-    "items": [
-      "/teaching/fta/index.html",
-      "/teaching/pm/index.html",
-      "/teaching/bf/index.html",
-      "/teaching/fdw/index.html",
-      "/teaching/cbwcb/index.html",
-      "/teaching/sem/index.html",
-      "/teaching/pedm/index.html",
-      "/teaching/ec/index.html",
-      "/teaching/macro/index.html",
-      "/teaching/efc/index.html",
-      "/teaching/ib/index.html",
-      "/teaching/fmw/index.html",
-      "/teaching/er/index.html",
-      "/teaching/ed/index.html",
-      "/teaching/it/index.html"
     ]
   }
 ]
